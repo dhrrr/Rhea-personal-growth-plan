@@ -1437,7 +1437,6 @@
     <button class="top-tab-btn" data-top-tab="overview"><span class="top-tab-icon">📋</span>成长总览</button>
     <button class="top-tab-btn active" data-top-tab="schedule"><span class="top-tab-icon">📅</span>每日时间表</button>
     <button class="top-tab-btn" data-top-tab="resources"><span class="top-tab-icon">📱</span>资源推荐</button>
-    <button class="top-tab-btn" id="sync-settings-btn" style="margin-left:auto;font-size:13px;flex-shrink:0;"><span class="top-tab-icon">☁️</span><span id="sync-status-text">同步设置</span></button>
   </div>
 </div>
 
@@ -1562,7 +1561,7 @@
 
   <!-- 三、每日时间表（7天Tab） -->
   <section>
-    <h2><span class="section-icon">📅</span> 每日时间表</h2>
+    <h2 style="display:flex;align-items:center;gap:10px;"><span class="section-icon">📅</span> 每日时间表<button id="sync-settings-btn" title="数据同步" style="background:none;border:none;cursor:pointer;font-size:18px;padding:2px;line-height:1;">☁️</button><span id="sync-status-text" style="font-size:12px;font-weight:normal;color:var(--page-text-tertiary,#999);"></span></h2>
     <p>按月度查看，点击任意日期查看当天的详细安排。工作日有「不加班」和「加班」两种模式可切换。</p>
 
     <!-- 月份切换 -->
