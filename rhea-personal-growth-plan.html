@@ -1437,6 +1437,24 @@
     <button class="top-tab-btn" data-top-tab="overview"><span class="top-tab-icon">📋</span>成长总览</button>
     <button class="top-tab-btn active" data-top-tab="schedule"><span class="top-tab-icon">📅</span>每日时间表</button>
     <button class="top-tab-btn" data-top-tab="resources"><span class="top-tab-icon">📱</span>资源推荐</button>
+    <button class="top-tab-btn" id="sync-settings-btn" style="margin-left:auto;font-size:13px;flex-shrink:0;"><span class="top-tab-icon">☁️</span><span id="sync-status-text">同步设置</span></button>
+  </div>
+</div>
+
+<!-- 同步设置弹窗 -->
+<div id="sync-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;align-items:center;justify-content:center;">
+  <div style="background:var(--page-bg-elevated,#fff);border-radius:16px;padding:28px;max-width:440px;width:90%;box-shadow:0 8px 32px rgba(0,0,0,0.2);">
+    <h3 style="margin:0 0 8px;font-size:18px;">☁️ 数据同步设置</h3>
+    <p style="font-size:13px;color:var(--page-text-secondary,#666);margin:0 0 20px;">输入 GitHub Token 开启跨设备同步。数据保存在你的 GitHub 仓库里，安全私密。</p>
+    <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">GitHub Personal Access Token</label>
+    <input type="password" id="sync-token-input" placeholder="ghp_xxxxx..." style="width:100%;padding:10px 12px;border:2px solid var(--page-border,#ddd);border-radius:8px;font-size:14px;box-sizing:border-box;margin-bottom:16px;" />
+    <div style="display:flex;gap:10px;margin-bottom:16px;">
+      <button id="sync-save-btn" style="flex:1;padding:10px;background:#6f63e8;color:white;border:none;border-radius:8px;font-size:14px;cursor:pointer;">保存并同步</button>
+      <button id="sync-close-btn" style="flex:1;padding:10px;background:transparent;border:2px solid var(--page-border,#ddd);border-radius:8px;font-size:14px;cursor:pointer;">关闭</button>
+    </div>
+    <div id="sync-message" style="font-size:13px;color:var(--page-text-secondary,#666);min-height:20px;"></div>
+    <hr style="border:none;border-top:1px solid var(--page-border-subtle,#eee);margin:16px 0;">
+    <button id="sync-now-btn" style="width:100%;padding:10px;background:transparent;border:2px solid #6f63e8;color:#6f63e8;border-radius:8px;font-size:14px;cursor:pointer;">立即同步</button>
   </div>
 </div>
 
@@ -3920,6 +3938,205 @@
 
   if (document.readyState !== 'loading') {
     initSchedule();
+  }
+
+  // ====== GitHub 数据同步 ======
+  const SYNC_REPO = 'dhrrr/rhea-personal-growth-plan';
+  const SYNC_FILE = 'data.json';
+  let syncToken = localStorage.getItem('rhea-sync-token') || '';
+  let syncTimer = null;
+
+  // 同步按钮状态更新
+  function updateSyncStatus() {
+    const statusText = document.getElementById('sync-status-text');
+    const tokenInput = document.getElementById('sync-token-input');
+    if (syncToken) {
+      if (statusText) statusText.textContent = '☁️ 已同步';
+      if (tokenInput) tokenInput.value = syncToken;
+    } else {
+      if (statusText) statusText.textContent = '同步设置';
+    }
+  }
+
+  // 从 GitHub 拉取数据
+  async function syncFromGitHub() {
+    if (!syncToken) return false;
+    try {
+      const resp = await fetch('https://api.github.com/repos/' + SYNC_REPO + '/contents/' + SYNC_FILE, {
+        headers: { 'Authorization': 'token ' + syncToken, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (resp.status === 404) return false; // 文件不存在，首次使用
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      const data = await resp.json();
+      const content = atob(data.content);
+      const remoteData = JSON.parse(content);
+      // 合并到 localStorage（远程覆盖本地）
+      let changed = false;
+      syncPaused = true;
+      for (let key in remoteData) {
+        const localVal = localStorage.getItem(key);
+        if (localVal !== remoteData[key]) {
+          originalSetItem(key, remoteData[key]);
+          changed = true;
+        }
+      }
+      syncPaused = false;
+      return changed;
+    } catch (e) {
+      console.error('Sync from GitHub failed:', e);
+      return false;
+    }
+  }
+
+  // 上传数据到 GitHub
+  async function syncToGitHub() {
+    if (!syncToken) return false;
+    try {
+      // 收集所有 rhea- 开头的 localStorage 数据
+      const allData = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith('rhea-') && key !== 'rhea-sync-token') {
+          allData[key] = localStorage.getItem(key);
+        }
+      }
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(allData))));
+
+      // 先获取当前文件的 sha（如果存在）
+      let sha = null;
+      try {
+        const resp = await fetch('https://api.github.com/repos/' + SYNC_REPO + '/contents/' + SYNC_FILE, {
+          headers: { 'Authorization': 'token ' + syncToken, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        if (resp.ok) {
+          const data = await resp.json();
+          sha = data.sha;
+        }
+      } catch (e) { /* 文件可能不存在 */ }
+
+      // 上传
+      const body = JSON.stringify({ message: 'Sync data ' + new Date().toISOString(), content: content, sha: sha });
+      const resp = await fetch('https://api.github.com/repos/' + SYNC_REPO + '/contents/' + SYNC_FILE, {
+        method: 'PUT',
+        headers: { 'Authorization': 'token ' + syncToken, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+        body: body
+      });
+      return resp.ok;
+    } catch (e) {
+      console.error('Sync to GitHub failed:', e);
+      return false;
+    }
+  }
+
+  // 防抖同步（2秒后执行）
+  function debounceSync() {
+    if (!syncToken) return;
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(async () => {
+      const ok = await syncToGitHub();
+      const statusText = document.getElementById('sync-status-text');
+      if (ok && statusText) {
+        statusText.textContent = '☁️ 已同步';
+      }
+    }, 2000);
+  }
+
+  // 立即同步（下拉或手动触发）
+  async function doFullSync() {
+    if (!syncToken) return;
+    const statusText = document.getElementById('sync-status-text');
+    const msg = document.getElementById('sync-message');
+    if (statusText) statusText.textContent = '🔄 同步中...';
+    if (msg) msg.textContent = '正在从云端拉取数据...';
+    // 先拉取
+    const changed = await syncFromGitHub();
+    if (msg) msg.textContent = '拉取完成，正在上传最新数据...';
+    // 再上传
+    const ok = await syncToGitHub();
+    if (statusText) statusText.textContent = ok ? '☁️ 已同步' : '同步设置';
+    if (msg) msg.textContent = ok ? '同步成功！' : '同步失败，请检查 Token 权限';
+    if (changed) {
+      // 重新渲染当天内容
+      renderDaySchedule();
+    }
+  }
+
+  // 初始化同步
+  async function initSync() {
+    updateSyncStatus();
+    if (syncToken) {
+      const changed = await syncFromGitHub();
+      if (changed) {
+        // 重新渲染
+        renderCalendar();
+        renderDaySchedule();
+      }
+    }
+  }
+
+  // 同步设置弹窗
+  document.getElementById('sync-settings-btn').addEventListener('click', () => {
+    const modal = document.getElementById('sync-modal');
+    modal.style.display = 'flex';
+    const tokenInput = document.getElementById('sync-token-input');
+    if (tokenInput) tokenInput.value = syncToken;
+    const msg = document.getElementById('sync-message');
+    if (msg) msg.textContent = syncToken ? '已配置 Token，可点击"立即同步"' : '请输入 GitHub Token';
+  });
+
+  document.getElementById('sync-close-btn').addEventListener('click', () => {
+    document.getElementById('sync-modal').style.display = 'none';
+  });
+
+  document.getElementById('sync-save-btn').addEventListener('click', async () => {
+    const input = document.getElementById('sync-token-input');
+    const msg = document.getElementById('sync-message');
+    const newToken = input.value.trim();
+    if (!newToken) {
+      if (msg) msg.textContent = '请输入 Token';
+      return;
+    }
+    if (msg) msg.textContent = '验证中...';
+    // 验证 Token
+    try {
+      const resp = await fetch('https://api.github.com/user', {
+        headers: { 'Authorization': 'token ' + newToken }
+      });
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      const data = await resp.json();
+      syncToken = newToken;
+      localStorage.setItem('rhea-sync-token', syncToken);
+      if (msg) msg.textContent = '验证通过！用户: ' + data.login + '，正在同步...';
+      updateSyncStatus();
+      await doFullSync();
+      if (msg) msg.textContent = '同步成功！';
+      setTimeout(() => {
+        document.getElementById('sync-modal').style.display = 'none';
+      }, 1500);
+    } catch (e) {
+      if (msg) msg.textContent = 'Token 验证失败，请检查';
+    }
+  });
+
+  document.getElementById('sync-now-btn').addEventListener('click', async () => {
+    await doFullSync();
+  });
+
+  // 拦截 localStorage.setItem，自动触发同步
+  const originalSetItem = localStorage.setItem.bind(localStorage);
+  let syncPaused = false;
+  localStorage.setItem = function(key, value) {
+    originalSetItem(key, value);
+    if (!syncPaused && key && key.startsWith('rhea-') && key !== 'rhea-sync-token') {
+      debounceSync();
+    }
+  };
+
+  // 页面加载时初始化同步
+  if (document.readyState !== 'loading') {
+    initSync();
+  } else {
+    document.addEventListener('DOMContentLoaded', initSync);
   }
 </script>
 
