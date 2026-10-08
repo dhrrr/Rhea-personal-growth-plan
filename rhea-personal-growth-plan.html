@@ -4112,6 +4112,14 @@
       if (msg) msg.textContent = '同步成功！';
       setTimeout(() => {
         document.getElementById('sync-modal').style.display = 'none';
+        // 切换到每日时间表 Tab
+        document.querySelectorAll('.top-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.top-tab-panel').forEach(p => p.classList.remove('active'));
+        const scheduleBtn = document.querySelector('.top-tab-btn[data-top-tab="schedule"]');
+        const schedulePanel = document.querySelector('.top-tab-panel[data-tab-group="schedule"]');
+        if (scheduleBtn) scheduleBtn.classList.add('active');
+        if (schedulePanel) schedulePanel.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }, 1500);
     } catch (e) {
       if (msg) msg.textContent = 'Token 验证失败，请检查';
@@ -4120,6 +4128,16 @@
 
   document.getElementById('sync-now-btn').addEventListener('click', async () => {
     await doFullSync();
+    setTimeout(() => {
+      document.getElementById('sync-modal').style.display = 'none';
+      document.querySelectorAll('.top-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.top-tab-panel').forEach(p => p.classList.remove('active'));
+      const scheduleBtn = document.querySelector('.top-tab-btn[data-top-tab="schedule"]');
+      const schedulePanel = document.querySelector('.top-tab-panel[data-tab-group="schedule"]');
+      if (scheduleBtn) scheduleBtn.classList.add('active');
+      if (schedulePanel) schedulePanel.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 1000);
   });
 
   // 拦截 localStorage.setItem，自动触发同步
