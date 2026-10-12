@@ -3824,6 +3824,10 @@
       const span = document.createElement('span');
       span.className = 'task-text';
       span.innerHTML = originalHTML;
+      // 前沿新闻 → 可点击跳转到每日新闻页
+      if (task.id === 'news') {
+        span.innerHTML = span.innerHTML.replace('前沿新闻', '<a href="news.html" target="_blank" style="color:#7c6cf0;text-decoration:underline;text-underline-offset:2px;">前沿新闻</a>');
+      }
       label.appendChild(checkbox);
       label.appendChild(span);
       targetEl.innerHTML = '';
