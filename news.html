@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>10分钟新闻早餐 · 10月12日</title>
+<title>10分钟新闻早餐 · 每日精选</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   body {
@@ -16,14 +16,14 @@
   .header {
     background: linear-gradient(135deg, #7c6cf0, #a58cff);
     color: #fff;
-    padding: 22px 18px 20px;
+    padding: 22px 18px 16px;
     position: sticky;
     top: 0;
     z-index: 10;
     box-shadow: 0 2px 12px rgba(124,108,240,.25);
   }
   .header h1 { font-size: 20px; font-weight: 700; }
-  .header .date { font-size: 13px; opacity: .9; margin-top: 4px; }
+  .header .sub { font-size: 13px; opacity: .9; margin-top: 4px; }
   .back-link {
     display: inline-block;
     margin-top: 10px;
@@ -34,15 +34,44 @@
     border-radius: 999px;
     text-decoration: none;
   }
-  .container { max-width: 720px; margin: 0 auto; padding: 14px 14px 0; }
+  /* 日期 Tab 栏 */
+  .day-tabs {
+    position: sticky;
+    top: 108px;
+    z-index: 9;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px 14px;
+    background: #f6f5fb;
+    scrollbar-width: none;
+  }
+  .day-tabs::-webkit-scrollbar { display: none; }
+  .day-tab {
+    flex-shrink: 0;
+    border: 1.5px solid #dcd8f5;
+    background: #fff;
+    color: #6d6a8a;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .day-tab.active {
+    background: #7c6cf0;
+    border-color: #7c6cf0;
+    color: #fff;
+    font-weight: 600;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 4px 14px 0; }
+  .day-section { display: none; }
+  .day-section.active { display: block; }
   .cat {
-    margin: 18px 0 10px;
+    margin: 16px 0 10px;
     font-size: 15px;
     font-weight: 700;
     color: #7c6cf0;
-    display: flex;
-    align-items: center;
-    gap: 6px;
   }
   .card {
     background: #fff;
@@ -72,10 +101,7 @@
     padding: 8px 10px;
     border-radius: 8px;
   }
-  .topic {
-    background: linear-gradient(135deg, #fff8ec, #fff);
-    border: 1px solid #ffe0a8;
-  }
+  .topic { background: linear-gradient(135deg, #fff8ec, #fff); border: 1px solid #ffe0a8; }
   .topic p { font-size: 14px; color: #6b5a2e; }
   .footer {
     text-align: center;
@@ -89,13 +115,22 @@
 
 <div class="header">
   <h1>📰 10分钟新闻早餐</h1>
-  <div class="date">2026年10月12日 · 周一 · 来源：喜马拉雅「10分钟新闻早餐」精炼</div>
+  <div class="sub">来源：喜马拉雅「10分钟新闻早餐」· 每天中午 12 点更新 · 保留最近 7 天</div>
   <a class="back-link" href="rhea-personal-growth-plan.html">← 返回计划表</a>
 </div>
 
+<!-- DAY-TABS（最新的在最左，定时任务每天在这里插入新 Tab，并删除 7 天前的旧 Tab） -->
+<div class="day-tabs" id="day-tabs">
+  <button class="day-tab active" data-day="2026-10-12">10/12 周一</button>
+</div>
+<!-- /DAY-TABS -->
+
 <div class="container">
 
-  <div class="cat">🚗 汽车（你的兴趣）</div>
+<!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
+<section class="day-section active" id="day-2026-10-12">
+
+  <div class="cat">🚗 汽车</div>
 
   <div class="card">
     <h2>四部门划清汽车安全底线<span class="hot">重点</span></h2>
@@ -192,9 +227,26 @@
     <p>武汉某中学要求家长轮值晚自习、珠海某班家委会倡议家长轮流看午休——"家校共育"变成了"责任外包"？评论区几乎一边倒反对：可以互助，不能摊派。你怎么看？</p>
   </div>
 
-  <div class="footer">内容由小秘根据「10分钟新闻早餐」文稿精炼 · 每天更新</div>
+</section>
+<!-- /DAY-SECTIONS -->
+
+  <div class="footer">内容由小秘根据「10分钟新闻早餐」文稿精炼 · 保留最近 7 天</div>
 
 </div>
+
+<script>
+  // 日期 Tab 切换
+  document.querySelectorAll('.day-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.day-tab').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.day-section').forEach(s => s.classList.remove('active'));
+      btn.classList.add('active');
+      const sec = document.getElementById('day-' + btn.dataset.day);
+      if (sec) sec.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
 
 </body>
 </html>
