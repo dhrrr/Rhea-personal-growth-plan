@@ -3836,7 +3836,7 @@
         const diffDays = Math.round((today0 - dayDate) / 86400000);
         if (diffDays >= 0 && diffDays <= 6) {
           const cfg = linkMap[task.id];
-          span.innerHTML = span.innerHTML.replace(cfg[1], '<a href="' + cfg[0] + '#day-' + dateStr + '" target="_blank" style="color:#7c6cf0;text-decoration:underline;text-underline-offset:2px;">' + cfg[1] + '</a>');
+          span.innerHTML = span.innerHTML.replace(cfg[1], '<a href="' + cfg[0] + '#day-' + dateStr + '" style="color:#7c6cf0;text-decoration:underline;text-underline-offset:2px;">' + cfg[1] + '</a>');
         }
       }
       label.appendChild(checkbox);
