@@ -17,9 +17,6 @@
     background: linear-gradient(135deg, #7c6cf0, #a58cff);
     color: #fff;
     padding: 22px 18px 16px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
     box-shadow: 0 2px 12px rgba(124,108,240,.25);
   }
   .header h1 { font-size: 20px; font-weight: 700; }
@@ -34,9 +31,22 @@
     border-radius: 999px;
     text-decoration: none;
   }
+  .page-nav { display: flex; gap: 8px; margin-top: 12px; }
+  .page-nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background: rgba(255,255,255,.18);
+    padding: 6px 4px;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .page-nav a.current { background: #fff; color: #7c6cf0; font-weight: 600; }
   .day-tabs {
     position: sticky;
-    top: 108px;
+    top: 0;
     z-index: 9;
     display: flex;
     gap: 8px;
@@ -105,18 +115,23 @@
 <div class="header">
   <h1>🤖 AI 动态</h1>
   <div class="sub">来源：科技媒体 · 前沿论坛 · 行内分享 · 每天早上 8 点更新 · 保留最近 7 天</div>
+  <div class="page-nav">
+    <a href="news.html" data-page="news">📰 前沿新闻</a>
+    <a href="ai.html" data-page="ai" class="current">🤖 AI 动态</a>
+    <a href="pm.html" data-page="pm">📦 产品与供应链</a>
+  </div>
   <a class="back-link" href="rhea-personal-growth-plan.html">← 返回计划表</a>
 </div>
 
-<!-- DAY-TABS（最新的在最左，定时任务每天在这里插入新 Tab，并删除 7 天前的旧 Tab） -->
+<!-- DAY-TABS（由旧到新排列，最新在最右；定时任务每天在末尾追加新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab active" data-day="2026-10-12">10/12 周一</button>
-  <button class="day-tab" data-day="2026-10-11">10/11 周日</button>
-  <button class="day-tab" data-day="2026-10-10">10/10 周六</button>
-  <button class="day-tab" data-day="2026-10-09">10/9 周五</button>
-  <button class="day-tab" data-day="2026-10-08">10/8 周四</button>
-  <button class="day-tab" data-day="2026-10-07">10/7 周三</button>
   <button class="day-tab" data-day="2026-10-06">10/6 周二</button>
+  <button class="day-tab" data-day="2026-10-07">10/7 周三</button>
+  <button class="day-tab" data-day="2026-10-08">10/8 周四</button>
+  <button class="day-tab" data-day="2026-10-09">10/9 周五</button>
+  <button class="day-tab" data-day="2026-10-10">10/10 周六</button>
+  <button class="day-tab" data-day="2026-10-11">10/11 周日</button>
+  <button class="day-tab active" data-day="2026-10-12">10/12 周一</button>
 </div>
 <!-- /DAY-TABS -->
 
@@ -596,6 +611,13 @@
   }
   document.querySelectorAll('.day-tab').forEach(btn => {
     btn.addEventListener('click', () => activateDay(btn.dataset.day, true));
+  });
+  // 三个资讯页互相切换时，带上当前选中的日期锚点
+  document.querySelectorAll('.page-nav a').forEach(a => {
+    a.addEventListener('click', function() {
+      const tab = document.querySelector('.day-tab.active');
+      if (tab) this.href = this.getAttribute('href').split('#')[0] + '#day-' + tab.dataset.day;
+    });
   });
   // 支持 ai.html#day-YYYY-MM-DD 直达某天；该天不存在则显示最新一天
   if (location.hash.indexOf('#day-') === 0) {
