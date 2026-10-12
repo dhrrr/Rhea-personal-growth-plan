@@ -554,16 +554,22 @@
 </div>
 
 <script>
+  function activateDay(dateStr, scroll) {
+    const sec = document.getElementById('day-' + dateStr);
+    if (!sec) return false;
+    document.querySelectorAll('.day-tab').forEach(b => b.classList.toggle('active', b.dataset.day === dateStr));
+    document.querySelectorAll('.day-section').forEach(s => s.classList.remove('active'));
+    sec.classList.add('active');
+    if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+    return true;
+  }
   document.querySelectorAll('.day-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.day-tab').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.day-section').forEach(s => s.classList.remove('active'));
-      btn.classList.add('active');
-      const sec = document.getElementById('day-' + btn.dataset.day);
-      if (sec) sec.classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    btn.addEventListener('click', () => activateDay(btn.dataset.day, true));
   });
+  // 支持 news.html#day-YYYY-MM-DD 直达某天；该天不存在（如周末停更）则显示最新一天
+  if (location.hash.indexOf('#day-') === 0) {
+    activateDay(location.hash.replace('#day-', ''), false);
+  }
 </script>
 
 </body>
