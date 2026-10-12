@@ -606,6 +606,9 @@
     document.querySelectorAll('.day-tab').forEach(b => b.classList.toggle('active', b.dataset.day === dateStr));
     document.querySelectorAll('.day-section').forEach(s => s.classList.remove('active'));
     sec.classList.add('active');
+    // 让激活的 Tab 在横向滚动条中完全露出来（居中）
+    const tab = document.querySelector('.day-tab.active');
+    if (tab) tab.scrollIntoView({ inline: 'center', block: 'nearest' });
     if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
     return true;
   }
