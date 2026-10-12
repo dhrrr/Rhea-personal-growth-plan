@@ -34,7 +34,6 @@
     border-radius: 999px;
     text-decoration: none;
   }
-  /* 日期 Tab 栏 */
   .day-tabs {
     position: sticky;
     top: 108px;
@@ -67,12 +66,7 @@
   .container { max-width: 720px; margin: 0 auto; padding: 4px 14px 0; }
   .day-section { display: none; }
   .day-section.active { display: block; }
-  .cat {
-    margin: 16px 0 10px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #7c6cf0;
-  }
+  .cat { margin: 16px 0 10px; font-size: 15px; font-weight: 700; color: #7c6cf0; }
   .card {
     background: #fff;
     border-radius: 14px;
@@ -92,7 +86,7 @@
     font-weight: 500;
   }
   .card ul { padding-left: 18px; }
-  .card li { font-size: 14px; margin-bottom: 4px; color: #44415c; }
+  .card li { font-size: 14px; margin-bottom: 5px; color: #44415c; }
   .card .point {
     margin-top: 8px;
     font-size: 13px;
@@ -103,12 +97,7 @@
   }
   .topic { background: linear-gradient(135deg, #fff8ec, #fff); border: 1px solid #ffe0a8; }
   .topic p { font-size: 14px; color: #6b5a2e; }
-  .footer {
-    text-align: center;
-    font-size: 12px;
-    color: #a29fc0;
-    margin-top: 26px;
-  }
+  .footer { text-align: center; font-size: 12px; color: #a29fc0; margin-top: 26px; }
 </style>
 </head>
 <body>
@@ -122,6 +111,9 @@
 <!-- DAY-TABS（最新的在最左，定时任务每天在这里插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
   <button class="day-tab active" data-day="2026-10-12">10/12 周一</button>
+  <button class="day-tab" data-day="2026-10-10">10/10 周六</button>
+  <button class="day-tab" data-day="2026-10-09">10/9 周五</button>
+  <button class="day-tab" data-day="2026-10-08">10/8 周四</button>
 </div>
 <!-- /DAY-TABS -->
 
@@ -135,96 +127,423 @@
   <div class="card">
     <h2>四部门划清汽车安全底线<span class="hot">重点</span></h2>
     <ul>
-      <li>工信部等四部门发文：新车申报必须完成可靠性、耐久性、软件功能等测试</li>
-      <li>硬性要求：环境适应性验证 ≥1 年（含"两冬一夏"），试验里程 ≥3 万公里</li>
-      <li>2027 年起，测试不充分或造假不予上市；已上市的须补报，逾期有隐患直接停产召回</li>
+      <li><strong>时间：</strong>10月10日，工信部会同公安部、生态环境部、市场监管总局联合发文</li>
+      <li><strong>事件：</strong>发布《关于进一步加强汽车产品创新设计和研发测试验证有关管理工作的通知（征求意见稿）》</li>
+      <li><strong>关键要求：</strong>新车申报必须完成综合可靠性与耐久性、结构可靠性、软件功能可靠性测试；环境适应性验证 ≥1 年，须包含"两冬一夏"试验；可靠性验证里程 ≥3 万公里</li>
+      <li><strong>时间节点：</strong>2027年1月1日起，未按要求验证或提供虚假材料的产品不予公告；已公告产品须在 2027年7月1日前补报，逾期且有隐患的停止生产并召回</li>
     </ul>
-    <div class="point">💡 看点：监管收紧，"速成车"时代结束，造车回归长期主义</div>
+    <div class="point">💡 看点：今年以来监管持续加码，覆盖设计、测试、生产、使用全链条，"速成车"时代结束，造车回归长期主义</div>
   </div>
 
   <div class="card">
     <h2>尊界 V800 踏板升级方案 10 月底确认</h2>
     <ul>
-      <li>制动踏板支架底座设计优化，已交付用户免费升级</li>
-      <li>已提车用户可到全国任一服务中心预约登记；未交付车辆升级后再交</li>
+      <li><strong>时间：</strong>10月11日，尊界客服向媒体确认；此前 10月8日晚官方发布情况说明</li>
+      <li><strong>事件：</strong>尊界 V800 制动踏板支架底座存在问题，将进一步优化设计，为已交付用户提供免费升级</li>
+      <li><strong>进展：</strong>升级方案预计 10 月底确认，11 月起陆续启动；已提车用户可到全国任一服务中心或购车门店预约登记，未发运车辆直接升级后再交付</li>
     </ul>
   </div>
 
   <div class="cat">🤖 AI & 科技</div>
 
   <div class="card">
-    <h2>SpaceXAI 更名 SpaceXSI（超级智能）<span class="hot">重点</span></h2>
+    <h2>SpaceXAI 正式更名 SpaceXSI<span class="hot">重点</span></h2>
     <ul>
-      <li>马斯克宣布 SpaceX 是"超级智能(SI)"公司</li>
-      <li>背景：特朗普 9 月底会见黄仁勋、马斯克、扎克伯格等，签署文件将"人工智能"改称"超级智能"</li>
+      <li><strong>时间：</strong>当地时间10月10日，马斯克在社交平台晒出截图，SpaceXAI 官方账号更名为"SpaceX Super Intelligence"</li>
+      <li><strong>背景：</strong>10月4日马斯克表示"SpaceX 是一家超级智能（SI）公司"；9月29日特朗普在白宫会见黄仁勋、马斯克、扎克伯格等科技负责人，共同签署一份"具有道德约束力"的文件，正式将"人工智能（AI）"改名为"超级智能（SI）"</li>
     </ul>
+    <div class="point">💡 看点：从 AI 到 SI 的更名不只是文字游戏，标志着美国对人工智能的战略定位再升级</div>
   </div>
 
   <div class="card">
     <h2>英伟达洽谈收购"美国版 DeepSeek"<span class="hot">重点</span></h2>
     <ul>
-      <li>标的：Reflection AI（前谷歌 DeepMind 研究员创立，估值 250 亿美元）</li>
-      <li>英伟达已投 8 亿美元，或采用"收购式招聘"规避监管审查</li>
-      <li>该公司本月发布开源模型 Beam，专攻代码和 AI Agent</li>
+      <li><strong>时间：</strong>10月11日英国《金融时报》援引知情人士报道，谈判处于早期阶段，可能几周内达成，也可能破裂</li>
+      <li><strong>人物/公司：</strong>Reflection AI，由两名前谷歌 DeepMind 研究人员创立，被称为"美国版 DeepSeek"，3月融资时估值 250 亿美元</li>
+      <li><strong>关键名词：</strong>可能采取"收购式招聘"（聘用员工+技术许可），规避全面收购的漫长监管审查；英伟达已投资 8 亿美元，是最大股东之一</li>
+      <li><strong>产品：</strong>本月早些时候发布首款开放权重模型 Beam，专注代码编写和 AI 智能体性能，运行于英伟达芯片之上</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>美司法部调查 CNN 等五大电视媒体</h2>
+    <h2>美国司法部调查五大电视媒体</h2>
     <ul>
-      <li>涉嫌违反联邦反垄断法；此前五家媒体集体抵制白宫，声援被禁记者</li>
+      <li><strong>时间：</strong>10月10日，美国司法部宣布调查 CNN 等五家电视媒体是否违反联邦反垄断法</li>
+      <li><strong>背景：</strong>此前特朗普禁止 CNN 等三家新闻机构记者进入白宫采访，五家主要媒体随即集体抵制、拒绝报道白宫活动以示声援</li>
+      <li><strong>进展：</strong>白宫暂未发表意见，五家当事媒体未作回应</li>
     </ul>
   </div>
 
   <div class="cat">💼 财经 & 商业</div>
 
   <div class="card">
-    <h2>2026 电影票房突破 310 亿</h2>
+    <h2>2026 年度电影票房突破 310 亿元</h2>
     <ul>
-      <li>全年 400+ 部影片，全产业链产值超 4800 亿</li>
-      <li>国产片加速出海：《神探之痕迹》《重生2》等接力海外上映</li>
+      <li><strong>时间：</strong>截至10月11日，年度总票房突破 310 亿元</li>
+      <li><strong>数据：</strong>今年以来 400 多部影片上映，覆盖喜剧、动作、科幻、悬疑、动画等类型；电影全产业链产值已超 4800 亿元</li>
+      <li><strong>趋势：</strong>国产片加速出海——《给阿嬷的情书》《八仙！》《欢迎来龙餐馆》海外陆续上映；《神探之痕迹》官宣全球上映计划，《重生2》《什么意思夫妇》启动海外发行</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>超长蛋挞只火了一个月</h2>
+    <h2>"超长蛋挞"只火了一个月</h2>
     <ul>
-      <li>9 月爆火的网红单品，国庆后大量门店下架</li>
-      <li>商家："这阵风已经过了"——网红单品生命周期越来越短</li>
+      <li><strong>事件：</strong>9月新晋网红单品"超长蛋挞"，国庆假期刚结束就陆续下架</li>
+      <li><strong>细节：</strong>部分核心商圈烘焙门店国庆后半段撤下主打海报，夜市小摊、社区烘焙店直接下架；有商家称上架一周售罄后不再补货，另有商家 19.8 元/个的清完最后一批即止</li>
     </ul>
+    <div class="point">💡 看点：网红单品生命周期越来越短，"尝鲜型消费"过后没有复购，就没有生命力</div>
   </div>
 
-  <div class="cat">⚠️ 防骗提醒</div>
+  <div class="cat">⚠️ 民生提醒</div>
 
   <div class="card">
     <h2>央视起底"社保卡金卡"骗局</h2>
     <ul>
-      <li>网传金色"社保卡金卡"可提高报销、领补贴，均为谣言</li>
-      <li>官方辟谣：社保卡无金银卡之分，不转账、不给个人信息</li>
+      <li><strong>事件：</strong>网上出现通体金色的"社保卡金卡"，发布者声称可提高医保报销待遇、领取养老补贴、享受免费文旅福利；甚至有人冒充人社部门工作人员索取个人信息、诱导转账</li>
+      <li><strong>官方辟谣：</strong>人社部门明确——全国现行社保卡没有官方定义的金卡、银卡分类，不存在金色社保卡对应更高待遇的国家标准</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>医生拒绝插队遭投诉，当天接诊 105 名患儿</h2>
+    <ul>
+      <li><strong>人物：</strong>苏州大学附属儿童医院儿科医生陈世赓</li>
+      <li><strong>事件：</strong>急诊按序叫号，优先救治一名腰部受压的车祸重伤患儿；排在后一号的家长称孩子"血流不止"要求插队被拒，当场在诊室门口拨打投诉热线</li>
+      <li><strong>结果：</strong>经检查该患儿伤口敷料干结、无活动性出血，系家长焦虑所致；投诉未成立，家长冷静后当场致歉。陈医生当天接诊 105 名患儿，午饭都没来得及吃</li>
     </ul>
   </div>
 
   <div class="cat">🏆 体育</div>
 
   <div class="card">
-    <h2>郑钦文夺中网女单冠军 🎾</h2>
+    <h2>郑钦文夺中网女单冠军 🎾<span class="hot">重点</span></h2>
     <ul>
-      <li>2:0 战胜安德列娃，生涯首座 WTA1000 冠军</li>
-      <li>中网 20 届以来首位本土女单冠军，历史性突破</li>
+      <li><strong>时间：</strong>10月11日，中网女单决赛</li>
+      <li><strong>人物/事件：</strong>郑钦文 2:0 战胜俄罗斯名将安德列娃，斩获生涯首座 WTA1000 赛冠军</li>
+      <li><strong>意义：</strong>中网举办 20 届以来首位来自中国本土的女单冠军，历史性突破</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>王曼昱 WTT 中国大满贯卫冕</h2>
+    <h2>王曼昱卫冕 WTT 中国大满贯；张帅女双 13 连胜终结</h2>
     <ul>
-      <li>4:0 横扫佐藤瞳；国乒本届丢男单、男双、混双三冠，首次未包揽五金</li>
+      <li><strong>王曼昱：</strong>10月11日女单决赛 4:0 战胜日本选手佐藤瞳，继2025年后成功卫冕；女双搭档蒯曼夺冠</li>
+      <li><strong>国乒：</strong>本届已失男单、男双、混双三项冠军，是中国大满贯赛事历史上首次未能包揽五金</li>
+      <li><strong>张帅：</strong>中网女双决赛，头号种子张帅/西尼亚科娃 0:2 负于达布洛斯基/斯特凡尼获亚军；37岁的张帅生涯首进中网女双决赛，此前的女双 13 连胜被终结</li>
     </ul>
   </div>
 
   <div class="cat">💬 今日互动话题</div>
 
   <div class="card topic">
-    <p>武汉某中学要求家长轮值晚自习、珠海某班家委会倡议家长轮流看午休——"家校共育"变成了"责任外包"？评论区几乎一边倒反对：可以互助，不能摊派。你怎么看？</p>
+    <p>武汉一中学要求家长轮值晚自习并记录学生违纪，珠海某班级家委会倡议家长轮流看午休。校方称是为缓解老师连轴转的压力，但家长直言这是把学校分内工作"外包"给家长。评论区几乎一边倒：家校合作可以互助，但不能责任外包。你怎么看？</p>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-10-10">
+
+  <div class="cat">🌤️ 天气 & 出行</div>
+
+  <div class="card">
+    <h2>海南强降雨持续，周末冷空气影响北方</h2>
+    <ul>
+      <li><strong>时间：</strong>中央气象台10月9日预报，9-10日海南岛中东部大到暴雨、局地特大暴雨，注意航班和陆路交通</li>
+      <li><strong>冷空气：</strong>11-13日一股冷空气影响北方，降温 4~6℃、局地 8℃ 左右，东北、华北、黄淮早晚添衣</li>
+      <li><strong>台风：</strong>28号"诺洛"、29号"小熊"在西北太平洋活动、趋向日本，对我国海域无影响；新疆高海拔山区大到暴雪</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>新疆独库公路冬季封闭</h2>
+    <ul>
+      <li><strong>时间：</strong>10月8日起禁止车辆通行</li>
+      <li><strong>事件：</strong>全长 561 公里的"此生必驾"网红公路，每年 5 月底至 10 月开放，冬季因积雪结冰封闭；近期计划前往的需重新规划路线，关注"新疆路网"官方发布</li>
+    </ul>
+  </div>
+
+  <div class="cat">⚠️ 民生 & 安全</div>
+
+  <div class="card">
+    <h2>摄影师曼谷失踪，家属披露两次通话内容<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>人物：</strong>山西长治武乡县摄影师韩少杰，被邀约赴泰国参与拍摄，落地一天后失联（10月6日起家属公开求助）</li>
+      <li><strong>细节：</strong>家属两次接到其电话——第一次称坐黑车、睡醒钱财被洗劫、人身自由被限制；第二次称"救人只有两个方案：凑齐老板买他的 15 万元，或撤掉所有报案"</li>
+      <li><strong>进展：</strong>家属 10月7日飞抵曼谷报案；中国驻泰大使馆已联系当地警方，武乡县公安局以非法拘禁案立案调查</li>
+    </ul>
+    <div class="point">💡 提醒：切勿轻信境外"高薪拍摄/工作"邀约，出差不轻易搭乘陌生人车辆</div>
+  </div>
+
+  <div class="card">
+    <h2>"儿童装"银鳕鱼疑致汞中毒，多平台下架字样</h2>
+    <ul>
+      <li><strong>事件：</strong>一名 2 岁幼儿连续 8 个月频繁食用"儿童装"银鳕鱼后确诊汞中毒，引发关注</li>
+      <li><strong>关键名词：</strong>银鳕鱼属食物链顶端大型深海掠食性鱼类，甲基汞富集风险高；"儿童装/宝宝装"只是切得更小的包装，并非婴幼儿专用辅食标准</li>
+      <li><strong>进展：</strong>各生鲜 App 所售鳕鱼已基本不见"儿童食品"字样，但部分网店改称"迷你装"继续销售</li>
+    </ul>
+  </div>
+
+  <div class="cat">💰 财经 & 商业</div>
+
+  <div class="card">
+    <h2>深圳水贝金价回落至每克 940 元以下</h2>
+    <ul>
+      <li><strong>时间：</strong>上证报10月9日报道，受国际金价回调带动</li>
+      <li><strong>数据：</strong>水贝市场金价回落至 940 元/克以下，回收价 885 元/克；周大福、周生生等品牌足金饰品约 1249 元/克</li>
+      <li><strong>热度：</strong>国庆促销期间水贝日均客流近 3 万人次，婚庆金饰销量同比增 60%-70%，部分款式断货；央行已连续 23 个月增持黄金</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>豆包上线生活缴费功能<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>10月9日消息，北上广深杭等 23 座城市开放"语音直缴"</li>
+      <li><strong>事件：</strong>对手机说一句"交下这个月电费"，即可唤起服务卡片、核对户号、完成支付，覆盖水、电、燃气、有线电视、物业费</li>
+      <li><strong>背景：</strong>此前豆包已上线机票、火车票、打车、导航等出行服务，月活用户达 3.82 亿</li>
+    </ul>
+    <div class="point">💡 看点：AI 助手从"陪聊"走向"办事"，正在接管日常琐事——这和你们做产品的 Agent 化趋势一脉相承</div>
+  </div>
+
+  <div class="cat">🏆 体育</div>
+
+  <div class="card">
+    <h2>郑钦文晋级中网四强</h2>
+    <ul>
+      <li><strong>事件：</strong>中网女单 1/4 决赛，郑钦文 2:0 战胜 6 号种子斯维托丽娜，时隔 2 年重返中网四强</li>
+      <li><strong>数据：</strong>收获 390 积分 + 340,190 美元奖金，即时世界排名升至第 35 位；半决赛对阵斯瓦泰克与梅尔滕斯之间的胜者</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>国乒提前无缘中国大满贯两项冠军</h2>
+    <ul>
+      <li><strong>事件：</strong>男双半决赛，中国唯一四强组合温瑞博/袁励岑 1:3 遭世界第一法国勒布伦兄弟逆转；混双中国选手也全部止步四强之外</li>
+      <li><strong>背景：</strong>此前两届 WTT 中国大满贯，国乒均在主场包揽五冠；本届男单、女单、女双仍保留争冠希望</li>
+    </ul>
+  </div>
+
+  <div class="cat">🌍 国际</div>
+
+  <div class="card">
+    <h2>世贸组织上调全球货物贸易增长预期</h2>
+    <ul>
+      <li><strong>数据：</strong>WTO 将 2026 年全球货物贸易增长预期从 1.9% 上调至 3.9%，预计 2027 年增长 4.1%；服务贸易预计增长 3.3%</li>
+      <li><strong>原因：</strong>供应链调整 + 人工智能领域投资强劲；地缘摩擦和能源价格仍是变量</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>美国暂停多家企业外籍员工绿卡申请</h2>
+    <ul>
+      <li><strong>时间/人物：</strong>10月8日，美国副总统万斯宣布暂停微软等多家科技企业参与"永久劳工认证"计划（H-1B 员工申请绿卡的第一步）</li>
+      <li><strong>同时：</strong>点名批评哈佛大学、斯坦福大学等 9 所高校"涉嫌 J-1 签证欺诈"，将面临进一步调查</li>
+    </ul>
+  </div>
+
+  <div class="cat">💬 今日互动话题</div>
+
+  <div class="card topic">
+    <p>火了不到一个月的"超长蛋挞"开始陆续下架——有品牌曾 8 天卖 70 多万份，如今商家说"这阵风已经过了"。这种网红单品，你会第一时间买来尝鲜吗？</p>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-10-09">
+
+  <div class="cat">🇨🇳 国内要闻</div>
+
+  <div class="card">
+    <h2>国庆假期跨区域人员流动 21.42 亿人次，日均首破 3 亿<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间/数据：</strong>交通运输部10月8日发布，国庆 7 天全社会跨区域人员流动 21.42 亿人次，日均 3.06 亿人次，同比增长 0.6%</li>
+      <li><strong>亮点：</strong>铁路发送旅客 1.52 亿人次、日均同比增 12.7%；假期首日铁路 2520.4 万人次创单日历史新高；全国又有 16 个县首次接入高铁网络</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>江苏太仓通报网传地下代孕机构</h2>
+    <ul>
+      <li><strong>时间：</strong>10月8日，打拐志愿者上官正义发视频举报</li>
+      <li><strong>事件：</strong>太仓陆渡镇江南路一别墅内藏有自称"华东地区最大"的地下代孕机构手术室和实验室，承接江浙沪取卵、胚胎移植手术</li>
+      <li><strong>进展：</strong>太仓市卫健委通报"高度重视"，已会同公安等部门第一时间现场核查，查实问题将依法依规处理</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>辟谣：螃蟹加柿子等于砒霜？假的</h2>
+    <ul>
+      <li><strong>结论：</strong>不存在"食物相克"，抛开剂量谈毒性都是危言耸听</li>
+      <li><strong>原理：</strong>风险根源是柿子里的鞣酸——空腹、一次性大量吃易在胃里形成硬块引发不适；螃蟹腹部黑膜主要成分是胶原蛋白，无毒，口感不好撕掉即可</li>
+    </ul>
+  </div>
+
+  <div class="cat">💰 财经 & 商业</div>
+
+  <div class="card">
+    <h2>安踏 113 亿元成为彪马第一大股东<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>10月7日，安踏集团公告完成交割</li>
+      <li><strong>事件：</strong>以 15.055 亿欧元（约 112.89 亿元人民币）现金，向 Pinault 家族旗下 Artémis SAS 收购 PUMA SE 29.06% 股权，已获所有监管机构批准</li>
+      <li><strong>对比：</strong>此次投入与 2019 年收购始祖鸟母公司亚玛芬时安踏自身出资（约 15 亿欧元）相近</li>
+    </ul>
+    <div class="point">💡 看点：中国运动品牌全球化再下一城，安踏"多品牌帝国"版图继续扩张</div>
+  </div>
+
+  <div class="card">
+    <h2>美国通胀预期飙升，美债遭抛售</h2>
+    <ul>
+      <li><strong>数据：</strong>纽约联储10月7日《消费者预期调查报告》——一年后通胀预期升至 3.9%（8月为 3.6%），创 2023年5月以来最高</li>
+      <li><strong>债市：</strong>10年期美债收益率盘中升至 5.36%，创 2002 年以来新高；30年期达 5.73%，触及 24 年来最高水平</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>非洲 Safari 火了：人均 3 万起，春节档已开始预订</h2>
+    <ul>
+      <li><strong>事件：</strong>以坦桑尼亚、肯尼亚为目的地的 Safari（草原观兽旅行）今年假期格外火热</li>
+      <li><strong>价格：</strong>9-15 天长线，不含机票签证报价 2 万元以上，入门级人均约 3 万，野奢级每天约 2 万</li>
+      <li><strong>热度：</strong>热门假期席位需至少提前 2-3 个月预订，有人提前半年订国庆，春节行程已开订</li>
+    </ul>
+  </div>
+
+  <div class="cat">🌍 国际</div>
+
+  <div class="card">
+    <h2>厄尔尼诺预计 12 月达到峰值</h2>
+    <ul>
+      <li><strong>机构：</strong>世界气象组织《全球季节性气候最新通报》</li>
+      <li><strong>预测：</strong>10-12月热带太平洋中东部海面温度将升至创纪录水平，厄尔尼诺持续增强、12月达峰，持续至 2027年2月的可能性接近 100%，将增加各地干旱和洪水风险</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>诺贝尔文学奖：加拿大诗人安妮·卡森</h2>
+    <ul>
+      <li><strong>时间：</strong>斯德哥尔摩时间10月8日 13:00 公布</li>
+      <li><strong>人物：</strong>76岁的安妮·卡森——古典学教授、翻译家、诗人，多伦多大学博士，曾在麦吉尔大学教古希腊语和拉丁语，翻译过萨福和埃斯库罗斯悲剧</li>
+      <li><strong>颁奖词：</strong>"大胆而富有创造力的文学创作，以充满玩味的方式与古典传统展开对话，为当代文学创造了新的形式"</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>新西兰：2050 年前清除所有野猫</h2>
+    <ul>
+      <li><strong>事件：</strong>新西兰政府正式将野猫纳入"2050 无捕食者计划"清除名单</li>
+      <li><strong>背景：</strong>去年底环保部长塔马·波塔卡称野猫已成"国家公敌"，原定今年3月落地的新政推迟至今</li>
+    </ul>
+  </div>
+
+  <div class="cat">🏆 体育</div>
+
+  <div class="card">
+    <h2>郑钦文 24 岁生日夜闯入中网八强</h2>
+    <ul>
+      <li><strong>事件：</strong>10月7日晚中网女单第四轮，郑钦文 6:1、2:6、6:4 力克亚美尼亚"黑马"查拉耶娃，时隔两年再进中网八强（生涯第 10 次 WTA1000 八强）</li>
+      <li><strong>花絮：</strong>10月8日是她 24 岁生日，她笑称"今天是我 23 岁的最后一天"；10月9日 1/4 决赛对阵 6 号种子斯维托丽娜</li>
+    </ul>
+  </div>
+
+  <div class="cat">💬 今日互动话题</div>
+
+  <div class="card topic">
+    <p>英国利物浦大学两年实验：493 名超重者随机分组，喝无糖饮料组平均减 4.8 公斤、喝水组减 3.7 公斤，差距统计学上不显著。减肥时你会喝无糖饮料解馋吗？"无糖"是真有用还是心理安慰？</p>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-10-08">
+
+  <div class="cat">🇨🇳 国庆收官</div>
+
+  <div class="card">
+    <h2>假期返程最高峰，铁路预计发送 2.84 亿人次<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>数据：</strong>国庆 7 天全国跨区域人员流动约 21.3 亿人次，日均 3 亿、为平日 1.7 倍；10月1日单日约 3.4 亿人次创历史同期新高</li>
+      <li><strong>铁路：</strong>中秋国庆运输方案 9月23日-10月8日共 16 天，预计发送 2.84 亿人次；10月7日返程压力最集中</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>小城包揽国庆 TOP10 热门景区</h2>
+    <ul>
+      <li><strong>趋势：</strong>"追秋航线"成顶流，近三成游客预订 2 个及以上城市酒店；"多城串游"热度增 35%；"奔县游"大热，县域游客一半以上打卡 2 个以上小城，平均游玩 5 天</li>
+      <li><strong>入境游：</strong>欧洲客源占比升至 20%+；张家界入境订单增约 1.5 倍（TOP10 中唯一五线城市），黑河增 1.3 倍（九成来自俄罗斯），延边增近 3 倍</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>在泰失联的上海音乐教师已安全回国</h2>
+    <ul>
+      <li><strong>时间：</strong>新华社曼谷10月7日电，中国驻泰大使馆证实该教师已安全返回上海</li>
+      <li><strong>使馆提醒：</strong>赴泰公民切勿轻信高薪招聘许诺及非正规商业项目邀约，不轻易搭乘陌生人车辆</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>假期消费旺：零售餐饮日均销售额增 6.1%</h2>
+    <ul>
+      <li><strong>数据：</strong>商务部大数据——全国重点零售和餐饮企业日均销售额同比增 6.1%；78 个重点步行街客流量、营业额分别增 6.4%、5.1%</li>
+      <li><strong>楼市：</strong>30 城新房成交同比微增 0.38%，一线城市增 35.53%（北京拉动明显），三线降 58.86%；24 城二手房成交同比增 53.43%——结构性回暖，一线升温、三线仍弱</li>
+      <li><strong>出行提示：</strong>国内航线燃油附加费 10月10日上涨，7-9日是买低价机票窗口期；出境机票"跳水"——北京飞首尔最低 518 元、成都飞曼谷 286 元</li>
+    </ul>
+  </div>
+
+  <div class="cat">💰 财经</div>
+
+  <div class="card">
+    <h2>9月外储小幅回调，央行连续 23 个月增持黄金</h2>
+    <ul>
+      <li><strong>数据：</strong>截至 9 月末外汇储备 34003 亿美元，较 8 月末下降 381 亿美元（降幅 1.11%）</li>
+      <li><strong>黄金：</strong>9 月末黄金储备 7747 万盎司，环比增 74 万盎司（高于 8 月的 65 万盎司），连续第 23 个月增持</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>国庆档票房破 11 亿，《神探之痕迹》夺冠</h2>
+    <ul>
+      <li><strong>数据：</strong>截至10月7日14时，国庆档总票房（含预售）11.51 亿元，观影 3163 万人次</li>
+      <li><strong>影片：</strong>刑侦片《神探之痕迹》4.05 亿领跑（占档期 36%），《什么意思夫妇》《生化危机：爆发夜》列二三位；今年无超级大片，中小成本影片错位竞争</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>《欢迎来龙餐馆》角逐奥斯卡</h2>
+    <ul>
+      <li><strong>时间：</strong>10月7日官宣，代表中国内地角逐第 99 届奥斯卡最佳国际影片</li>
+      <li><strong>内容：</strong>战火动荡时代背景下，以一间普通餐馆为核心叙事空间，用烟火气串联普通人的命运与羁绊</li>
+    </ul>
+  </div>
+
+  <div class="cat">🌍 国际</div>
+
+  <div class="card">
+    <h2>诺贝尔化学奖揭晓</h2>
+    <ul>
+      <li><strong>人物：</strong>瑞典皇家科学院10月7日宣布，2026年诺贝尔化学奖授予亨利·B·卡甘和硖合宪三</li>
+      <li><strong>成就：</strong>发现不对称有机合成中的非线性效应和自催化现象；奖金 1200 万瑞典克朗由两人平分</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7 国有意申办 2036 年夏奥会</h2>
+    <ul>
+      <li><strong>事件：</strong>国际奥委会10月6日公布遴选安排，德国、匈牙利、印度、卡塔尔、韩国、南非、土耳其七国明确表达意向</li>
+      <li><strong>流程：</strong>各意向方 11 月提交方案，随后国际奥委会进行可行性评估</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>特朗普称对伊军事行动"必须收尾了"</h2>
+    <ul>
+      <li><strong>时间：</strong>10月6日在马里兰州斯帕罗斯角发表讲话</li>
+      <li><strong>背景：</strong>自2月28日美以对伊朗发起军事打击以来，美国实施空袭、海上封锁、经济施压，冲突仍在持续；特朗普称"唯一要考虑的是以柔和还是强硬的方式收尾"</li>
+    </ul>
+  </div>
+
+  <div class="cat">💬 今日互动话题</div>
+
+  <div class="card topic">
+    <p>假期归来别让身体"急刹车"：入睡时间每天往前挪半小时、早餐吃温热好消化的、每小时起身活动、多晒太阳。这个长假你是"熬夜冠军"还是"早睡标兵"？有什么快速回血小妙招？</p>
   </div>
 
 </section>
@@ -235,7 +554,6 @@
 </div>
 
 <script>
-  // 日期 Tab 切换
   document.querySelectorAll('.day-tab').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.day-tab').forEach(b => b.classList.remove('active'));
