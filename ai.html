@@ -125,20 +125,144 @@
 
 <!-- DAY-TABS（由旧到新排列，最新在最右；定时任务每天在末尾追加新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab" data-day="2026-10-06">10/6 周二</button>
   <button class="day-tab" data-day="2026-10-07">10/7 周三</button>
   <button class="day-tab" data-day="2026-10-08">10/8 周四</button>
   <button class="day-tab" data-day="2026-10-09">10/9 周五</button>
   <button class="day-tab" data-day="2026-10-10">10/10 周六</button>
   <button class="day-tab" data-day="2026-10-11">10/11 周日</button>
-  <button class="day-tab active" data-day="2026-10-12">10/12 周一</button>
+  <button class="day-tab" data-day="2026-10-12">10/12 周一</button>
+  <button class="day-tab active" data-day="2026-10-13">10/13 周二</button>
 </div>
 <!-- /DAY-TABS -->
 
 <div class="container">
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
-<section class="day-section active" id="day-2026-10-12">
+<section class="day-section active" id="day-2026-10-13">
+
+  <div class="cat">🚀 模型 & 产品</div>
+
+  <div class="card">
+    <h2>Meta 发布 Muse Wonder 旗舰模型，扎克伯格称"已追平 AI 前沿"<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>当地时间10月12日（北京时间10月13日凌晨）发布</li>
+      <li><strong>人物/机构：</strong>Meta；CEO 马克·扎克伯格；首席 AI 官亚历山大·王（Alexandr Wang，Scale AI 创始人）</li>
+      <li><strong>事件：</strong>推出新一代旗舰模型 Muse Wonder 及更强版本 Muse Wonder Full（内部代号"西瓜 / Watermelon"），为 Meta 首款宣称对标的前沿模型；官方称在推理、写作、代码测试中已接近 Anthropic 顶尖模型，多项测试达到 Fable 5.1、Opus 5.5 与 GPT-6 水平</li>
+      <li><strong>数据：</strong>新模型将接入个人智能体 Muse（上月上线数周即登顶应用商店，下载量已破 660 万、日活 180 万）；Muse 订阅每月 20/100 美元，Wonder Full 仅向编程工具 Muse Code 付费用户开放；底层服务 Instagram、Facebook、WhatsApp 合计 35 亿用户</li>
+      <li><strong>关键名词：</strong>前沿模型（frontier model）、个人 AI 智能体、Muse Code</li>
+    </ul>
+    <div class="point">💡 看点：在 Anthropic、OpenAI 接连呼吁放缓前沿研发之际，Meta 逆势官宣"追平"，并把前沿能力直接灌入面向 35 亿用户的消费级 Agent——竞赛叙事正从"卷参数"转向"卷付费智能体"。</div>
+  </div>
+
+  <div class="card">
+    <h2>Anthropic 被曝秘密测试下一代模型，部分 Opus 5.5 请求疑似"悄悄换芯"</h2>
+    <ul>
+      <li><strong>时间：</strong>10月12日，TestingCatalog 报道</li>
+      <li><strong>事件：</strong>部分 Claude 用户发现自己的 Opus 5.5 请求被路由到一个未公布的新模型，X 平台上分享的输出显示能力有实质性提升；新版本号究竟是 Opus 5.6 还是 Fable 5.5 尚不确定</li>
+      <li><strong>关键名词：</strong>静默灰度测试、模型路由（model routing）</li>
+    </ul>
+    <div class="point">💡 看点：头部厂商"不发版先上量"的灰度打法日益普遍，模型版本本身正在变成一种用户无感知的后端资源。</div>
+  </div>
+
+  <div class="cat">💰 融资 & 并购</div>
+
+  <div class="card">
+    <h2>亚马逊约 70 亿美元洽购以色列 AI 公司 Decart，Anthropic 弃购后接盘<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>10月11日《华尔街日报》报道，10月12日国内媒体跟进；若谈判顺利，未来几天或达成协议</li>
+      <li><strong>人物/机构：</strong>亚马逊（AWS）、Decart（以色列 AI 初创公司，仅 100 余名员工）；此前 Anthropic 曾有意向、最终退出</li>
+      <li><strong>事件：</strong>亚马逊正洽谈收购 Decart，潜在交易估值约 70 亿美元；Decart 的核心技术是让开发者在不同厂商的 AI 芯片之间无缝切换工作负载</li>
+      <li><strong>数据：</strong>若成交将跻身 2026 年 AI 模型及软件公司收购案前列，同榜还有 Cursor、Hugging Face、World Labs、OpenRouter</li>
+      <li><strong>关键名词：</strong>跨芯片调度中间件、硬件解耦、Trainium（AWS 自研芯片）</li>
+    </ul>
+    <div class="point">💡 看点：云厂商争夺的已不只是模型，更是"算力翻译层"——谁掌握负载跨芯片迁移，谁就能削弱单一芯片供应商的绑定。</div>
+  </div>
+
+  <div class="card">
+    <h2>英伟达洽谈收购"美国版 DeepSeek"Reflection AI，估值或达 250 亿美元<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>英国《金融时报》10月10-11日报道，10月12日持续发酵；双方或在未来数周达成协议，也存在破裂可能</li>
+      <li><strong>人物/机构：</strong>英伟达、Reflection AI（由两名前谷歌 DeepMind 研究员创立）</li>
+      <li><strong>事件：</strong>双方正就全面收购、追加股权投资或"收购式招聘"（acqui-hire，聘用核心团队并获得技术授权）进行早期谈判；英伟达此前已投资约 8 亿美元，是其最大股东之一</li>
+      <li><strong>数据：</strong>Reflection AI 今年 3 月融资后估值达 250 亿美元；10月6日刚发布 5010 亿参数开源模型 Beam</li>
+      <li><strong>关键名词：</strong>收购式招聘、开源权重模型、MoE</li>
+    </ul>
+    <div class="point">💡 看点：从卖芯片到收编开源模型公司，英伟达试图把"模型优化—算力需求"的闭环焊死在自己的 GPU 生态上。</div>
+  </div>
+
+  <div class="card">
+    <h2>腾讯拟发行至少 45 亿美元债券，为 AI 基建筹措"长钱"</h2>
+    <ul>
+      <li><strong>时间：</strong>10月12日，路透社报道</li>
+      <li><strong>事件：</strong>腾讯筹备至少 45 亿美元的美元债与离岸人民币债组合，期限约 10 至 30 年，用于支撑算力、云服务及 AI 产品投入</li>
+      <li><strong>数据：</strong>腾讯 2026 年上半年资本开支同比大幅攀升</li>
+      <li><strong>关键名词：</strong>长期债券融资、AI 资本开支（capex）</li>
+    </ul>
+    <div class="point">💡 看点：AI 军备竞赛正在重塑全球科技巨头的资产负债表——美国巨头大规模举债买卡之后，中国大厂也进入"靠长期债务建算力"的阶段。</div>
+  </div>
+
+  <div class="cat">📉 市场 & 供应链</div>
+
+  <div class="card">
+    <h2>英伟达携手思科推出 USFP 光模块标准，单通道速率翻倍至 400Gb/s</h2>
+    <ul>
+      <li><strong>时间：</strong>10月12日，双方联合宣布</li>
+      <li><strong>事件：</strong>推出新一代超高密度可插拔光模块标准 USFP，并联合 TE Connectivity、安费诺开发笼架、连接器及模块，计划通过多源协议（MSA）推动其成为开放行业规范</li>
+      <li><strong>数据：</strong>首款产品单通道支持 400Gb/s 电信号，较现有 200Gb/s 方案速率翻倍、带宽密度提升至 4 倍、功率效率提高约 1.3 倍；量产时间表尚未公布</li>
+      <li><strong>关键名词：</strong>光模块、AI 工厂网络互联、MSA 开放标准</li>
+    </ul>
+    <div class="point">💡 看点：算力集群的瓶颈正从 GPU 芯片外溢到网络互联，"光"成为 AI 工厂下一轮升级的必争环节。</div>
+  </div>
+
+  <div class="card">
+    <h2>博通 CEO 陈福阳：许多 AI 投资者如同"赌场赌徒"，资本才是最大制约</h2>
+    <ul>
+      <li><strong>时间：</strong>10月12日，新加坡星展银行 Asia Future Forward 大会</li>
+      <li><strong>人物/观点：</strong>博通 CEO 陈福阳（Hock Tan）称，部分投资者对所投技术缺乏了解却期待高回报；资本可能正取代芯片、存储与电力，成为 AI 扩张的首要制约因素</li>
+      <li><strong>数据/判断：</strong>他认为 AI 算力供需失衡可能持续至 2029 年甚至 2030 年，但若模型能力或应用普及不及预期，基建需求可能放缓；英特尔 CEO 陈立武同场呼应，称融资成本上升与回报不确定已是行业核心挑战</li>
+    </ul>
+    <div class="point">💡 看点：AI 叙事正从"算力稀缺"切换到"资本回报拷问"，未来两三年将有一批 AI 基建项目接受商业化大考。</div>
+  </div>
+
+  <div class="card">
+    <h2>瑞银：AI 行情下一阶段看基础设施，电力是最关键变量</h2>
+    <ul>
+      <li><strong>时间：</strong>10月12日，瑞银发布最新报告</li>
+      <li><strong>人物/机构：</strong>瑞银；能源与资源领域专家 Catherine Gordon</li>
+      <li><strong>事件/观点：</strong>报告认为 AI 投资逻辑正从模型竞争转向基础设施建设，电力供应、数据中心容量与融资能力成为扩张关键；Alphabet、亚马逊近期签署的长期购电协议凸显电力瓶颈，同时建议关注稀土、钨等关键原材料相关企业</li>
+      <li><strong>关键名词：</strong>PPA（长期购电协议）、AI 基建产业链</li>
+    </ul>
+    <div class="point">💡 看点："AI 的尽头是电力"正从行业口号变成投行的资产配置框架，掌握稀缺资源与交付能力的企业将被重估。</div>
+  </div>
+
+  <div class="cat">🏛️ 政策 & 格局</div>
+
+  <div class="card">
+    <h2>IMF 总裁：AI 如"缓慢袭来的海啸"，全球约 40% 岗位将受冲击</h2>
+    <ul>
+      <li><strong>时间：</strong>10月12日，泰国曼谷，IMF-世界银行年会</li>
+      <li><strong>人物：</strong>国际货币基金组织（IMF）总裁格奥尔基耶娃</li>
+      <li><strong>数据：</strong>预计全球约 40% 的工作岗位最终将受 AI 影响，其中发达经济体约 60%、发展中经济体约 23%；刚进入劳动力市场的年轻毕业生首当其冲；美国、中国、印度被视为最大受益方</li>
+      <li><strong>关键名词：</strong>就业极化、技能互补（AI complementarity）</li>
+    </ul>
+    <div class="point">💡 看点：IMF 罕见直接点名年轻人就业与中产收缩，AI 冲击将从行业话题升级为各国财政、教育与社保政策的必答题。</div>
+  </div>
+
+  <div class="card">
+    <h2>谷歌 150 亿美元印度 AI 数据中心遭居民质疑，高管出面辩护</h2>
+    <ul>
+      <li><strong>时间：</strong>10月12日，法新社报道</li>
+      <li><strong>人物/机构：</strong>谷歌亚太区基础设施与能源主管 Alexander Smith；项目位于印度维沙卡帕特南（Visakhapatnam）</li>
+      <li><strong>事件：</strong>当地居民就项目用电、用水、用地及就业兑现提出质疑；谷歌回应称数据中心将采用空冷而非水冷、选址前已评估流域状况，并将投资清洁能源与电网配套</li>
+      <li><strong>数据：</strong>项目总投资约 150 亿美元，预计 2028 年投入运营</li>
+      <li><strong>关键名词：</strong>AI 数据中心环评、社区许可（social license）</li>
+    </ul>
+    <div class="point">💡 看点：AI 基建扩张进入"社区许可"时代，能源与环境议题正成为比融资更难跨过的落地门槛。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-10-12">
 
   <div class="cat">💰 融资 & 资本</div>
 
@@ -549,50 +673,6 @@
 
 </section>
 
-<section class="day-section" id="day-2026-10-06">
-
-  <div class="cat">💰 融资 & 资本</div>
-
-  <div class="card">
-    <h2>DeepSeek 接近完成 120 亿美元融资，腾讯、宁德时代入局<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>10月6日，多家外媒报道</li>
-      <li><strong>事件：</strong>DeepSeek 接近完成至少 800 亿元人民币（约 120 亿美元）融资，由腾讯与宁德时代支持，为 IPO 前关键一轮</li>
-      <li><strong>关键名词：</strong>Pre-IPO 轮、战略投资</li>
-    </ul>
-    <div class="point">💡 看点：中国大模型公司开始走向公开市场，"技术理想主义"也要讲商业闭环了</div>
-  </div>
-
-  <div class="cat">🚀 模型 & 产品</div>
-
-  <div class="card">
-    <h2>Reflection AI 发布 5010 亿参数开源模型 Beam</h2>
-    <ul>
-      <li><strong>时间：</strong>10月6日公布技术细节</li>
-      <li><strong>事件：</strong>Reflection AI 首款开放权重模型 Beam 亮相：MoE 架构、5010 亿总参数、每 token 仅激活约 230 亿</li>
-      <li><strong>数据：</strong>代码与推理能力对标 GLM 5.2，推理成本降低约 3-4 倍，剑指企业"AI 工厂"</li>
-      <li><strong>背景：</strong>该公司由前谷歌 DeepMind 研究员创立，被称为"美国版 DeepSeek"，正被英伟达洽谈收购</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>OpenAI 公开 722 篇数学手稿引争议</h2>
-    <ul>
-      <li><strong>时间：</strong>10月6日</li>
-      <li><strong>事件：</strong>OpenAI 在 GitHub 公开 722 篇 AI 生成的数学研究手稿，其中包括一份 175 页的"四维挂谷满维"证明</li>
-      <li><strong>争议：</strong>学界质疑"未经同行评审的机器成果"污染学术生态，成为一周后 AHM 抵制呼吁的导火索</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>ChatGPT 开始测试广告</h2>
-    <ul>
-      <li><strong>事件：</strong>ChatGPT 被观察到在部分回答中测试广告展示，商业化再进一步</li>
-      <li><strong>看点：</strong>当 AI 助手开始卖广告，"答案的中立性"将成为新的产品议题</li>
-    </ul>
-  </div>
-
-</section>
 <!-- /DAY-SECTIONS -->
 
   <div class="footer">内容由小秘全网搜集精炼 · 每天早上 8 点更新 · 保留最近 7 天</div>
