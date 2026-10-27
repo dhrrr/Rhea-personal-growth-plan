@@ -642,7 +642,12 @@
     // 让激活的 Tab 在横向滚动条中完全露出来（居中）
     const tab = document.querySelector('.day-tab.active');
     if (tab) tab.scrollIntoView({ inline: 'center', block: 'nearest' });
-    if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (scroll) {
+      // 滚动到日期 Tab 栏位置（吸顶处），而不是整个页面顶部
+      const tabsBar = document.getElementById('day-tabs');
+      const y = tabsBar ? tabsBar.getBoundingClientRect().top + window.pageYOffset : 0;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
     return true;
   }
   document.querySelectorAll('.day-tab').forEach(btn => {
