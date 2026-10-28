@@ -875,6 +875,13 @@
 </div>
 
 <script>
+  // 统一滚动定位：当天内容顶部紧贴吸顶的日期栏下方
+  function scrollToContent(sec, behavior) {
+    const tabsBar = document.getElementById('day-tabs');
+    const tabH = tabsBar ? tabsBar.offsetHeight : 0;
+    const y = sec.getBoundingClientRect().top + window.pageYOffset - tabH;
+    window.scrollTo({ top: Math.max(0, y), behavior: behavior || 'smooth' });
+  }
   function activateDay(dateStr, scroll) {
     const sec = document.getElementById('day-' + dateStr);
     if (!sec) return false;
@@ -884,13 +891,7 @@
     // 让激活的 Tab 在横向滚动条中完全露出来（居中）
     const tab = document.querySelector('.day-tab.active');
     if (tab) tab.scrollIntoView({ inline: 'center', block: 'nearest' });
-    if (scroll) {
-      // 滚动到当天内容的顶部（让内容紧贴在吸顶的日期栏下方）
-      const tabsBar = document.getElementById('day-tabs');
-      const tabH = tabsBar ? tabsBar.offsetHeight : 0;
-      const y = sec.getBoundingClientRect().top + window.pageYOffset - tabH;
-      window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
-    }
+    if (scroll) scrollToContent(sec);
     return true;
   }
   document.querySelectorAll('.day-tab').forEach(btn => {
@@ -905,7 +906,16 @@
   });
   // 支持 ai.html#day-YYYY-MM-DD 直达某天；该天不存在则显示最新一天
   if (location.hash.indexOf('#day-') === 0) {
-    activateDay(location.hash.replace('#day-', ''), false);
+    const hashDay = location.hash.replace('#day-', '');
+    if (activateDay(hashDay, false)) {
+      // 用与点击 Tab 相同的方式定位（浏览器原生锚点会与吸顶栏错位）
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          const sec = document.getElementById('day-' + hashDay);
+          if (sec) scrollToContent(sec, 'auto');
+        }, 50);
+      });
+    }
   }
 </script>
 
