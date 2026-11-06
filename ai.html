@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -125,7 +125,8 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab active" data-day="2026-11-05">11/5 周四</button>
+  <button class="day-tab active" data-day="2026-11-06">11/6 周五</button>
+  <button class="day-tab" data-day="2026-11-05">11/5 周四</button>
   <button class="day-tab" data-day="2026-11-01">11/1 周日</button>
   <button class="day-tab" data-day="2026-10-31">10/31 周六</button>
 </div>
@@ -135,7 +136,99 @@
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
 
-<section class="day-section active" id="day-2026-11-05">
+<section class="day-section active" id="day-2026-11-06">
+
+  <div class="cat">🚀 模型 & 产品</div>
+
+  <div class="card">
+    <h2>谷歌发布 Gemini Omni 1.2 Flash：15秒视频生成，价格降30%<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月5日（美国时间），北京时间11月6日早间多家媒体报道</li>
+      <li><strong>人物/机构：</strong>谷歌 DeepMind / Google Vids</li>
+      <li><strong>事件：</strong>正式推出视频生成模型 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for Business 全面开放；核心升级包括：视频时长从 10 秒提升至最长 15 秒、支持多轮"对话式编辑"（用持续对话对已生成视频进行修改）、角色与场景一致性显著增强、改善语音唇形同步与镜头控制；同步在 Google Vids（Workspace 视频创作工具）中免费开放</li>
+      <li><strong>数据：</strong>720p 定价约 0.07 美元/秒，较前代下调 30%</li>
+      <li><strong>关键名词：</strong>Gemini Omni 1.2 Flash、对话式编辑（Conversational Editing）、Google Vids、唇形同步</li>
+    </ul>
+    <div class="point">💡 看点：视频生成从"生成一段"进入"边看边改"的交互范式，"对话式编辑"降低了非专业用户的创作门槛；Workspace 内置免费开放，谷歌把视频能力直接塞给 30 亿用户入口。</div>
+  </div>
+
+  <div class="card">
+    <h2>Meta Muse 上线实时语音聊天与表情头像：Agent 从打字变打电话</h2>
+    <ul>
+      <li><strong>时间：</strong>11月5日正式发布（Connect 2026 预览后约 1.5 个月）</li>
+      <li><strong>人物/机构：</strong>Meta</li>
+      <li><strong>事件：</strong>为个人 AI Agent Muse 推出两项核心交互升级——实时语音对话（Muse Realtime Voice）与表情化头像（Expressive Avatars），在美国市场覆盖移动端、Web 与 Mac；语音模式下 Muse 可直接出声回答，用户能随时打断插入新想法，体感更接近真人通话；头像会随对话表情变化，同时支持"语音指令后台执行"——比如走路时口头交代，Muse 后台默默把事办了；Meta 还预告 AI 眼镜与 Charm 硬件即将支持</li>
+      <li><strong>关键名词：</strong>Muse、Realtime Voice、Expressive Avatars、语音打断、后台执行、AI 眼镜</li>
+    </ul>
+    <div class="point">💡 看点：语音+表情头像是"Agent 拟人化"的关键一步，交互范式从"搜索框"彻底转向"通话"；Meta 把 Agent 与硬件绑定的节奏在加快（手机→眼镜→Charm）。</div>
+  </div>
+
+  <div class="cat">🧠 芯片 & 算力</div>
+
+  <div class="card">
+    <h2>Moonshot AI 被曝讨论租用欧洲 8000+ 英伟达 Blackwell GPU 集群<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>CNBC 11月6日凌晨报道</li>
+      <li><strong>人物/机构：</strong>Moonshot AI（月之暗面）；欧洲 neocloud 运营商</li>
+      <li><strong>事件：</strong>多位知情人士透露，月之暗面今年曾与欧洲多家云运营商谈判租用 8000+ 颗英伟达 Blackwell GPU 集群，用于 Kimi 系列新模型的训练与推理；因美国出口管制限制，Blackwell 无法直接售往中国，但经欧洲数据中心的远程访问存在监管灰色地带；Kimi K3 发布后一度触达服务上限，迫使其紧急寻求海外算力备份；谈判细节尚在进行中，未签署正式协议</li>
+      <li><strong>数据：</strong>单集群规模 8000+ 颗 Blackwell GPU</li>
+      <li><strong>关键名词：</strong>Blackwell GPU、neocloud、远程算力、出口管制、监管灰色地带</li>
+    </ul>
+    <div class="point">💡 看点：国产大模型公司正在构建"国内算力+海外备份"的双通道——既应对美国芯片管制，也为全球用户的推理服务提供低延迟备份；算力采购的全球调度能力正在变成 AI 公司的核心竞争力。</div>
+  </div>
+
+  <div class="card">
+    <h2>AI 芯片初创公司几天内斩获 11 亿美元，三家分方向围攻英伟达</h2>
+    <ul>
+      <li><strong>时间：</strong>11月5日–6日（近日多轮融资集中披露）</li>
+      <li><strong>人物/机构：</strong>MatX（通用训练+推理芯片）、Axelera（超低功耗边缘 AI）、SambaNova（推理平台）</li>
+      <li><strong>事件：</strong>三家 AI 芯片新锐在数天内合计获 11 亿美元新融资：MatX 瞄准单芯片同时跑训练和推理；Axelera 聚焦边缘端低功耗推理；SambaNova 发布 SN50 第五代 RDU，同时与 Intel 达成战略合作，估值达 110 亿美元；芯片赛道的融资正在从"讲故事"转向"单款产品实际量产+客户落地"</li>
+      <li><strong>数据：</strong>3 家合计融资约 11 亿美元；SambaNova 估值 110 亿美元</li>
+      <li><strong>关键名词：</strong>MatX、Axelera、SambaNova SN50、RDU、边缘 AI、训练推理一体</li>
+    </ul>
+    <div class="point">💡 看点：推理芯片正在成为新的融资主线——训练端英伟达仍是霸主，但推理场景的多样化（边缘、低功耗、专用）给了更多玩家机会；"训练推理一体化"的单芯片路线如果跑通，会重塑数据中心的硬件采购清单。</div>
+  </div>
+
+  <div class="cat">📊 公司 & 业绩</div>
+
+  <div class="card">
+    <h2>AppLovin Q3 营收 21.85 亿美元（+55%），盘后暴涨 31%<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月5日美股盘后发布</li>
+      <li><strong>人物/机构：</strong>AppLovin（APP.US）——全球最大的移动广告科技平台之一</li>
+      <li><strong>事件：</strong>公布 2026 年 Q3 财报，营收 21.85 亿美元（同比 +55%），净利润 14.39 亿美元（+72%），净利润率 66% 冠绝广告行业；管理层披露营收高增长核心驱动是 AI 广告投放引擎的持续升级（动态素材生成、智能出价优化），同行增速普遍仅 10–25%；Q4 营收指引 23.65–23.95 亿美元（+55% 以上），明显高于市场预期；盘后股价一度暴涨 31%，此前公司估值曾跌至十几倍</li>
+      <li><strong>数据：</strong>Q3 营收 21.85 亿美元（+55%）、净利润 14.39 亿美元（+72%）；Q4 指引 23.65–23.95 亿美元</li>
+      <li><strong>关键名词：</strong>AI 广告投放、动态素材生成、智能出价、利润率 66%、盘后暴涨</li>
+    </ul>
+    <div class="point">💡 看点：AI 商业化最清晰的场景之一——广告投放，正在跑出"高增长+高利润"的双击回报；从"讲故事"到"真金白银"，AI 的 ROI 终于在一个行业被市场用股价兑现了。</div>
+  </div>
+
+  <div class="cat">⚖️ 政策 & 治理</div>
+
+  <div class="card">
+    <h2>何立峰副总理调研北京：加大 AI 与算力网建设的金融支持</h2>
+    <ul>
+      <li><strong>时间：</strong>11月4–5日调研，11月6日财联社早间新闻精选</li>
+      <li><strong>人物/机构：</strong>中共中央政治局委员、国务院副总理何立峰</li>
+      <li><strong>事件：</strong>到北京科技创新与金融等领域调研，强调要强化科技创新与产业创新深度融合，推动经济持续向新；特别指出加大对人工智能、算力网建设等领域的金融支持和要素保障，统筹做好创新发展与风险防控，有序扩大新型基础设施建设投资</li>
+      <li><strong>关键名词：</strong>算力网、金融支持、新型基础设施、要素保障、风险防控</li>
+    </ul>
+    <div class="point">💡 看点：副总理级别调研明确"AI+算力网"为新基建投资重点方向——政策层面的金融支持有望向算力调度、区域算力网互联等基础设施倾斜，利好"算力调度平台"这类新赛道。</div>
+  </div>
+
+  <div class="card">
+    <h2>宇树科技王兴兴：人形机器人单家企业增速或超 100%</h2>
+    <ul>
+      <li><strong>时间：</strong>11月6日第八届虹桥国际经济论坛"人形机器人创新发展合作"分论坛</li>
+      <li><strong>人物/机构：</strong>宇树科技创始人、董事长王兴兴</li>
+      <li><strong>事件：</strong>在论坛发言中表示，对"个人智能机器人"领域保持乐观，预计国内单家人形机器人企业年均增长率或将超过 100%；此前宇树科技已发布多款消费级与人形机器人产品，行业普遍预期 2027 年前后人形机器人将进入规模化交付初期</li>
+      <li><strong>关键名词：</strong>人形机器人、虹桥论坛、规模化交付、消费级机器人</li>
+    </ul>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-05">
 
   <div class="cat">🚀 模型 & 产品</div>
 
