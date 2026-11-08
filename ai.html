@@ -125,10 +125,10 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab active" data-day="2026-11-07">11/7 周六</button>
+  <button class="day-tab active" data-day="2026-11-08">11/8 周日</button>
+  <button class="day-tab" data-day="2026-11-07">11/7 周六</button>
   <button class="day-tab" data-day="2026-11-06">11/6 周五</button>
   <button class="day-tab" data-day="2026-11-05">11/5 周四</button>
-  <button class="day-tab" data-day="2026-11-01">11/1 周日</button>
 </div>
 <!-- /DAY-TABS -->
 
@@ -136,7 +136,145 @@
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
 
-<section class="day-section active" id="day-2026-11-07">
+<section class="day-section active" id="day-2026-11-08">
+
+  <div class="cat">🚀 模型 & 产品</div>
+
+  <div class="card">
+    <h2>谷歌 ADK 2.14.0 转正：A2A 协议进入稳定期，Antigravity 上线"关电脑也在干活"的远程智能体</h2>
+    <ul>
+      <li><strong>时间：</strong>11月6日–7日（Google 官方博客与 GitHub 发布）</li>
+      <li><strong>人物/机构：</strong>Google；Google Antigravity；微软 Teams</li>
+      <li><strong>事件：</strong>Agent Development Kit 2.14.0 把执行环境、A2A 协议、评估模块与核心运行时转为稳定版，26 个认证/环境/应用模块、16 项工具集特性摘掉 experimental 标签；新增 MultiRunConfig 支持用例并行多次评测、ToolArgsMatcher 做工具参数的语义比对，TeamsRunner 可把智能体接入 Microsoft Teams，OpenAIDecisionsClassifier 用 OpenAI Decisions API 作为流程闸门；Antigravity 面向 AI Pro/Ultra 个人账户开放 Remote Agents，任务运行在隔离云 VM，可离开电脑、在手机上解权限；语音模式由 Gemini Live 驱动，破坏性操作仍需屏幕点击确认</li>
+      <li><strong>数据：</strong>长多轮工作流运行快 23%、峰值内存低 9%；ADK 2.14.0 为一次以"转正"为主题的大版本</li>
+      <li><strong>关键名词：</strong>ADK、A2A 协议、MultiRunConfig、Remote Agents、Gemini Live、ToolArgsMatcher</li>
+    </ul>
+    <div class="point">💡 看点：智能体框架的竞争已从"功能数量"转向"稳定性与互操作"——A2A 稳定意味着不同厂商的 Agent 有了共同调用语言，多智能体架构的集成成本明显下降；远程 Agent 把"人在回路"改成"人不在场也能推进"，权限与审计成了新的准入门槛。</div>
+  </div>
+
+  <div class="cat">🧩 生态 & 工具</div>
+
+  <div class="card">
+    <h2>微软开源 APM：给智能体装上"npm"，技能与 MCP 服务器终于能锁版本</h2>
+    <ul>
+      <li><strong>时间：</strong>11月7日（微软/GitHub 发布）</li>
+      <li><strong>人物/机构：</strong>微软；GitHub Copilot、Claude Code、Cursor；Agentic AI Foundation</li>
+      <li><strong>事件：</strong>微软以 MIT 协议开源 Agent Package Manager（APM），在 apm.yml 中统一声明技能、提示词、指令、插件与 MCP 服务器，执行一次 apm install 即按当前 harness 分发到 9 种环境；lockfile 锁定精确版本与内容哈希，保证新克隆的仓库逐字节一致；安全模型为默认拒绝——每次安装扫描隐藏 Unicode 字符，未经显式声明或信任的传递性 MCP 服务器一律拦截；apm-policy.yml 提供企业→组织→仓库的"只收紧"继承；兼容 GitLab、Azure DevOps、Bitbucket、Gitea；构建于 AGENTS.md、Agent Skills 与 MCP 标准之上，上个月 Anthropic 已将 Agent Skills 标准捐给 Agentic AI Foundation</li>
+      <li><strong>数据：</strong>9 种运行环境；MIT 许可；lockfile 内容哈希校验</li>
+      <li><strong>关键名词：</strong>APM、apm.yml、MCP、lockfile、deny-by-default、apm-policy.yml</li>
+    </ul>
+    <div class="point">💡 看点：智能体资产开始被当作"依赖"来管理——提示词与 MCP 工具此前靠复制粘贴传播，无法保证两台机器跑的是同一套东西；对企业来说，这意味着 Agent 能力第一次可审计、可锁版、可集中治理，Agent 的供应链正在成为大厂的新战场。</div>
+  </div>
+
+  <div class="cat">🔐 安全 & 治理</div>
+
+  <div class="card">
+    <h2>OpenAI 请外部攻击者来"打自己"：与 Hacktron 联手审计第三方连接面</h2>
+    <ul>
+      <li><strong>时间：</strong>11月7日（OpenAI 官方公告）</li>
+      <li><strong>人物/机构：</strong>OpenAI；Hacktron；Cathedral 研究者；Daybreak Red 计划</li>
+      <li><strong>事件：</strong>OpenAI 宣布与安全公司 Hacktron 合作，由双方工程师联合圈定高优先级区域，重点测试 OpenAI 服务与第三方平台交互处的漏洞；Hacktron 用 AI Agent 做代码审查、渗透测试与红队，其研究员此前擅长发现应用、云基础设施与身份系统的交界漏洞，并获得 Daybreak Red 计划的前沿模型访问权限。此前一周 OpenAI 已宣布 Cathedral 研究者加入下一轮安全冲刺，并上调漏洞赏金</li>
+      <li><strong>数据：</strong>官方未披露赏金金额与测试范围</li>
+      <li><strong>关键名词：</strong>Hacktron、红队、Daybreak Red、第三方连接面、漏洞赏金</li>
+    </ul>
+    <div class="point">💡 看点：与前一天"把攻击能力交给认证专家"的 GPT-6 Cyber 形成闭环——OpenAI 正把安全边界从内部测试扩展到整个生态；Agent 接入越多，认证流、数据交接与权限边界的"接缝"就是最危险的地方，也是企业接入第三方 Agent 时最该审计的部分。</div>
+  </div>
+
+  <div class="cat">🧠 芯片 & 算力</div>
+
+  <div class="card">
+    <h2>英伟达 Vera Rubin 的内存调度：单卡 HBM 只多 3%，推理吞吐最高 30 倍<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月6日–8日（英伟达技术博客；11月8日科技快报汇总）</li>
+      <li><strong>人物/机构：</strong>英伟达；台积电；Apollo；微软 Azure</li>
+      <li><strong>事件：</strong>英伟达披露 Vera Rubin NVL72 的内存策略：模型权重与 KV 缓存压缩到 NVFP4，权重摊到 72 颗 GPU 以释放本地 HBM，Vera CPU 的大容量内存做缓冲层，Dynamo 负责上下文迁移，RAG 索引与非活跃上下文下沉到更便宜的存储层——内存从"单卡上限"变成"整机柜可调度资源"；同期独立 CPU 产品 Vera 发布、正面进入数据中心 CPU 市场，与台积电合作的 Spectrum-X CPO 硅光交换机（200Gb/s SerDes）全面量产，微软已完成 Vera Rubin 验证并将部署 Azure；英伟达联合 Apollo 把约 130 座电信老机房改造成小型 AI 数据中心，合计约 1GW、覆盖最多 20 州</li>
+      <li><strong>数据：</strong>单 GPU HBM 容量仅增约 3%；成本调整后智能体推理吞吐最高为 GB300 NVL72 的 30 倍（厂商口径，待第三方验证）；约 130 座机房、约 1GW、最多 20 州</li>
+      <li><strong>关键名词：</strong>Vera Rubin NVL72、NVFP4、KV 缓存、Dynamo、CPO、Vera CPU</li>
+    </ul>
+    <div class="point">💡 看点：竞争轴从"峰值算力/显存容量"转向"每美元产出多少可用 token"——智能体负载是长上下文、多轮、重复读缓存，账单由内存管理决定；3% 的硬件增量撬动最高 30 倍的系统收益，说明下一轮推理降本的胜负手在调度与压缩这类软件问题。采购侧评估 GPU 也不能只看 FLOPS，要看整机柜交付与电力可得性。</div>
+  </div>
+
+  <div class="card">
+    <h2>英伟达 10 亿美元投资 NAVER 完成交割，持股 4.13%</h2>
+    <ul>
+      <li><strong>时间：</strong>11月6日（NAVER 监管申报文件）</li>
+      <li><strong>人物/机构：</strong>英伟达；NAVER（韩国）</li>
+      <li><strong>事件：</strong>NAVER 收到约 1.3 万亿韩元，以第三方配股方式发行 650 万余股新股，英伟达 10 亿美元投资完成付款、持股 4.13%；双方 6 月已宣布 AI 工厂合作，此次把资本投入与 GPU 基建绑定：NAVER 将从世宗数据中心起步建设 GPU 算力，并扩展 GPU-as-a-Service 业务，让客户通过云租用算力</li>
+      <li><strong>数据：</strong>10 亿美元；约 1.3 万亿韩元；650 万余股；4.13% 持股</li>
+      <li><strong>关键名词：</strong>NAVER、主权 AI、GPU-as-a-Service、AI 工厂、第三方配股</li>
+    </ul>
+    <div class="point">💡 看点：英伟达的投资正从"卖芯片"延伸到"拿股权"——在每个国家的头部互联网公司里占住算力入口，等于把生态护城河钉进国家级 AI 基建；对云采购方，这类绑定意味着算力议价空间进一步向供给方集中。</div>
+  </div>
+
+  <div class="cat">💰 融资 & 并购</div>
+
+  <div class="card">
+    <h2>Anthropic 冲刺感恩节前上市：募资至多 1000 亿美元，目标估值 1.25–1.75 万亿美元<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日 07:51（凤凰网科技引《金融时报》，北京时间）</li>
+      <li><strong>人物/机构：</strong>Anthropic；摩根大通；Altimeter、Dragoneer、Greenoaks、红杉等投资方</li>
+      <li><strong>事件：</strong>尽管科技股近期大幅抛售，Anthropic 仍在推进 IPO，计划在美国感恩节（11 月 26 日）前上市，寻求融资 800 亿–1000 亿美元，目标估值 1.25 万亿–1.75 万亿美元；该区间低于部分最乐观投资者此前期望的 2 万亿美元，但高于上轮 9650 亿美元估值；摩根大通计划 11 月 13 日为潜在投资者举行信息说明会，最终估值、募资规模与上市时间仍待确定</li>
+      <li><strong>数据：</strong>募资 800–1000 亿美元；目标估值 1.25–1.75 万亿美元；Q3 营收约 170 亿美元（环比增近 50%）；年化营收约 810 亿美元；纳斯达克 100 周四跌超 6%、全周跌 4.9%</li>
+      <li><strong>关键名词：</strong>IPO、S-1、年化营收（ARR）、信息说明会、估值下修</li>
+    </ul>
+    <div class="point">💡 看点：一级市场的"标价"正与二级市场的"情绪"接轨——Q3 环比近 50% 的增长仍被压估值，说明投资人开始用现金流与资本开支承诺来定价；其招股文件披露的采购与租赁累计承诺支出（媒体汇总约 8954 亿美元）会成为上市后被公开审视的第一道考题，也给所有重度租算力的 AI 公司定了估值范式。</div>
+  </div>
+
+  <div class="card">
+    <h2>SpaceX 完成收购 xAI：xAI 作价 2500 亿美元，合并估值 1.25 万亿美元</h2>
+    <ul>
+      <li><strong>时间：</strong>11月7日晚至11月8日凌晨（SpaceX 官宣，北京时间）</li>
+      <li><strong>人物/机构：</strong>SpaceX；xAI；马斯克</li>
+      <li><strong>事件：</strong>SpaceX 宣布完成对 xAI 的收购：交易中 SpaceX 估值约 1 万亿美元、xAI 估值约 2500 亿美元，合并后实体约 1.25 万亿美元；xAI 估值不到一年从约 800 亿美元升至 2500 亿美元，涨幅超 200%；整合后 xAI 并入 SpaceX，形成"太空 + AI"的垂直整合实体</li>
+      <li><strong>数据：</strong>xAI 2500 亿美元；SpaceX 约 1 万亿美元；合并约 1.25 万亿美元；xAI 估值 800 亿→2500 亿美元</li>
+      <li><strong>关键名词：</strong>垂直整合、合并估值、SpaceX、xAI、Grok</li>
+    </ul>
+    <div class="point">💡 看点：把模型公司装进有真实现金流的火箭公司，是给 AI 叙事找"现金流锚"的结构性操作——当纯模型公司在一级市场被压价时，能并表的收入与订单反而更值钱；判断 AI 公司价值，背后站着什么样的现金流载体，比模型榜单更关键。</div>
+  </div>
+
+  <div class="cat">⚖️ 政策 & 治理</div>
+
+  <div class="card">
+    <h2>工信部给智能体终端立规矩：一机一码、OTA 升级要评估、分发要声明</h2>
+    <ul>
+      <li><strong>时间：</strong>11月6日（新华社、工信部官网；文号 工信厅信管〔2026〕42号）</li>
+      <li><strong>人物/机构：</strong>工业和信息化部；终端厂商；应用分发平台</li>
+      <li><strong>事件：</strong>工信部发布《关于加强智能体终端设备进网管理的通知》，智能体终端指预置安装智能体的手机、平板、可穿戴设备等电信终端；要求每个智能体具备唯一身份码，厂商取得进网许可后不得擅自改动核心能力，重大变更须重新报备检测；通过 OTA 开展现网升级的，需制定升级方案、经专家评估并征求意见后向用户提供服务；分发环节要求应用开发者声明是否同意被智能体调用，并为用户提供兼容设备型号的下载安装服务；同日工信部还公示《机器人产品标识码管理暂行办法（征求意见稿）》，为机器人建立统一"身份证"、覆盖全生命周期可溯源</li>
+      <li><strong>数据：</strong>通知文号 工信厅信管〔2026〕42号；机器人标识码办法 11 月 6 日起公开征求意见</li>
+      <li><strong>关键名词：</strong>智能体终端、进网管理、唯一身份码、OTA、机器人产品标识码</li>
+    </ul>
+    <div class="point">💡 看点：监管正从"模型内容"落到"硬件入口"——预置智能体的手机/手表第一次被当作受管对象，能力变更、升级与分发全链条留痕；对硬件与供应链，智能体能力要进 BOM 与合规清单，机器人"一机一码"则直接推动整机与零部件的可追溯体系，采购、质量与售后流程要提前改造。</div>
+  </div>
+
+  <div class="cat">🚗 汽车 & 具身智能</div>
+
+  <div class="card">
+    <h2>美国人形机器人第一股诞生：Agility Robotics 登陆纳斯达克，估值约 25 亿美元</h2>
+    <ul>
+      <li><strong>时间：</strong>11月4日完成与 SPAC 合并，11月5日纳斯达克开始交易</li>
+      <li><strong>人物/机构：</strong>Agility Robotics（Digit）；Churchill Capital Corp XI；富士康、英伟达等</li>
+      <li><strong>事件：</strong>Agility 完成与 Churchill Capital Corp XI 的业务合并，11 月 5 日以 AGLT 在纳斯达克交易、认股权证代码 AGLTW，成为美国首家以人形机器人为核心业务、且已有真实商业部署的上市公司；富士康领投，英伟达等机构加持</li>
+      <li><strong>数据：</strong>估值约 25 亿美元；股票代码 AGLT / AGLTW</li>
+      <li><strong>关键名词：</strong>人形机器人、SPAC、Digit、AGLT、纯血标的</li>
+    </ul>
+    <div class="point">💡 看点：人形机器人从"PPT 估值"进入"公开财报"——有真实仓储部署与量产交付的公司先拿到上市通道，富士康这类制造巨头直接坐进股东席，意味着下一阶段比拼的是产能、良率与单机成本；供应链侧该盯关节、灵巧手、减速器的量产爬坡，而不是又一轮 demo。</div>
+  </div>
+
+  <div class="card">
+    <h2>FSD V14 长沙"硬碰硬"：特斯拉对上智驾大赛八冠王文远知行</h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日（第二届中国智驾大赛长沙站）</li>
+      <li><strong>人物/机构：</strong>特斯拉（Model Y，FSD V14）；文远知行（埃安 Ray7）；第一电动网/中国智驾大赛</li>
+      <li><strong>事件：</strong>长沙站被称为"智驾大赛史上难度最高路线"，FSD V14 与八冠王文远知行的最新车型同场挑战预赛与决赛两条路线，场景覆盖倒车出库、掉头、三点式掉头、社区窄路与不规则路段，重点考察基础能力与复杂场景应对</li>
+      <li><strong>数据：</strong>两条实测路线（预赛、决赛）；覆盖倒车出库、掉头、三点式掉头、社区窄路、不规则路段等高难场景</li>
+      <li><strong>关键名词：</strong>FSD V14、端到端、智驾大赛、三点式掉头、城市 NOA</li>
+    </ul>
+    <div class="point">💡 看点：特斯拉在华智驾从"媒体试驾"进入第三方公开横评——同一路线、同一场景的对比，比参数表更能暴露端到端方案在长尾场景的差距；对整车与零部件企业，这类公开赛事正成为供应商选型与消费者认知的共同参照系。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-07">
 
   <div class="cat">🚀 模型 & 产品</div>
 
@@ -478,99 +616,6 @@
       <li><strong>关键名词：</strong>人工智能+能源、试点项目、高价值场景、算力电力协同</li>
     </ul>
     <div class="point">💡 看点："AI+能源"从政策文件走向项目清单落地，算力能耗与电力供给的协同有了具体抓手——数据中心扩容的电力约束有望逐步松动。</div>
-  </div>
-
-</section>
-
-<section class="day-section" id="day-2026-11-01">
-
-  <div class="cat">🚀 模型 & 产品</div>
-
-  <div class="card">
-    <h2>DeepSeek 公开 Super-agent 架构并开源原型："AI 调度 AI"<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>10月31日晚间发布，11月1日报道</li>
-      <li><strong>人物/机构：</strong>DeepSeek Harness 团队</li>
-      <li><strong>事件：</strong>官方公众号发表《Super-agent设计探索：迈向更自主的Agent系统》，公开面向自主智能体的全新架构：Router/Worker 双层设计——Router 是持续运行的全局协调节点，统一承接 IM、GitHub、邮件等多渠道交互，维护全局上下文并分派任务；Worker 在相互隔离的会话中并发执行问题复现、代码审查、功能开发等工作，必要时调用 Subagent；系统引入事件驱动与两级过滤机制，无人@时也能识别群聊中的潜在缺陷，主动在后台复现并尝试修复；相关原型已同步开源</li>
-      <li><strong>数据：</strong>原型开源地址 github.com/deepseek-ai/dsh-superagent-prototype</li>
-      <li><strong>关键名词：</strong>Super-agent、Router/Worker、事件驱动、Subagent、存算分离、Watchdog</li>
-    </ul>
-    <div class="point">💡 看点：团队坦言没有提出全新理论，而是把经典计算机系统思想搬进 Agent 系统——"AI 调度 AI"让人类从执行细节上移到决策与验收；这套 Router/Worker 模式对企业内部多 Agent 工作流（工单分派、审批巡检）有直接借鉴价值。</div>
-  </div>
-
-  <div class="card">
-    <h2>Claude 订阅改版：Max 20x 升级为 Ultra，取消 5 小时限额<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>10月31日官宣</li>
-      <li><strong>人物/机构：</strong>Anthropic</li>
-      <li><strong>事件：</strong>原 Max 5x 更名为 Max（月费 100 美元不变）、Max 20x 更名为 Ultra（月费 200 美元不变），现有订阅用户自动无缝迁移，套餐变为四档结构；最大变化是 Ultra 档取消原先严格的 5 小时使用时长限制，可无时限使用；Anthropic 同时启动面向已认证 Ultra 用户的全新功能内测，细节未披露</li>
-      <li><strong>数据：</strong>Max 100 美元/月、Ultra 200 美元/月，价格均不变</li>
-      <li><strong>关键名词：</strong>Claude Ultra、5 小时限额、订阅分层、无缝迁移</li>
-    </ul>
-    <div class="point">💡 看点：取消限额是对 Agent 长任务真实用量的直接回应——订阅竞争从"价格"转向"用量自由度"，档位命名与 ChatGPT Ultra 对齐，高端订阅的比拼进入"谁先不设防"阶段。</div>
-  </div>
-
-  <div class="card">
-    <h2>Google 宣布关停编码 Agent Jules，能力并入 Antigravity</h2>
-    <ul>
-      <li><strong>时间：</strong>10月29日官方宣布，近两日多家媒体跟进</li>
-      <li><strong>人物/机构：</strong>Google</li>
-      <li><strong>事件：</strong>2024 年 12 月上线的异步编码 Agent Jules 将"逐步停运"，官方称此举是"统一 agentic coding 布局"，积累的经验将带入 Agent 优先开发平台 Antigravity；用户需在 11 月 11 日前完成所有会话、12 月 31 日前导出数据，Jules 历史不会自动迁移</li>
-      <li><strong>数据：</strong>11 月 11 日会话截止；12 月 31 日数据导出截止</li>
-      <li><strong>关键名词：</strong>Jules、Antigravity、异步编码 Agent、agentic coding</li>
-    </ul>
-    <div class="point">💡 看点：编码 Agent 从"多产品并跑"进入收敛整合期——工具选型要看平台的长期投入承诺，频繁换道的迁移成本正在成为隐性税。</div>
-  </div>
-
-  <div class="cat">💰 融资 & 并购</div>
-
-  <div class="card">
-    <h2>Sierra 完成 9.5 亿美元 E 轮，投后估值 158 亿美元</h2>
-    <ul>
-      <li><strong>时间：</strong>11月1日报道（周末消息）</li>
-      <li><strong>人物/机构：</strong>Sierra；创始人 Bret Taylor（OpenAI 董事长、前 Salesforce 联合 CEO）</li>
-      <li><strong>事件：</strong>企业级 AI Agent 公司 Sierra 完成 E 轮融资，媒体称估值 7 个月内翻倍，企业级 AI Agent 头部地位进一步巩固</li>
-      <li><strong>数据：</strong>E 轮 9.5 亿美元；投后估值 158 亿美元</li>
-      <li><strong>关键名词：</strong>企业级 AI Agent、E 轮、客户服务 Agent</li>
-    </ul>
-    <div class="point">💡 看点：在一二级市场同步收紧的当口还能估值翻倍，说明资金正向"有真实企业客户与计费场景"的 Agent 公司集中——纯讲故事的 Agent 创业窗口正在关闭。</div>
-  </div>
-
-  <div class="card">
-    <h2>DeepSeek 千亿融资细节曝光：1055 亿元、近 30 家机构参投</h2>
-    <ul>
-      <li><strong>时间：</strong>10月30日媒体报道</li>
-      <li><strong>人物/机构：</strong>DeepSeek；腾讯、宁德时代为最大出资方；产业资本含中芯国际、长鑫存储、vivo、美团、吉利、美的、立讯精密、携程、小红书等；国家级资本含中国移动、中国电信、中金、中信证券、中国人寿、国家人工智能产业投资基金等</li>
-      <li><strong>事件：</strong>第二轮融资细节浮出水面，共吸引近 30 家投资者，产业资本与国家级基金同场下注</li>
-      <li><strong>数据：</strong>募资 1055 亿元人民币（约 158 亿美元）；投后估值 6155 亿元人民币（约 860 亿美元）</li>
-      <li><strong>关键名词：</strong>产业资本、国家级 AI 基金、投后估值</li>
-    </ul>
-    <div class="point">💡 看点：出资名单横跨芯片、存储、手机、汽车、家电与消费平台——大模型公司正在变成"中国制造巨头共同的 AI 底座"，产业链以股权方式直接绑定 AI 能力。</div>
-  </div>
-
-  <div class="card">
-    <h2>港股 IBS 拟 5.63 亿港元收购 AI 芯片公司，切入边缘计算</h2>
-    <ul>
-      <li><strong>时间：</strong>10月31日</li>
-      <li><strong>人物/机构：</strong>港股上市公司 IBS；标的为 QuantumCompute Solutions</li>
-      <li><strong>事件：</strong>IBS 宣布有条件收购 QuantumCompute Solutions，借此进入 AI 芯片设计与边缘计算领域</li>
-      <li><strong>数据：</strong>收购对价 5.63 亿港元</li>
-      <li><strong>关键名词：</strong>AI 芯片设计、边缘计算、港股并购</li>
-    </ul>
-  </div>
-
-  <div class="cat">⚠️ 安全 & 治理</div>
-
-  <div class="card">
-    <h2>Chainalysis 披露遭"进攻性智能体技术"入侵，客户姓名邮箱泄露<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>10月31日向客户发函并公开披露；入侵发生于本月初</li>
-      <li><strong>人物/机构：</strong>Chainalysis（区块链分析公司，服务交易所、金融机构与执法部门）；未具名外部攻击者</li>
-      <li><strong>事件：</strong>攻击者使用"offensive agentic techniques"（进攻性智能体技术）获得其系统与内部工具的未授权访问，暴露平台用户 ID、全名、邮箱与组织角色标签；公司称未发现客户调查内容或认证密钥被访问的证据，仍在确认各组织受影响记录范围；同期其在追踪币安巨额被盗资金时发现，攻击者正利用自动化手段混淆资金路径、借 Tron 链上 DeFi 协议规避稳定币冻结</li>
-      <li><strong>数据：</strong>泄露字段：用户 ID、姓名、邮箱、组织角色标签</li>
-      <li><strong>关键名词：</strong>offensive agentic techniques、智能体攻击、数据泄露、稳定币冻结</li>
-    </ul>
-    <div class="point">💡 看点：首批以"AI Agent 作为攻击工具"名义披露的大型企业数据泄露之一——安全假设要升级：对手不再只是人，而是不知疲倦、可并发的 Agent；"AI 犯罪即服务"的门槛正在快速下降。</div>
   </div>
 
 </section>
