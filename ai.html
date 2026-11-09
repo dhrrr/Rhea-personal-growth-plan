@@ -136,7 +136,128 @@
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
 
-<section class="day-section active" id="day-2026-11-08">
+<section class="day-section active" id="day-2026-11-09">
+
+  <div class="cat">🚀 模型 &amp; 产品</div>
+
+  <div class="card">
+    <h2>Mistral 开源 1T 参数"Le Chonk"权重：免费商用的最强开源模型来了<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日（Mistral 官方、Hugging Face 同步发布）</li>
+      <li><strong>人物/机构：</strong>Mistral AI；Hugging Face；NVIDIA</li>
+      <li><strong>事件：</strong>Mistral Large 4（昵称"Le Chonk"）完整权重在 Hugging Face 发布，总参数约 1 万亿、每 token 激活约 500 亿、100 万 token 上下文窗口；欧洲基础设施从零训练，原生多模态 MoE 架构；许可证为修改版 MIT，允许免费使用、修改、微调、商用，仅提供 Model-as-a-Service 的公司需单独签商业协议；对比预览版新增三周 RL，Terminal-Bench 4.0 得分 41%（+13 点、输出 token 少 30%）；人工偏好盲测中击败 GLM-5.3、Kimi K3、DeepSeek V4.1 Flash，仅次于 Claude Opus 5.5；恶意请求拒答率 96.6%（开源模型最高），B3 智能体安全基准攻击抗性 97.1%</li>
+      <li><strong>数据：</strong>总参数 1T、激活 50B、上下文 1M；Terminal-Bench 41%；人工盲测第二名（次于 Claude Opus 5.5）；安全拒答率 96.6%</li>
+      <li><strong>关键名词：</strong>Mistral Large 4、Le Chonk、MoE、MIT 开源、Terminal-Bench、MaaS 商业协议</li>
+    </ul>
+    <div class="point">💡 看点：欧洲实验室第一次拿出"企业级可自托管"的开源旗舰——许可证是关键：免费商用条件宽、MaaS 除外，直接给全球企业私有化部署指了条路；编码+安全双强，意味着智能体编码与漏洞挖掘的开源部署栈刚补齐最上面的一环。</div>
+  </div>
+
+  <div class="card">
+    <h2>DeepMind 用 AI 把飓风预报提前一整天：28km 粗网格比传统细网格还准<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日（Nature 论文、DeepMind 博客同步）</li>
+      <li><strong>人物/机构：</strong>Google DeepMind；NOAA 国家飓风中心；英国气象办公室；CIRA</li>
+      <li><strong>事件：</strong>发表 Nature 论文展示 WeatherNext Cyclones 系统——热带气旋预报提前时间大幅超越传统模型，等于"十年气象学进步"；传统认知认为高精度分辨率是强度预报的关键，但 WeatherNext 只用 28km 分辨率（传统模型的 1/100）就达到同样精度；模型集成从 50 增至 1000 个成员，能捕捉 2025 年 Hurricane Melissa 那样的快速增强极端场景；全部开源：代码、模型权重、操作化版本 WeatherNext 2 与 111km 的 mini 版（单 TPU 可跑），气象机构可直接本地化部署</li>
+      <li><strong>数据：</strong>1000 成员集成；28km 分辨率 vs 传统高精度模型；完整开源；mini 版单 TPU 运行</li>
+      <li><strong>关键名词：</strong>WeatherNext Cyclones、Nature 论文、NOAA、预报提前时间、开源气象模型</li>
+    </ul>
+    <div class="point">💡 看点：AI 不只是"又一个工具"，是改写了气象学的精度-分辨率认知——28km 粗网格就够准，说明气象场的可预测结构比人类想象的更粗；"提前一整天"意味着沿海城市的疏散窗口翻倍，也是 AI 在硬核科学领域最有说服力的落地案例。</div>
+  </div>
+
+  <div class="card">
+    <h2>xAI 给 Grok API 默认加水印：欧盟 AI Act 合规，开发者要改的是流程不是代码</h2>
+    <ul>
+      <li><strong>时间：</strong>11月7日起正式生效，11月8日官方文档确认</li>
+      <li><strong>人物/机构：</strong>xAI（SpaceXSI）；欧盟 AI Act</li>
+      <li><strong>事件：</strong>Grok 系列 7 款模型（grok-4.7 到 grok-4.20）的 API 文本输出默认携带隐形统计水印；请求响应头 x-watermark 可验证；管理员可按模型选择退出，属于团队级操作且需确认法律豁免；此举是为了符合欧盟 AI Act 第 50(2) 条标注义务，距离 12 月 2 日最后期限还剩三周；是第一家把水印做成默认开启的前沿 API 提供商（Anthropic 此前只做公开实验）</li>
+      <li><strong>数据：</strong>覆盖 7 款 Grok 模型；默认开启、管理员级退出；12 月 2 日欧盟 AI Act 标注截止</li>
+      <li><strong>关键名词：</strong>xAI 输出水印、x-watermark header、欧盟 AI Act、第 50(2) 条、合规截止</li>
+    </ul>
+    <div class="point">💡 看点："默认开启水印"的设计很狠——开发者不能单关自己的模型，要管理员级别、还要法律确认；给所有欧盟区 API 提供商留了三周时间抄作业或找豁免，也是 AI Act 第一次真金白银地影响到开发者日常流程（日志与缓存层要保留 header 才能溯源）。</div>
+  </div>
+
+  <div class="cat">🧠 芯片 &amp; 算力</div>
+
+  <div class="card">
+    <h2>Anthropic 砸 34 亿美元买发电机：锁定 1.7GW 电力，比芯片还先抢电<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月7日报道（知情人士引述）</li>
+      <li><strong>人物/机构：</strong>Anthropic；OnePWR Solutions（得州圣安东尼奥）</li>
+      <li><strong>事件：</strong>Anthropic 与 OnePWR 达成约 34 亿美元协议，采购 1.7GW 重型燃气发电机组，全部用于数据中心供电；9 月下旬已签约，比 IPO 消息还早；同时还有消息称 Anthropic 在大量封号（推测是 API 滥用），官方称可通过申诉渠道复核；抢电而非抢芯片——电力成了 AI 基建的新瓶颈</li>
+      <li><strong>数据：</strong>34 亿美元；1.7GW 电力产能；OnePWR 得州圣安东尼奥工厂</li>
+      <li><strong>关键名词：</strong>数据中心电力、燃气发电、1.7GW、IPO 冲刺、算力电力绑定</li>
+    </ul>
+    <div class="point">💡 看点：Anthropic 在 IPO 前砸 34 亿锁电——说明 AI 基建的第一瓶颈已从 GPU 转向电力；芯片再贵是一次投入，电力是长期刚性成本，谁先锁电谁的算力成本曲线就赢一半；国内算力采购也要把电力可得性写进 RFP 评分项。</div>
+  </div>
+
+  <div class="card">
+    <h2>黄仁勋公开反对全面限制对华 AI 芯片出口：反对同行阿莫代伊极端主张</h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日（快科技等科技媒体报道）</li>
+      <li><strong>人物/机构：</strong>英伟达 CEO 黄仁勋；Anthropic CEO 达里奥·阿莫代伊（Dario Amodei）；美国国会</li>
+      <li><strong>事件：</strong>黄仁勋公开发声，明确反对 Anthrpic CEO 阿莫代伊提出的"全面禁止向中国出口美国 AI 芯片与半导体设备"的极端主张；黄仁勋认为美国科技企业应守住技术领先，但完全没必要通过极端出口管制扼杀全球 AI 市场；同时透露新一代 Vera Rubin 架构芯片已进入大规模量产阶段</li>
+      <li><strong>关键名词：</strong>黄仁勋、出口管制、Vera Rubin、半导体地缘、RASA 法案</li>
+    </ul>
+    <div class="point">💡 看点：行业大佬公开互怼罕见——阿莫代伊出于安全担忧要彻底封死，黄仁勋出于商业考量要留市场；出口管制的政策空间反而因为这种分歧而可能留缝，"远程租算力"灰色地带是否会被彻底堵死仍是变量。</div>
+  </div>
+
+  <div class="cat">💰 融资 &amp; 并购</div>
+
+  <div class="card">
+    <h2>Shield AI 25 亿融资 + 53 亿并购：防务 AI 公司估值翻倍到 288 亿美元<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月7日（Shield AI 官宣）</li>
+      <li><strong>人物/机构：</strong>Shield AI；Echodyne（雷达）；Disruptive、Innovation X Capital；黑石；摩根大通</li>
+      <li><strong>事件：</strong>Shield 宣布以 53 亿美元收购雷达厂商 Echodyne（48 亿交割 + 最高 5 亿业绩对赌）；同步完成 25 亿美元融资：10 亿 H 轮（投后 288 亿美元，Disruptive+Innovation X 领投）、10 亿黑石结构化股权、5 亿摩根大通债务——估值较 3 月 127 亿美元翻倍；Echodyne 固态雷达技术已集成到全球 40+ 国家的反无人机系统，新工厂年产 3 万台；Shield 自身 Hivemind  autonomy 软件、V-BAT/X-BAT 无人机 + X-BAT 无人战斗机原型（2029 量产）</li>
+      <li><strong>数据：</strong>融资 25 亿（估值 288 亿）；并购 53 亿；年产雷达 3 万台；估值翻倍（3 月 127 亿→11 月 288 亿）</li>
+      <li><strong>关键名词：</strong>Shield AI、Echodyne、固态雷达、反无人机、X-BAT 无人战斗机、防务 AI</li>
+    </ul>
+    <div class="point">💡 看点：防务 AI 在科技股暴跌日逆势融资翻倍——国防预算里反无人机是增长最快的品类，买雷达是把"感知层"钉死在自主无人机闭环里；供应链侧，机载/舰载 AI 需求正在从消费电子的算力红线里单独拉出来，雷达、导航、通信是新的高毛利赛道。</div>
+  </div>
+
+  <div class="cat">🧩 生态 &amp; 工具</div>
+
+  <div class="card">
+    <h2>Amazon 把 Agent 搬进短信：Alexa for Shopping 发短信就能买东西</h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日（Amazon 官方公告）</li>
+      <li><strong>人物/机构：</strong>Amazon；Alexa for Shopping</li>
+      <li><strong>事件：</strong>Alexa for Shopping 新增短信 Agent 渠道——美国用户现在可以直接发短信"狗粮没了，给我妹妹买生日礼物，纸巾快用完了"，Agent 会自动搜索商品、对比选项、消息回复建议、加入购物车并完成购买；支持 100+ 购物能力，包括图片识别配料表→购物清单、目标价位自动买入；已在 12 个月内触达 4 亿+ 用户，智能体功能使用率自 2026 年初增长 8 倍；9 月 Amazon 刚封过 Meta Muse 爬虫</li>
+      <li><strong>数据：</strong>4 亿+ 用户覆盖；Agent 使用率年增 8 倍；100+ 购物能力；9 月封过 Meta Muse</li>
+      <li><strong>关键名词：</strong>Alexa Shopping、短信 Agent、自主采购、Meta Muse 爬虫、智能体电商</li>
+    </ul>
+    <div class="point">💡 看点："发短信购物"把 Agent 入口从 App 搬进了消息框——未来的购物界面是对话不是搜索结果页；品牌方要让产品 feed、价格数据和物流策略变成"机器可读"的，不然 Agent 根本搜不到你；对 ERP 采购模块，AI Agent 自动比价与下单会是下一个必须对接的渠道。</div>
+  </div>
+
+  <div class="card">
+    <h2>Buoyant 开源 Kinference：Kubernetes 上给 vLLM 加个推理控制平面</h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日（Buoyant/GitHub 发布）</li>
+      <li><strong>人物/机构：</strong>Buoyant（Linkerd 母公司）；NVIDIA dynamo-kv-router</li>
+      <li><strong>事件：</strong>以 Apache 2.0 协议开源 Kinference——Kubernetes + vLLM 的推理控制平面，监控 KV-cache 事件与引擎指标，按策略、路由、负载均衡在多个推理端点间选择，用 gRPC 接口输出 OpenAI chat-completions 格式；配置走 Kubernetes CRD，kinfctl CLI 做策略校验，配合 Buoyant Gateway 代理；底层用 NVIDIA 的 dynamo-kv-router crate 处理 KV cache 事件；官方声称中位首 token 时间比裸 Kubernetes 低 95%（未独立验证）；当前 alpha 阶段，缺 Anthropic /v1/messages、限流、语义分类器与多副本</li>
+      <li><strong>数据：</strong>Apache 2.0；alpha 阶段；官方声称 P99 TTFT 降 95%；配合 Linkerd/Buoyant Gateway</li>
+      <li><strong>关键名词：</strong>Kinference、vLLM、KV-cache、推理控制平面、Apache 2.0、kfctl</li>
+    </ul>
+    <div class="point">💡 看点：Mistral 刚把权重开源，Buoyant 就把"推理集群调度"开源——企业自托管大模型的基础设施栈正在一片片补齐，从权重→推理 runtime→集群路由，每缺一片都是云厂商多收钱的地方；Linkerd 教过的"控制平面 + 声明式策略 > 脚本"正在复用到 AI 推理领域。</div>
+  </div>
+
+  <div class="cat">🚗 汽车 &amp; 具身智能</div>
+
+  <div class="card">
+    <h2>工信部公开征求《汽车数据安全要求》等五项强制性国家标准意见</h2>
+    <ul>
+      <li><strong>时间：</strong>11月8日（工信部装备工业一司官网，10月20日发布，征求意见截止 12 月 19 日）</li>
+      <li><strong>人物/机构：</strong>工业和信息化部装备工业一司；全国汽车标准化技术委员会</li>
+      <li><strong>事件：</strong>公开征求《汽车数据安全要求》《智能网联汽车 自动驾驶系统安全要求》等五项强制性国家标准的意见，由全国汽标委组织修订；其中《智能网联汽车 自动驾驶系统安全要求》（GB 44721-2026）已于 8 月发布、拟 2027 年 7 月 1 日正式实施；同期 11 月 1 日起《重庆市智能网联汽车发展促进条例》已施行，工信部 L3 级自动驾驶第二批准入试点正在推进</li>
+      <li><strong>数据：</strong>五项强制性国家标准；GB 44721-2026 自动驾驶安全要求 2027.7.1 实施；重庆条例 11月1日起施行</li>
+      <li><strong>关键名词：</strong>汽车数据安全、智能网联汽车、强制性国家标准、L3 准入、汽标委</li>
+    </ul>
+    <div class="point">💡 看点：智能网联汽车的"数据安全"和"功能安全"双线同时立标准——自动驾驶从路测走向量产，数据采集与上传的边界、OTA 升级后的安全兜底、人机交互的告知方式，都要有国标可循；Tier 1 供应商的合规清单会再长一截，汽车 EDI 系统也要适配强制性标准的数据字段。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-08">
 
   <div class="cat">🚀 模型 & 产品</div>
 
