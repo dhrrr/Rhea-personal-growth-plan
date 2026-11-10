@@ -125,7 +125,9 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-<button class="day-tab active" data-day="2026-11-09">11/9 周一</button>
+<button class="day-tab active" data-day="2026-11-10">11/10 周二</button>
+
+<button class="day-tab" data-day="2026-11-09">11/9 周一</button>
 <button class="day-tab" data-day="2026-11-08">11/8 周日</button>
   <button class="day-tab" data-day="2026-11-07">11/7 周六</button>
   <button class="day-tab" data-day="2026-11-06">11/6 周五</button>
@@ -136,7 +138,110 @@
 <div class="container">
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
-<section class="day-section active" id="day-2026-11-09">
+<section class="day-section active" id="day-2026-11-10">
+
+  <div class="cat">🌐 政策与出海</div>
+
+  <div class="card">
+    <h2>中美关税延期 2 个月：178 项对华 301 关税豁免延至 2027 年 1 月 9 日，双方同步生效<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>美东时间 11 月 6 日 USTR 公告，11 月 9 日到期的 178 项豁免延至 2027 年 1 月 9 日；中方自北京时间 11 月 10 日 13:01 起同步暂停 24% 对美加征关税 2 个月</li>
+      <li><strong>人物/机构：</strong>美国贸易代表办公室（USTR）；中国商务部美大司；特朗普政府</li>
+      <li><strong>事件：</strong>原定 11 月 9 日到期的 178 项对华 301 关税豁免延至 2027 年 1 月 9 日（美东时间 23:59）；同日中方公告自北京时间 11 月 10 日 13:01 起暂停 24% 对美加征关税 2 个月，保留 10% 对美加征关税税率；双方时点相互衔接。中方公告同时提及：如美方后续以 301 关税替代已被判决失效的《国际紧急经济权力法》措施，中方保留进一步反应权利；商务部希望后续磋商能讨论"各 300 亿美元或更多"产品对等降税框架</li>
+      <li><strong>数据：</strong>178 项豁免清单；如未延期清单内货物将恢复 7.5%-25% 附加关税；中方暂停 24% 加征关税 2 个月、保留 10%；潜在对等降税规模各 300 亿美元+</li>
+      <li><strong>关键名词：</strong>301 关税豁免、对等降税、300 亿美元框架、暂停实施 vs 保留税率</li>
+    </ul>
+    <div class="point">💡 看点：这次延期是"时间差 2 个月 + 税率分层暂停"的精巧设计——中方暂停 24% 但保留 10%，给自己留了后手；178 项清单主要涉及电子元器件、机械设备、化工原料等供应链中间品，这意味着中国制造业的进口成本压力可暂缓，但出口端的不确定性仍在。采购系统要紧急更新：对涉及这 178 项的原材料/部件，先确认清关时点是否落在豁免期内；同时把"13:01 生效"这个精确时间作为跨境订单的关键风险节点</div>
+  </div>
+
+  <div class="card">
+    <h2>欧盟 11 月 1 日起对 150 欧元以下跨境小包加收 2 欧元/类"联盟处理费"，强制 PID 申报同步实施<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 1 日起正式生效；赶在"黑五"、Cyber Monday 与圣诞网购旺季前夕</li>
+      <li><strong>人物/机构：</strong>欧盟税务与海关同盟（Taxation and Customs Union）；欧盟委员会；eBay、速卖通、Temu 等跨境平台</li>
+      <li><strong>事件：</strong>欧盟依据授权条例 (EU) 2026/2152，对境外直邮 B2C 小包（单件内在价值 ≤150 欧元）加征 2 欧元"联盟处理费"，按报关商品类别而非包裹数量收取；同时强制要求所有 B2C 小包在商品明细级别申报产品标识符（PID），分 M-PID（商家 SKU/货号）、C-PID（CE 合规标识）、U-PID（唯一产品编码）三类。这是欧盟继 7 月 1 日开征 3 欧元临时关税之后，四个月内第二次加码低值小包入境成本</li>
+      <li><strong>数据：</strong>2025 年进入欧盟低值小包平均申报价值仅 8.82 欧元；之前 7 月已征收 3 欧元/件临时关税；本次新增 2 欧元/类处理费；PID 强制申报自 11/1 起，此前 7/1 起可自愿申报</li>
+      <li><strong>关键名词：</strong>联盟处理费、PID 产品标识符、低值 B2C 小包、临时关税（3€ 至 2028/7/1）、欧盟海关改革</li>
+    </ul>
+    <div class="point">💡 看点：欧盟在低值小包上"7月3€ 关税 + 11月2€ 处理费 + PID 强制"的组合拳，直接把"5欧元T恤交5欧元税"的极端案例变成现实——这意味着低客单价的跨境卖家正在被系统性挤出欧盟市场。ERP 供应链产品做跨境模块时，必须支持：PID 字段在商品主数据里的原生管理、欧盟订单的"关税+处理费"双维度自动试算、以及按欧盟新规则的数据校验；采购/寻源环节要优先考虑"非欧盟直邮"替代方案</div>
+  </div>
+
+  <div class="cat">📊 行业报告 &amp; 数据</div>
+
+  <div class="card">
+    <h2>安永联合中物联发布《中国供应链发展报告 2025-2026》+《全球供应链发展趋势蓝皮书 2026》：物流 AI 渗透率超 37%，运输环节达 78%<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月上旬同步发布；安永大中华区官网转载；第七届供应链管理年会（厦门）同期发布</li>
+      <li><strong>人物/机构：</strong>安永（中国）企业咨询有限公司；中国物流与采购联合会（中物联）；供应链战略专家宋华（解读嘉宾）</li>
+      <li><strong>事件：</strong>两份年度权威报告同时发布。《中国供应链发展报告 2025-2026》指出：2025 年中国供应链领域 AI 应用加速落地，物流供应链领域 AI 渗透率超过 37%，其中运输环节 78% 居首位，安全合规 52.73%，智能仓储 47.27%；采购领域采用智能采购供应链的企业效率提升显著。《全球供应链发展趋势蓝皮书 2026》聚焦数智化转型、供应链韧性与绿色低碳三大主线。供应链专家宋华提出"从数字供应链向 AI 原生供应链"的三阶段演进框架：数字→数智→AI 原生（架构/数据/决策/组织四维度同步原生构建）</li>
+      <li><strong>数据：</strong>物流供应链 AI 应用渗透率 37%+；运输环节 78%、安全合规 52.73%、智能仓储 47.27%；中国供应链正迈向"全球供应链枢纽"定位</li>
+      <li><strong>关键名词：</strong>AI 原生供应链、三阶段演进、数据底座层→决策引擎层→应用层架构、绿色低碳、供应链枢纽</li>
+    </ul>
+    <div class="point">💡 看点：这两份报告是当前国内供应链数字化最权威的行业基线数据——"运输 78% vs 其他环节 30-50%"的渗透率断层意味着：AI 在物流场景已进入"真金白银"阶段，但在采购、计划、库存等 ERP 核心环节仍有巨大落地空间。产品经理做 SCM 模块的 AI 功能规划时，可以参考宋华的三层架构思路：先把数据底座打通（不是做 Agent），再在决策引擎上叠加 AI 能力，最后才是 Agent 编排层</div>
+  </div>
+
+  <div class="card">
+    <h2>全球 SCM 软件市场 2026 年营收 359 亿美元，2036 年预计达 1096 亿美元，年复合增长率 11.8%</h2>
+    <ul>
+      <li><strong>时间：</strong>Future Market Insights 最新报告（2026 年 Q4）</li>
+      <li><strong>人物/机构：</strong>Future Market Insights（FMI）</li>
+      <li><strong>事件：</strong>FMI 发布全球供应链管理（SCM）软件市场预测报告，覆盖计划、采购与执行三大板块的订阅型软件。报告指出 SCM 软件正受益于 AI 原生架构迁移、供应链韧性投资和数字化采购三大驱动因素，市场从 2026 年起进入加速增长期</li>
+      <li><strong>数据：</strong>2026 年全球 SCM 软件营收约 359 亿美元；2036 年预计达 1096 亿美元；2026-2036 年复合年增长率（CAGR）11.8%</li>
+      <li><strong>关键名词：</strong>订阅型软件、计划-采购-执行、AI 原生架构、韧性投资</li>
+    </ul>
+  </div>
+
+  <div class="cat">🤖 供应链科技 &amp; AI</div>
+
+  <div class="card">
+    <h2>Docusign 收购 Suplari，把 AI 采购智能直接嵌入电子合同平台</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 3 日宣布收购，11 月 4-5 日多家供应链媒体报道</li>
+      <li><strong>人物/机构：</strong>Docusign（电子签名与智能合同管理平台，Nasdaq: DOCU）；Suplari（AI 驱动采购智能创企）</li>
+      <li><strong>事件：</strong>Docusign 完成对 Suplari 的收购，将后者的 AI 采购情报能力整合进自身 Intelligent Agreement Management（IAM）平台，实现"合同条款 ↔ 采购支出数据 ↔ 供应商风险"三者的关联分析。Suplari 技术可帮助企业识别采购节约机会、管理供应商风险、做出更好的采购决策，收购后 Docusign 的 IAM 平台将直接具备跨合同与支出数据的智能洞察能力</li>
+      <li><strong>关键名词：</strong>合同-支出关联、供应商风险识别、Intelligent Agreement Management、电子合同 → 采购闭环</li>
+    </ul>
+    <div class="point">💡 看点：Docusign 从"电子签名工具"向"合同-采购-风控一体化平台"演进的路径值得国内 ERP 参考——合同管理模块如果能直接联动 SRM/采购模块的供应商支出与风险数据，就能从"归档容器"变成"决策入口"。国内 ERP 的合同管理普遍偏弱，这个方向有很大的产品机会</div>
+  </div>
+
+  <div class="card">
+    <h2>IBM + SELCO 基于 watsonx 联合推出智能体供应链情报平台：多 Agent 协同覆盖从原料采购到终端交付</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 9 日（今天凌晨）IBM 中东非新闻社官宣</li>
+      <li><strong>人物/机构：</strong>IBM（watsonx 平台）；SELCO（大型制造与供应链集团）</li>
+      <li><strong>事件：</strong>IBM 与 SELCO 宣布合作开发下一代供应链情报平台，基于 IBM watsonx，通过多个专业 AI Agent 协同工作，覆盖从原材料采购、生产排程、质量监控到最终交付的全链路。方案核心是"多 Agent 编排"——不同 Agent 各自负责采购、物流、质量等专业领域，协同做出决策</li>
+      <li><strong>关键名词：</strong>watsonx、多 Agent 编排、供应链情报平台、agentic AI、协同决策</li>
+    </ul>
+  </div>
+
+  <div class="cat">🏢 ERP 厂商动态</div>
+
+  <div class="card">
+    <h2>Workday 连续第五年获评 Gartner《服务中心型企业云 ERP》魔力象限领导者；将于 11 月 24 日公布 Q3 财报</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 5 日，Gartner 发布 2026 年报告，Workday 同日官方宣布</li>
+      <li><strong>人物/机构：</strong>Workday（Nasdaq: WDAY）；Gartner（面向服务中心型企业，含专业服务、IT 服务、人员派遣、托管运营）</li>
+      <li><strong>事件：</strong>Workday 连续第五年跻身 Gartner 魔力象限领导者梯队。Workday 指出客户采购方式正发生结构性变化——从"买工时"转向"买结果"（如固定月租的托管运营服务、固定范围的项目交付等），这一趋势在专业服务、IT 服务、人员派遣行业尤为明显。Workday 将于 11 月 24 日美股盘后公布 2027 财年第三季度财报</li>
+      <li><strong>数据：</strong>2027 财年 Q3 财报将于 11 月 24 日盘后公布；Workday Q1 结束时市值约 540 亿美元</li>
+      <li><strong>关键名词：</strong>服务中心型 ERP、按结果计费 vs 按工时、托管运营、agentic 平台（Workday 定位自身为"trusted agentic platform"）</li>
+    </ul>
+    <div class="point">💡 看点："从买工时到买结果"是专业服务行业 ERP 产品设计的底层变化——系统要能按"结果交付物"而非"工时日志"来做项目结算与收入确认，这对 ERP 的财务收入模块和项目管理模块都提出了新需求。国内做专业服务、外包行业的 ERP 厂商可以重点关注这个趋势</div>
+  </div>
+
+  <div class="card">
+    <h2>Ivalua 与 Altares Dun &amp; Bradstreet 合作：D&amp;B MCP Server 把企业信用情报直连 AI 采购工作流</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 2 日，Ivalua 官网公告</li>
+      <li><strong>人物/机构：</strong>Ivalua（AI 驱动的企业采购平台）；Altares Dun &amp; Bradstreet（D&amp;B 企业信用情报机构）</li>
+      <li><strong>事件：</strong>双方合作将 D&amp;B 的可信企业情报通过 MCP Server 直接接入 Ivalua 的 AI 采购工作流。集成后，AI Agent 在做供应商评估、比价、风险筛查时可实时调取 D&amp;B 的信用评级、财务数据、合规记录等外部信息，帮助采购团队更快、更有信心地做出供应商决策</li>
+      <li><strong>关键名词：</strong>D&amp;B MCP Server、企业外部情报接入、AI 采购、供应商评估自动化、可信数据治理</li>
+    </ul>
+    <div class="point">💡 看点：这是 MCP（Model Context Protocol）在供应链场景的又一落地——把第三方权威数据（D&amp;B 信用）通过 MCP Server 接入 AI Agent 工作流，让 Agent 的供应商决策从"只读内部数据"变成"内外数据结合"。国内 ERP 做 AI 采购时，MCP Server 是连接内部系统和外部数据的关键中间层，可以对接天眼查/企查查（国内）、D&amp;B/Greenwood（海外）等</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-09">
 
   <div class="cat">🏢 ERP 厂商动态</div>
 
