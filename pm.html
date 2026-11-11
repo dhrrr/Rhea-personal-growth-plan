@@ -125,20 +125,116 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-<button class="day-tab active" data-day="2026-11-10">11/10 周二</button>
+<button class="day-tab active" data-day="2026-11-11">11/11 周三</button>
+
+<button class="day-tab" data-day="2026-11-10">11/10 周二</button>
 
 <button class="day-tab" data-day="2026-11-09">11/9 周一</button>
 <button class="day-tab" data-day="2026-11-08">11/8 周日</button>
   <button class="day-tab" data-day="2026-11-07">11/7 周六</button>
   <button class="day-tab" data-day="2026-11-06">11/6 周五</button>
   <button class="day-tab" data-day="2026-11-05">11/5 周四</button>
+
 </div>
 <!-- /DAY-TABS -->
 
 <div class="container">
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
-<section class="day-section active" id="day-2026-11-10">
+<section class="day-section active" id="day-2026-11-11">
+
+  <div class="cat">🏭 供应链科技 &amp; AI</div>
+
+  <div class="card">
+    <h2>SAP × AstraZeneca 扩展 20 年合作：启动全量 RISE with SAP Cloud ERP 迁移 + Business AI 全景探索<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 10 日官宣（Walldorf，德国）</li>
+      <li><strong>人物/机构：</strong>SAP SE（首席客户官 Thomas Saueressig）；AstraZeneca（全球生物制药公司，CIO Chris Taylor）</li>
+      <li><strong>事件：</strong>AstraZeneca 启动"Axial 业务转型计划"，将全集团 SAP 系统从 ECC 迁移到 RISE with SAP Cloud ERP Private，同时引入 SAP Business AI 全家桶——Industry AI 行业 AI、Joule 助手、金融/供应链/制造三大领域 Agentic 用例。两家已合作 20 年，本次是生命科学领域规模最大的 SAP 云端迁移之一。同步探索 SAP Business Data Cloud（建立统一数据核心）与 SAP Green Ledger（供应链可持续数据连通）</li>
+      <li><strong>关键名词：</strong>RISE with SAP、SAP Cloud ERP Private、Business AI、Joule、Agentic 用例、Axial Transformation、SAP Green Ledger</li>
+    </ul>
+    <div class="point">💡 看点：AstraZeneca 把"云迁移 + AI 全栈探索"打包在一个"Axial"品牌下推进——这给国内大型企业 ERP 转型提供了参考模板：不是先上云再谈 AI，而是把两者作为同一个战略动作的两个不可分割的维度。SAP Joule + Industry AI + Agentic 三件套的组合打法，也是 ERP 厂商"把 AI 卖进核心业务"的典型案例</div>
+  </div>
+
+  <div class="card">
+    <h2>State Electric 在 Infor ERP 上叠加 AI，意外发现 40% 采购订单行跳过审批流程</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 3-10 日 ERP Today / Bruno Digital 深度报道</li>
+      <li><strong>人物/机构：</strong>State Electric Supply（美国电气分销商，42 个门店）；Infor（CloudSuite Distribution 客户）</li>
+      <li><strong>事件：</strong>State Electric 在已运行的 Infor CloudSuite Distribution 上，用 Infor Velocity Suite 原生 AI 工具（而非第三方）快速叠加了 5 个用例：AI 库存再平衡、订单录入时的产品推荐、替代月度矩阵的 AI 动态定价、AP 发票自动化、以及 Infor Process Mining。部署周期从多季度缩短到按月交付。最意外的收获是 Process Mining 发现：40% 采购订单行未走规定审批流程，且存在"先建发票再建 PO"的流程倒挂——这个控制缺陷此前完全隐形</li>
+      <li><strong>数据：</strong>5 个 AI 用例部署；库存 AI 每年节省 ~2,200 工时；AP 自动化后 ~1,500 工时/年节省；定价覆盖减少 40%；利润率提升 1 个百分点；40% PO 审批跳过率；问题定位速度提升 86%；调查资源减少 50%</li>
+      <li><strong>关键名词：</strong>Infor Velocity Suite、CloudSuite Distribution、Process Mining、原生 AI vs 第三方集成、采购审批绕过（PO Approval Bypass）</li>
+    </ul>
+    <div class="point">💡 看点：这个案例给 ERP 产品经理一个重要提醒——AI 叠加不是为了"炫技提效"，而是为了"看见之前看不见的问题"。Process Mining 在这个故事里不是 AI 的"附属功能"，而是验证自动化是否真的"合规运行"的必备前置。国内 ERP 做 AI 采购/AP 模块时，一定要把"流程合规校验"做成 AI 的标配，而不是 AI 上线后才去补的审计环节</div>
+  </div>
+
+  <div class="card">
+    <h2>project44 联合 Snowflake Cortex AI 发布供应链 AI 分析师 Mo：1 万亿物流记录 × 业务语义层 = 准确率 10/10 vs 通用 LLM 2/10</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 10 日 14:00 GMT，芝加哥官宣</li>
+      <li><strong>人物/机构：</strong>project44（供应链决策智能平台，CEO Jett McCandless）；Snowflake（AI 数据云）；Ford Motor（已使用 Mo 的客户）</li>
+      <li><strong>事件：</strong>project44 与 Snowflake Cortex AI 深度集成，推出供应链 AI 分析师 Mo。Mo 基于 project44 积累 10 年的约 1 万亿条物流记录 + 自建"物流本体（Ontology）"和客户专属业务语义层，先用 Cortex Analyst 把自然语言问题翻译成结构化 SQL 再返回数据。内部测试显示：准确率 Mo 10/10 vs 通用 LLM 2/10；一致性 Mo 10 次相同答案 vs LLM 2 次；响应速度快 2.5 倍。目前 210 家客户在用 Mo，已回答 50,000+ 问题</li>
+      <li><strong>数据：</strong>1 万亿历史物流记录；210 家 Mo 用户；50,000+ 已回答问题；D&amp;D（滞期费）单客户 600 万美元减少；营运资金单问题释放 20 万美元；中断管理单项目节省 75 万美元</li>
+      <li><strong>关键名词：</strong>project44 Mo、Snowflake Cortex AI、物流本体 Ontology、业务语义层、Cortex Analyst、通用 LLM vs 垂直语义 Agent</li>
+    </ul>
+    <div class="point">💡 看点：project44 的策略揭示了供应链 AI Agent 一个"反常识"的底层逻辑——**不是模型越大越好，而是垂直领域的"数据语义层"越厚越准**。Mo 能做到 10/10 准确率，核心不是用了哪个强 LLM，而是因为它先把"On-Time Performance 到底怎么算"这种每家客户都不一样的业务规则做成了结构化语义层。国内做供应链 AI 的团队，应该优先建设自己领域的"数据本体 + 语义层"，而不是急着接更大的模型</div>
+  </div>
+
+  <div class="cat">📊 行业报告 &amp; 数据</div>
+
+  <div class="card">
+    <h2>MarketsandMarkets 预测：Agentic AI 供应链管理市场 2032 年达 880 亿美元，2026-2032 CAGR 74%</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 Q4 最新发布的研究报告</li>
+      <li><strong>人物/机构：</strong>MarketsandMarkets（全球市场研究机构）</li>
+      <li><strong>事件：</strong>报告首次独立量化"Agentic AI × SCM"这个新兴市场。核心观点：供应链正在经历一个"结构性断裂"——从"检测中断"到"执行纠正动作"之间的时间差被 Agentic AI 彻底压缩。研究覆盖计划、采购、物流、执行、风险五大应用场景，分软件供应商、系统集成商、咨询商三个角色</li>
+      <li><strong>数据：</strong>2025 年全球 Agentic AI SCM 市场约 18.5 亿美元；2032 年预计达 880 亿美元；2026-2032 复合年增长率（CAGR）74%</li>
+      <li><strong>关键名词：</strong>Agentic AI SCM、结构性断裂（Structural Break）、检测→执行时间差压缩、五大应用场景</li>
+    </ul>
+    <div class="point">💡 看点：74% CAGR 的数字看起来激进，但考虑到 SCM 软件整体 CAGR 是 11.8%（FMI 数据），Agentic AI 子赛道确实处于爆发前夜。对 ERP 产品经理来说，这个数据的意义在于：如果你所在团队还没有 Agentic SCM 的 Roadmap，竞品大概率已经在做——市场天花板已经被行业报告锚定，产品规划要快速跟进</div>
+  </div>
+
+  <div class="card">
+    <h2>甲子光年发布《2026 Agent 商业化与竞争研究报告》，洞隐科技入选供应链 Agent 行业图谱</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月上旬发布</li>
+      <li><strong>人物/机构：</strong>甲子光年智库；洞隐科技（DeepInsights，供应链科技公司）</li>
+      <li><strong>事件：</strong>甲子光年发布年度 Agent 行业研究报告，核心观点：Agent 行业正从"回答问题"阶段走向"执行任务"阶段，商业价值的关键在于"技术能力能否转化为持续有效的工作成果"。供应链领域 Agent 是报告重点关注的垂直赛道之一，国内供应链科技公司洞隐科技凭借"DI.AI 平台 + POD 回单审核 Agent"案例入选 Agent 行业图谱</li>
+      <li><strong>关键名词：</strong>Agent 商业化阶段演进、技术→工作成果转化、供应链 Agent、DI.AI 平台、POD 回单审核</li>
+    </ul>
+  </div>
+
+  <div class="cat">🏛 政策与合规</div>
+
+  <div class="card">
+    <h2>商务部 11 月 10 日核发 5 份货物自动进口许可：多家供应链企业进口合规通道正式打通</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 10 日（官方公示）</li>
+      <li><strong>人物/机构：</strong>商务部；江苏恒森泓霖供应链、中灏国际供应链（天津）、福建平贸供应链、立胜汽车科技（苏州）等 5 家企业</li>
+      <li><strong>事件：</strong>商务部公开公示 11 月 10 日核发的 5 份货物自动进口许可，涉及供应链管理、跨境供应链、汽车科技等不同行业。货物自动进口许可是中国进口管理体系中的基础性合规资质——企业取得后可按规定开展对应品类货物的自动进口业务，标志着其进口合规体系通过监管部门全流程审核</li>
+      <li><strong>数据：</strong>5 份许可同日核发；涉及江苏、天津、福建、苏州等地企业</li>
+      <li><strong>关键名词：</strong>货物自动进口许可、进口合规资质、监管全流程审核</li>
+    </ul>
+    <div class="point">💡 看点：自动进口许可的批量核发说明一个趋势——监管部门正在加速供应链企业的进口合规资质审核效率。ERP 采购/进口模块可以考虑：把"自动进口许可有效期、适用品类、监管证号"做成商品主数据的原生字段，在创建进口采购订单时自动校验合规状态，避免因资质过期导致清关受阻</div>
+  </div>
+
+  <div class="cat">📦 物流仓储</div>
+
+  <div class="card">
+    <h2>零食很忙贵阳数智化仓配中心上线：WMS 系统直接联动千余家门店补货，销售数据自动转补货清单</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 6 日（贵州日报报道）</li>
+      <li><strong>人物/机构：</strong>零食很忙（全国零食连锁品牌，1,000+ 门店）；贵州双龙航空港经济区数智化供应链仓配中心</li>
+      <li><strong>事件：</strong>零食很忙贵阳仓配中心全面启用数智化系统，门店店长通过移动端提交补货需求时，系统自动根据近几天销售数据生成"建议补货清单"，订单从门店提报到集团 WMS 系统后，WMS 自动判断就近调拨或更大区域仓补位，并在数十秒内完成订单分流。这是"门店销售数据 → 自动补货建议 → WMS 智能分流"完整链路的成功落地</li>
+      <li><strong>数据：</strong>千余家门店接入；订单从门店到 WMS 分流耗时数十秒</li>
+      <li><strong>关键名词：</strong>WMS 智能分流、门店销售数据驱动补货、数智化仓配中心、区域仓调拨</li>
+    </ul>
+    <div class="point">💡 看点：零食很忙的实践展示了 WMS 与门店端数据打通的真实效果——补货效率不再取决于店长"凭经验提报"，而是销售数据驱动的自动化决策。对 ERP 产品来说，这意味着 WMS 模块不能只做"仓储内部作业管理"，还要往前延伸到门店补货协同层，往后衔接运输调度层，形成"门店-仓储-运输"三位一体的端到端闭环</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-10">
 
   <div class="cat">🌐 政策与出海</div>
 
