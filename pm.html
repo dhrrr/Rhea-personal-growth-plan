@@ -125,7 +125,8 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-<button class="day-tab active" data-day="2026-11-12">11/12 周四</button>
+<button class="day-tab active" data-day="2026-11-13">11/13 周五</button>
+<button class="day-tab" data-day="2026-11-12">11/12 周四</button>
 <button class="day-tab" data-day="2026-11-11">11/11 周三</button>
 
 <button class="day-tab" data-day="2026-11-10">11/10 周二</button>
@@ -133,7 +134,6 @@
 <button class="day-tab" data-day="2026-11-09">11/9 周一</button>
 <button class="day-tab" data-day="2026-11-08">11/8 周日</button>
   <button class="day-tab" data-day="2026-11-07">11/7 周六</button>
-  <button class="day-tab" data-day="2026-11-06">11/6 周五</button>
 
 </div>
 <!-- /DAY-TABS -->
@@ -141,7 +141,101 @@
 <div class="container">
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
-<section class="day-section active" id="day-2026-11-12">
+<section class="day-section active" id="day-2026-11-13">
+
+  <div class="cat">🏢 ERP 厂商动态</div>
+
+  <div class="card">
+    <h2>Infor × Anthropic 发布 Industry AI for Claude：ERP 操作从"查询"走向"对话执行"<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 12 日（PR Newswire，芝加哥）</li>
+      <li><strong>人物/机构：</strong>Infor（制造业 ERP 核心系统厂商）；Anthropic</li>
+      <li><strong>事件：</strong>双方宣布合作推出 Infor Industry AI for Claude，制造业员工可在 Claude 对话中直接查询 Infor 行业应用数据，并对业务记录执行"经审批"的操作；官方示例场景：钢料发运延误两周时，采购员（Buyer）在 Claude 里即可查清受影响的客户订单并推进应对。同日 Anthropic 发布 Claude for Manufacturing 插件，内置制造场景技能，可对接 Oracle NetSuite、Infor M3、Microsoft 365、Autodesk Fusion 等</li>
+      <li><strong>数据：</strong>Claude for Manufacturing 首发约 17 个技能；Infor 连接器首批仅面向部分 Infor Velocity Suite 客户开放</li>
+      <li><strong>关键名词：</strong>Infor Industry AI for Claude、Claude for Manufacturing、Agentic ERP、写操作审批护栏、Velocity Suite</li>
+    </ul>
+    <div class="point">💡 看点：这是"大模型直接操作 ERP 业务记录"的标志性落地——现有权限体系 + 显式审批构成护栏，先查询、再放开写操作，是 agentic ERP 的渐进路线。国内 ERP/SRM 的 Copilot 多数还停在"只读问答"，可以参考这个"会话内查+办一体化"的产品形态，以及它选择从 buyer/planer 高频场景切入的思路</div>
+  </div>
+
+  <div class="card">
+    <h2>用友入选 Gartner 2026 产品导向型企业云 ERP 魔力象限"荣誉提及"</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 10 日（用友官方发布）</li>
+      <li><strong>人物/机构：</strong>Gartner；用友；同期领导者象限：SAP、Oracle、Microsoft</li>
+      <li><strong>事件：</strong>Gartner 发布 2026 年《Magic Quadrant for Cloud ERP for Product-Centric Enterprises》（面向产品导向型企业云 ERP 魔力象限），用友入选荣誉提及（Honorable Mention）。用友称 AI 时代 ERP 正从"记录业务"走向智能运营，以数智化能力参与全球评估</li>
+      <li><strong>关键名词：</strong>Honorable Mention、Product-Centric Cloud ERP、用友 BIP、Gartner 魔力象限</li>
+    </ul>
+    <div class="point">💡 看点：与 11 月 6 日 Microsoft 登顶领导者象限是同一份报告——全球云 ERP 的评价坐标系已把"AI 能力 + 面对关税/供应链波动的适应性"纳入核心维度。国内厂商拿到"荣誉提及"是出海背书的第一步；对产品经理来说，按 MQ 的 Execute/Vision 双维拆解自家产品差距清单，比闭门造 roadmap 更有效</div>
+  </div>
+
+  <div class="card">
+    <h2>马士基本周末完成 SAP S/4HANA 切换：11/13-11/15 开票延迟，11/16 起发票模板变更</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 13 日至 15 日切换窗口，11 月 16 日起新模板生效</li>
+      <li><strong>人物/机构：</strong>Maersk（全球集装箱航运巨头）；SAP</li>
+      <li><strong>事件：</strong>马士基宣布本月完成向 SAP S/4HANA 的系统迁移，11/13-11/15 期间发票开具出现延迟，11/16 起发票 PDF 模板更新，新增税务时点（tax point date）与税务规格表；已提前向全球客户与供应商发出通知</li>
+      <li><strong>数据：</strong>3 天切换窗口（11/13-15）；11/16 新发票模板生效</li>
+      <li><strong>关键名词：</strong>SAP S/4HANA、ECC→S/4 迁移、发票模板变更、tax point date、财务停机窗口</li>
+    </ul>
+    <div class="point">💡 看点：继 INPEX 之后又一个物流行业巨头切换 S/4HANA——巨头迁移的"停机窗口"会直接冲击下游企业的对账、收票与回款节奏。ERP 产品经理要意识到：大客户的系统切换期是供应商协同模块的高危时刻，"宽限期提醒 + 发票格式变更预警"应该成为供应商门户的标配能力</div>
+  </div>
+
+  <div class="cat">🤖 供应链科技 &amp; AI</div>
+
+  <div class="card">
+    <h2>中兴通讯"数字员工"上岗仓储：智能体把月拣选距离从 40 多万米降到 16 万米<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 13 日（新浪财经等媒体报道）</li>
+      <li><strong>人物/机构：</strong>中兴通讯副总裁周建峰；中兴通讯智能工厂基地</li>
+      <li><strong>事件：</strong>智能体加速走进制造供应链：中兴的仓储优化智能体在夜间无拣料任务时，按第二天的生产订单优化编排，把高频使用的物料提前挪到拣货近端，月拣选距离大幅下降；基地已有 80 多名"数字员工"跑在业务线上，有的排生产计划、有的盯仓储优化。AI 智能体正从演示走向千行百业的日常运营</li>
+      <li><strong>数据：</strong>月拣选距离从 40 多万米降至 16 万米（降幅约六成）；基地 80+ 名数字员工在岗</li>
+      <li><strong>关键名词：</strong>数字员工、仓储优化智能体、Agentic AI、生产计划编排、拣选路径优化</li>
+    </ul>
+    <div class="point">💡 看点："夜里自动搬料"是典型的"小切口 + 数据闭环 + 收益可量化"智能体场景，比"全能供应链大脑"更容易落地和算清 ROI。做供应链 AI 功能时，优先找"决策规则清晰、结果可测量"的环节切入，先赢一个可验证的小战场，再横向扩展</div>
+  </div>
+
+  <div class="card">
+    <h2>京东物流新疆大型无人机货运航线首次投入双 11，时效较陆运提升近 1 倍</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 9 日（京东物流官网发布）</li>
+      <li><strong>人物/机构：</strong>京东物流</li>
+      <li><strong>事件：</strong>京东物流开通新疆大型无人机货运航线，行业首次将大型无人机货运投用于双 11 大促场景，时效较陆运提升近 1 倍；其 AI 新成果也在 11.11 场景全面应用，低空物流开始从试点进入实战</li>
+      <li><strong>数据：</strong>时效较陆运提升近 1 倍；行业首次投入双 11 实战</li>
+      <li><strong>关键名词：</strong>大型无人机货运、低空物流、双 11 旺季保障、时效提升</li>
+    </ul>
+    <div class="point">💡 看点：无人机从"试点表演"进入"大促实战"，偏远/地形受限区域的履约时效模型要重算——ERP 的物流时效预估、运费计算与履约承诺模块，未来需要支持"多运输方式动态择优"，而不是按固定干线模板算时效</div>
+  </div>
+
+  <div class="cat">📦 物流与供应链</div>
+
+  <div class="card">
+    <h2>长荣时隔近三年重返苏伊士：红海 OGRD 航线 11/12 复航，吉达等港口恢复直挂<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11 月 8 日"Ever Eon"轮通过苏伊士运河；11 月 12 日中国—红海 OGRD 航线自青岛复航</li>
+      <li><strong>人物/机构：</strong>长荣海运；苏伊士运河管理局（主席 Rabiee 到场迎船）；Linerlytica（航运分析机构）</li>
+      <li><strong>事件：</strong>长荣旗下 16556TEU 的"Ever Eon"轮 11/8 作为北向船队成员通过苏伊士运河（从荷兰驶往新加坡），是长荣自 2024 年 1 月红海危机以来首艘走苏伊士的船舶；11/12 起由 7024TEU 的"Ever Superb"轮自青岛启航，重启中国—红海 OGRD 航线，吉达、苏赫纳、亚喀巴恢复直挂——此前三年中国至红海沿岸货物多需在新加坡或杰贝阿里中转，直航恢复后少一道装卸、少一次货损、在途时间缩短数日。长荣由此成为海洋联盟（Ocean Alliance）中最后一个恢复苏伊士航线服务的成员</li>
+      <li><strong>数据：</strong>时隔近 3 年首次复航；两船 16556TEU / 7024TEU；直航省去一次中转装卸</li>
+      <li><strong>关键名词：</strong>苏伊士运河复航、红海危机、OGRD 航线、海洋联盟、直挂 vs 中转</li>
+    </ul>
+    <div class="point">💡 看点：航运巨头集体回归苏伊士，红海常态化复航进程过半——中东、欧洲方向采购的头程交期与运价都会重构。采购与 ERP 团队要同步更新"标准交期表"和头程时效参数，与供应商的到货承诺（尤其涉及红海沿岸港口）需重新对齐，避免按危机时期的保守交期多备库存</div>
+  </div>
+
+  <div class="cat">📊 行业报告 &amp; 数据</div>
+
+  <div class="card">
+    <h2>Hapag-Lloyd 三季度利润跳升并上调全年指引；美国中期选举为贸易前景添变数</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 12 日（FreightWaves）</li>
+      <li><strong>人物/机构：</strong>Hapag-Lloyd（德国集装箱航运巨头）；FreightWaves</li>
+      <li><strong>事件：</strong>Hapag-Lloyd 发布三季度财报，利润大幅增长并上调全年盈利指引，驱动因素是运价走强、货量大体持平；同期美国中期选举结果落地，为贸易政策前景增添不确定性，跨太平洋海运费率维持高位、进口量有所放缓</li>
+      <li><strong>数据：</strong>Q3 利润大幅增长、全年指引上调；跨太平洋运价保持高位</li>
+      <li><strong>关键名词：</strong>跨太平洋运价、中期选举与贸易政策不确定性、旺季费率</li>
+    </ul>
+    <div class="point">💡 看点：运价与关税是采购成本的两大外部数据输入，政策摇摆意味着"点估计"式成本测算会频繁失真——进口贸易型 ERP 用户更需要"情景化成本模拟"（不同关税/运价假设下的到岸成本对比），而不是单一税率模板</div>
+  </div>
+
+</section>
+<section class="day-section" id="day-2026-11-12">
 
   <div class="cat">🏭 ERP 厂商动态</div>
 
@@ -796,109 +890,6 @@
   </div>
 
 </section>
-<section class="day-section" id="day-2026-11-06">
-
-  <div class="cat">🏢 ERP 厂商动态</div>
-
-  <div class="card">
-    <h2>Gartner 首份"供应链 AI Agent"象限：SAP 获评 Market Shaper，行业评价框架从工具走向智能体<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月初，Gartner 发布其最新的供应链 AI Agent 评价象限报告</li>
-      <li><strong>人物/机构：</strong>Gartner；SAP SE</li>
-      <li><strong>事件：</strong>Gartner 首次在供应链领域发布 AI Agent 专项象限，将 SAP 定位为 Market Shaper（市场塑造者），称 SAP 正通过 Joule Assistants、Autonomous Supply Chain Management 等能力把 Business Network 打造成跨组织的智能执行层；Gartner 认为行业对供应链 AI 的评价逻辑正在从"单点工具效果"转向"多智能体协调系统的端到端价值"</li>
-      <li><strong>关键名词：</strong>Gartner 新兴技术象限、Market Shaper、Autonomous SCM、多智能体协调</li>
-    </ul>
-    <div class="point">💡 看点：Gartner 首次把 AI Agent 作为供应链独立赛道评象限，意味着"Agent 原生"成为供应链产品的新对标维度——ERP 产品规划时要区分"嵌入式 AI"与"原生 Agent 架构"两条路线，前者增强现有功能，后者重写执行流程</div>
-  </div>
-
-  <div class="card">
-    <h2>Oracle NetSuite 推出 AI 工具集：AI Workspaces、SuiteAgent Studio、SuiteSkills 全面上线</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月初发布，海外科技媒体集中报道</li>
-      <li><strong>人物/机构：</strong>Oracle NetSuite</li>
-      <li><strong>事件：</strong>Oracle NetSuite 为云 ERP 平台推出全新 AI 工具集，包括 AI Workspaces（工作台）、AI portlets（智能组件）、SuiteSkills（技能库）、行业垂直 Agent 以及 SuiteAgent Studio（智能体开发 Studio）；新版 Ask Oracle 也获得更大的数据访问权限与业务上下文；客户既可使用 NetSuite 内置 AI，也可接入外部大模型</li>
-      <li><strong>关键名词：</strong>NetSuite Next、SuiteAgent Studio、AI Workspaces、外部大模型接入</li>
-    </ul>
-    <div class="point">💡 看点：Oracle 的策略是"AI 工具套件+开放接入"，与 SAP 的"自主执行"叙事不同——中小企业云 ERP 选 AI 能力时要看：是帮你分析决策，还是自动执行流程？两者的交付复杂度和 ROI 计算逻辑完全不同</div>
-  </div>
-
-  <div class="cat">🤖 供应链科技 &amp; AI</div>
-
-  <div class="card">
-    <h2>Docusign 11 月 3 日收购 Suplari：AI 原生采购智能分析并入 Intelligent Agreement Management<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 3 日官宣，收购预计 2026 年 Q4 完成</li>
-      <li><strong>人物/机构：</strong>Docusign、Suplari（AI 原生采购智能分析创企）</li>
-      <li><strong>事件：</strong>Docusign 宣布收购 Suplari，将其技术并入自家 Intelligent Agreement Management（IAM）平台，加速"合同条款-支出数据-供应商活动"三联动的采购智能分析产品开发；Suplari 团队将成为 Docusign 采购产品部门的核心研发力量</li>
-      <li><strong>关键名词：</strong>IAM 平台、合同-支出-供应商联动、采购智能分析、AI Native Procurement</li>
-    </ul>
-    <div class="point">💡 看点：电子签巨头下场收购采购 AI 创企，信号清晰——采购与合同管理的边界正在 AI 驱动下消解；SRM 产品应提前布局"合同执行-采购履约-供应商管理"的闭环，否则会被 Docusign 这类跨界玩家从合同端切入</div>
-  </div>
-
-  <div class="card">
-    <h2>甄云科技发布"AI+采购"战略：20+ AI 应用全系亮相，三生制药、桐昆集团等标杆案例发布</h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 2 日，甄云科技年度产品发布会</li>
-      <li><strong>人物/机构：</strong>甄云科技；三生制药集团、桐昆集团、中电科电子装备集团等客户</li>
-      <li><strong>事件：</strong>甄云科技首度完整展示"AI+采购"战略下的产品与服务双向智能化体系，20+ AI 应用与功能全系亮相，深度阐释 AI 赋能企业采购的背景、策略与实施路径，并发布三生制药、桐昆集团等多个标杆实践案例</li>
-      <li><strong>关键名词：</strong>AI+采购、服务智能、采购数字化标杆</li>
-    </ul>
-    <div class="point">💡 看点：国内采购 SaaS 厂商从"功能覆盖"转向"服务智能"叙事——关注其 20+ AI 应用清单中哪些是能独立交付的能力，哪些是营销包装，对比看国内采购 AI 落地的真实水位</div>
-  </div>
-
-  <div class="card">
-    <h2>Kodiact 获 250 万美元 pre-seed 融资：ERP 上层智能仿真平台，提前演练原材料价格冲击</h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 2 日，PR Newswire 报道</li>
-      <li><strong>人物/机构：</strong>Kodiact（创始团队 Steve Tucker 等）；投资方 Supply Change Capital 领投，Green Circle Foodtech Ventures、Velocity Catalyst 跟投</li>
-      <li><strong>事件：</strong>Kodiact 是一家站在 SAP、Dynamics 等 ERP 系统之上的智能仿真平台，将制造商采购的每一种原材料与其市场价格波动因素关联；当大宗商品价格飙升时，平台自动识别哪些产品与利润率暴露风险，推荐应对方案，并让团队在冲击落地损益表之前模拟演练决策结果；覆盖 500+ 种原材料、23 个类别，5 月刚上线即获融资</li>
-      <li><strong>数据：</strong>覆盖 500+ 种原材料、23 个类别；250 万美元 pre-seed 融资</li>
-      <li><strong>关键名词：</strong>直接物料波动、仿真模拟层、ERP 外挂、决策演练</li>
-    </ul>
-    <div class="point">💡 看点：原材料价格波动正从"成本会计问题"变成"采购策略问题"，Kodiact 模式是典型的 ERP 外挂场景——不替换 ERP，但在 ERP 之上叠加"仿真+预警+决策推荐"层，供应链产品团队可以评估是否做类似的外挂式增强</div>
-  </div>
-
-  <div class="cat">📦 物流与供应链</div>
-
-  <div class="card">
-    <h2>菜鸟推出"科技出海三日达"，AI 算力与具身智能迈入全球三日达时代<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 5 日发布，第九届中国国际进口博览会上集中亮相</li>
-      <li><strong>人物/机构：</strong>菜鸟；联邦快递、科捷智能等同期展示 AI 物流创新的企业</li>
-      <li><strong>事件：</strong>菜鸟在进博会上宣布推出"科技出海三日达"服务，称 AI 算力与具身智能技术已支撑跨境物流迈入全球三日达时代；同期联邦快递以"AI 驱动物流创新和全球网络联通"为主题亮相，科捷智能也展示星象系统等智能仓储方案</li>
-      <li><strong>关键名词：</strong>进博会、科技出海、三日达、具身智能、跨境物流时效</li>
-    </ul>
-    <div class="point">💡 看点：进博会成为跨境物流厂商集中发布战略的年度舞台，"三日达"从口号走向可交付服务——跨境电商供应链的时效承诺将被进一步拉满，ERP 的物流时效预估与履约承诺模块需要对标升级</div>
-  </div>
-
-  <div class="cat">🌐 政策与出海</div>
-
-  <div class="card">
-    <h2>欧盟 11 月 1 日起对非欧盟电商包裹每类商品再加征 2 欧元处理费，中国跨境电商承压显著<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 1 日起正式实施，观察者网等多家媒体 11 月 5 日集中解读</li>
-      <li><strong>人物/机构：</strong>欧盟理事会、德国财政部；中国商务部</li>
-      <li><strong>事件：</strong>这是继 7 月 1 日取消 150 欧元以下跨境小包免税政策后，欧盟针对跨境电商进口的又一收费措施；此前每类商品已需缴 3 欧元暂行关税，11 月起再加 2 欧元手续费，价值不超过 150 欧元的境外电商包裹每类商品合计需缴 5 欧元费用；德国财政部已明确区分"3 欧元关税"与"2 欧元处理费"是两项独立费用</li>
-      <li><strong>数据：</strong>150 欧元以下小包，每类商品合计费用从 0→3→5 欧元（7 月+3 欧元关税，11 月+2 欧元处理费）</li>
-      <li><strong>关键名词：</strong>跨境电商小包、150 欧元免税门槛、关税+处理费叠加、欧盟新规</li>
-    </ul>
-    <div class="point">💡 看点：中国跨境电商被欧盟政策连续叠加打击，低货值商品利润可能被费用完全侵蚀——ERP 的关税引擎与跨境合规模块需尽快覆盖"目的地处理费"维度，而非只算关税；出口企业要评估是否上调报价或调整备货策略</div>
-  </div>
-
-  <div class="card">
-    <h2>财政部公告：2026-2027 年跨境电商出口退运商品 6 个月内原状退运免征关税</h2>
-    <ul>
-      <li><strong>时间：</strong>中华人民共和国财政部、海关总署、税务总局 2026 年第 16 号公告，10 月中下旬发布，11 月上旬广泛解读</li>
-      <li><strong>人物/机构：</strong>财政部、海关总署、国家税务总局</li>
-      <li><strong>事件：</strong>对 2026 年 1 月 1 日至 2027 年 12 月 31 日期间，在跨境电子商务海关监管代码（1210、9610、9710、9810）项下申报出口、因滞销/退货原因自出口之日起 6 个月内原状退运进境的商品（不含食品），免征进口关税和进口环节增值税、消费税</li>
-      <li><strong>数据：</strong>政策覆盖 4 个跨境电商监管代码（1210 保税备货、9610 直购进口、9710/9810 B2B 跨境出口）</li>
-      <li><strong>关键名词：</strong>跨境电商监管代码、退运免税、出口退运、滞销退货</li>
-    </ul>
-    <div class="point">💡 看点：与欧盟加码形成对冲，国内政策在退运环节给跨境电商减负——ERP 的退货与逆向物流模块需预留"跨境电商退运免税"的自动判断逻辑，并对接海关监管代码识别</div>
-  </div>
-
-</section>
-
 <!-- /DAY-SECTIONS -->
 
   <div class="footer">内容由小秘全网搜集精炼 · 每天早上 8 点更新 · 保留最近 7 天</div>
