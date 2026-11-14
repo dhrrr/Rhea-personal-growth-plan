@@ -125,7 +125,8 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-<button class="day-tab active" data-day="2026-11-13">11/13 周五</button>
+<button class="day-tab active" data-day="2026-11-14">11/14 周六</button>
+<button class="day-tab" data-day="2026-11-13">11/13 周五</button>
 <button class="day-tab" data-day="2026-11-12">11/12 周四</button>
 <button class="day-tab" data-day="2026-11-11">11/11 周三</button>
 
@@ -133,7 +134,7 @@
 
 <button class="day-tab" data-day="2026-11-09">11/9 周一</button>
 <button class="day-tab" data-day="2026-11-08">11/8 周日</button>
-  <button class="day-tab" data-day="2026-11-07">11/7 周六</button>
+  
 
 </div>
 <!-- /DAY-TABS -->
@@ -141,7 +142,140 @@
 <div class="container">
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
-<section class="day-section active" id="day-2026-11-13">
+<section class="day-section active" id="day-2026-11-14">
+
+  <div class="cat">🏢 ERP 厂商动态</div>
+
+  <div class="card">
+    <h2>SAP 扩展 Logistics Management 平台：仓储、运输执行与承运商协同统一上云，AI 与自主智能体嵌入作业流<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 10 日（Logistics Viewpoints 报道，11 月 11 日行业媒体转载）</li>
+      <li><strong>人物/机构：</strong>SAP；SAP 物流产品团队</li>
+      <li><strong>事件：</strong>SAP 扩展物流管理产品组合，推出云原生的 SAP Logistics Management（LGM），把仓储运营、运输执行与承运商协同收敛到同一平台，并在作业流中嵌入 AI 执行与自主智能体；官方描述的场景包括港口拥堵时自动改道、运力紧张时与承运商议价、按预测需求自动触发补货。该平台此前已承载 SAP 与 Cyberwave 在德国 St. Leon-Rot 仓库的自主机器人作业，本次是从单点落地走向平台化扩展</li>
+      <li><strong>数据：</strong>平台为云原生、API 优先架构；SAP 未披露客户数与定价</li>
+      <li><strong>关键名词：</strong>SAP Logistics Management（LGM）、WMS+TMS 一体化、承运商协同、自主智能体、Joule</li>
+    </ul>
+    <div class="point">💡 看点：WMS/TMS/承运商协同“三合一”，是 ERP 巨头对 best-of-breed 物流 SaaS 的正面反击。对国内 ERP 的启示：物流域不能只做“单据+接口”，必须把执行、协同、智能体放进同一数据模型，否则 AI 拿不到可闭环的数据，只能做表面问答</div>
+  </div>
+
+  <div class="card">
+    <h2>Coupa 公布 Agentic 采购受理成效：AI 智能体“守门”，单证录入时间最多缩短 83%</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 11 日（Coupa 新闻稿，Foster City）</li>
+      <li><strong>人物/机构：</strong>Coupa（约 6 个月前通过收购 Tonkean 扩展编排能力）；Semrush 等客户</li>
+      <li><strong>事件：</strong>Coupa 公布 Intake &amp; Orchestration（I&amp;O）客户实践：员工在 Slack、Teams 里用自然语言提需求，AI 智能体负责澄清需求、跨部门路由、按公司政策推进，且不能跳过必需审批，所有动作留痕；平台提供 300+ 预置连接器，使用范围已从采购扩展到法务、IT、员工入职与客服</li>
+      <li><strong>数据：</strong>采购工单录入 30 分钟→5 分钟（降 83%）；Semrush 受理周期 19 天→10 天；某医疗器械企业供应商准入 30+ 天→不足 1 周；Hackett 2026 调研：65% 采购组织偏好 agentic 工作流，但不到一半 CPO 有信心监控</li>
+      <li><strong>关键名词：</strong>Intake &amp; Orchestration、AI Front Door、human-in-the-loop、智能体守卫栏、source-to-pay</li>
+    </ul>
+    <div class="point">💡 看点：采购数字化的入口正从“表单”变成“对话”，直接冲击 SRM 的需求受理与工单模块。产品设计要点：审批不可绕过、权限最小化、全量审计——先把治理做厚，再逐步放开自治，这比一上来做“全自动采购”更容易被客户接受</div>
+  </div>
+
+  <div class="card">
+    <h2>住友电工「楽々ProcurementII」Ver.11.0：生成 AI 推荐供应商并给出排序理由，11/20 发售</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 13 日发布，11 月 20 日正式发售</li>
+      <li><strong>人物/机构：</strong>住友电工信息系统株式会社（大阪）</li>
+      <li><strong>事件：</strong>购买管理系统新版本搭载“供应商 AI 推荐”功能：输入品目信息并勾选候选供应商后，AI 基于历史报价与供应商评价输出推荐排序及理由；可按质量、价格、交期分别设置权重，也支持“优先响应速度好的供应商”这类自然语言条件；分析结果随询价单保存，作为选型依据，便于上司复核。云版对接 Azure OpenAI，本地版可选 ChatGPT、Azure OpenAI、Gemini（Vertex AI）、Amazon Bedrock、Claude</li>
+      <li><strong>数据：</strong>该产品自 2000 年销售，已有 500+ 家企业使用；AI 推荐为选配功能</li>
+      <li><strong>关键名词：</strong>供应商 AI 推荐、可解释排序、权重+自然语言约束、询价留痕、多模型接入</li>
+    </ul>
+    <div class="point">💡 看点：这是“AI 选供应商”最务实的产品形态——不追求全自动定标，而是“排序+理由+留痕”，责任仍留给人。国内 SRM 可直接借鉴：把历史报价、绩效评分、交期履约做成可解释打分卡，AI 只负责排序与解释，落地阻力最小</div>
+  </div>
+
+  <div class="cat">🤖 供应链科技 &amp; AI</div>
+
+  <div class="card">
+    <h2>腾讯云 × Teleport：跨境物流从“可视化”走向智能体执行，报关单证与动态舱位列入首批场景<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 13 日（深圳，2026 腾讯全球数字生态大会）</li>
+      <li><strong>人物/机构：</strong>腾讯云（国际业务高级副总裁杨宝树）；Teleport（Capital A 旗下东南亚电商物流企业，CTO Milan Dhingra）</li>
+      <li><strong>事件：</strong>双方签署 MOU：腾讯云为 Teleport 中国业务提供云基础设施，Teleport 借助腾讯云 AI 把跨境物流从“看得见”推进到“自动执行”。规划场景包括智能体开发平台 ADP 支撑航线优化、报关单证处理、动态舱位规划与异常恢复；TokenHub 做多模型接入；WorkBuddy 做内部多智能体协作；eKYC 用于跨境商家、航司与地服准入</li>
+      <li><strong>数据：</strong>Teleport 网络日均包裹 125 万件，连接中国、东南亚、大洋洲与中东，合作 55+ 家航空公司</li>
+      <li><strong>关键名词：</strong>跨境物流智能体、ADP、报关单证自动化、动态舱位规划、eKYC</li>
+    </ul>
+    <div class="point">💡 看点：“报关单证处理”被明确列为首批智能体场景，跨境 ERP/关务产品应优先做“单证抽取—校验—申报”的 agent 闭环，而不是只做申报模板；“动态舱位规划”也意味着 TMS 里固定运价表、固定舱位表的逻辑正在失效</div>
+  </div>
+
+  <div class="card">
+    <h2>象屿股份“仓运智链”获中国人工智能大赛 A 级证书：供应链全链路智能体从仓库到餐桌</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 12 日（厦门，第七届中国人工智能大赛颁奖典礼）</li>
+      <li><strong>人物/机构：</strong>象屿股份；国家互联网信息办公室、公安部指导，厦门市人民政府主办</li>
+      <li><strong>事件：</strong>象屿股份以“仓运智链——民生保供从仓库到餐桌全链路智能体”参赛，在“AI+民生服务智能体技术案例赛”中获得 A 级证书；公司称把 AI 深度嵌入供应链服务核心环节，覆盖仓储、运输与履约调度，从全国上百支参赛队伍中脱颖而出</li>
+      <li><strong>数据：</strong>全国上百支队伍参赛；获 A 级证书</li>
+      <li><strong>关键名词：</strong>全链路智能体、仓运一体、AI+民生服务、供应链服务商数智化</li>
+    </ul>
+    <div class="point">💡 看点：大宗供应链服务商的竞争正从“仓运资源”转向“数据+算法调度”。对 ERP 产品经理：多式联运、仓配一体方案的差异化，未来取决于调度决策质量，而不是单据覆盖度——演示时讲“少跑多少空驶、少压多少库存”比讲功能清单更有说服力</div>
+  </div>
+
+  <div class="cat">📦 物流与供应链</div>
+
+  <div class="card">
+    <h2>京东工业 × 沙特邮政物流：共建 B2B 数智化采购平台，接入 9700 万件商品<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 8 日签署，11 月 11 日官宣，11 月 13 日国内媒体披露合作细节</li>
+      <li><strong>人物/机构：</strong>京东工业（HK:7618）；沙特邮政物流公司（SPL）</li>
+      <li><strong>事件：</strong>双方在利雅得签署战略合作框架协议，共建面向企业客户的 B2B 数字化采购平台，聚焦制造企业维护、修理与运营所需的 MRO 物资及生产用零部件，提升本地备货能力与采购透明度；SPL 的本地物流网络与京东工业供应商体系深度对接，京东此前已在沙特布局仓储、分拣、配送网点与物流设施</li>
+      <li><strong>数据：</strong>京东工业已接入 23 万+ 制造商、批发商与代理商，覆盖 80 个工业品品类、9700 万件商品，企业客户约 1.3 万家</li>
+      <li><strong>关键名词：</strong>MRO 数字化采购、B2B 平台出海、本地备货、沙特 2030 愿景</li>
+    </ul>
+    <div class="point">💡 看点：MRO 平台出海走的是“供应商体系+本地物流伙伴”，而不是自建仓配。国内 SRM/MRO 产品若要跟进中东，优先补齐多币种、多税制、本地化商品主数据与备件目录标准化——这是最难复制、也最值钱的部分</div>
+  </div>
+
+  <div class="card">
+    <h2>Amazon 与 Kuehne+Nagel 英国试点共享充电：90% 计划充电成功，停留期间补电约 40%</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 11 日（欧洲物流媒体报道）</li>
+      <li><strong>人物/机构：</strong>Amazon；Kuehne+Nagel（项目负责人 Matthew Scoble）；奥地利 kW-Solutions（Charge with Friends 平台）</li>
+      <li><strong>事件：</strong>K+N 的电动卡车在亚马逊英国履约中心装卸货期间，使用亚马逊的充电设施补电，把充电时间叠加到既有的作业停留时间里；试点验证“私有充电桩对外共享”的商业模型：使用方获得低于公共网络的电价，提供方提高桩利用率、加快投资回收。奥地利已有第三方平台撮合共享，报价约 30-40 欧分/kWh</li>
+      <li><strong>数据：</strong>90% 的计划充电机会成功完成；停留期间电池电量提升约 40%</li>
+      <li><strong>关键名词：</strong>共享充电、电动重卡、TCO、场站资源复用、绿色物流</li>
+    </ul>
+    <div class="point">💡 看点：绿色物流正从“买车”转向“运营网络”。TMS 未来需要把“可用充电资源”纳入路径与排班约束（充电路由、场站预约、计费结算）——这是被低估的新增模块，也是新能源车队客户愿意付费的点</div>
+  </div>
+
+  <div class="card">
+    <h2>新宙邦与亿纬锂能签 60 万吨电解液五年长单，预付款定向锁定上游产能</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 13 日盘后公告</li>
+      <li><strong>人物/机构：</strong>新宙邦（SZ:300037）；亿纬锂能（惠州）</li>
+      <li><strong>事件：</strong>双方签署《长期供货协议》，约定 2026-2030 年新宙邦向亿纬锂能供应预计 60 万吨电解液。为保障原材料稳定供应与产能锁定，亿纬锂能在协议生效后 30 个工作日内支付预付款，专项用于新宙邦向上游供应商锁定核心原材料产能；实际订单量可在预计量上下 10% 以内浮动，2029-2030 年预测采购量为意向性、不构成强制履约承诺</li>
+      <li><strong>数据：</strong>60 万吨/5 年；±10% 浮动；新宙邦 2026 前三季度营收 120.65 亿元（+82.35%）、净利 15.42 亿元（+106.19%）</li>
+      <li><strong>关键名词：</strong>长协锁量、预付款锁产能、意向性采购、供应链韧性</li>
+    </ul>
+    <div class="point">💡 看点：长协正从“锁价格”变成“锁产能+预付款”。采购合同管理的字段需要升级：预付款用途约束、浮动比例、意向量与强制量、违约救济。SRM 合同模块若不能把这些条款结构化，后续履约跟踪只能回到 Excel</div>
+  </div>
+
+  <div class="cat">🌍 贸易政策 &amp; 关税</div>
+
+  <div class="card">
+    <h2>特朗普威胁对墨西哥关税“立即翻倍”，未明确涉及商品与税率</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 12 日（Truth Social 发文；11 月 13 日中文媒体广泛报道）</li>
+      <li><strong>人物/机构：</strong>美国总统特朗普；墨西哥总统辛鲍姆</li>
+      <li><strong>事件：</strong>特朗普称“移民车队”正在穿越墨西哥向美国行进，要求墨方立即阻止，否则对墨西哥关税将立即翻倍；他未说明具体涉及哪些商品及税率。辛鲍姆回应称，自 2025 年 1 月以来没有任何移民队伍抵达墨西哥北部边境</li>
+      <li><strong>数据：</strong>尚未公布具体税率与商品范围</li>
+      <li><strong>关键名词：</strong>对墨关税、USMCA、近岸外包、关税情景风险</li>
+    </ul>
+    <div class="point">💡 看点：北美近岸外包的成本模型要补上“政策尾部风险”。ERP 到岸成本模块应支持关税情景版本化（按国别/HS Code/生效日切换），并把供应商原产地与转关路径作为主数据强校验项，避免政策一变就全量手工改价</div>
+  </div>
+
+  <div class="cat">📊 行业报告 &amp; 数据</div>
+
+  <div class="card">
+    <h2>铁矿石港口库存升至 1.69 亿吨：45 港环比增 187.72 万吨，疏港量基本持平</h2>
+    <ul>
+      <li><strong>时间：</strong>2026 年 11 月 13 日 08:48（Mysteel 我的钢铁网）</li>
+      <li><strong>人物/机构：</strong>Mysteel（上海钢联）</li>
+      <li><strong>事件：</strong>最新统计显示港口进口铁矿继续累库：45 个港口库存 16892.12 万吨，环比增加 187.72 万吨；日均疏港量 309.74 万吨（+0.54 万吨），在港船舶 108 条（-11 条）。47 港口径库存 17759.47 万吨，环比增加 226.27 万吨。分量看，澳矿 8899.63 万吨（+152.02 万吨）、巴西矿 5447.41 万吨（+11.48 万吨）</li>
+      <li><strong>数据：</strong>45 港约 1.69 亿吨；47 港约 1.78 亿吨；疏港量 309.74 万吨/日</li>
+      <li><strong>关键名词：</strong>港口库存、疏港量、澳矿/巴西矿、原料补库节奏</li>
+    </ul>
+    <div class="point">💡 看点：高库存叠加疏港量平稳，说明钢厂以刚需补库为主、采购偏谨慎。大宗采购的“库存—价格—到货”三角需要周频外部数据驱动；ERP 的原料库存与在途看板应能接入港口、疏港等第三方数据，而不是只看内部库存</div>
+  </div>
+
+</section>
+<section class="day-section" id="day-2026-11-13">
 
   <div class="cat">🏢 ERP 厂商动态</div>
 
@@ -760,133 +894,6 @@
       <li><strong>关键名词：</strong>意向采购、大宗商品进口、集中签约、履约与跨境结算</li>
     </ul>
     <div class="point">💡 看点：集中签约只是起点，真正的数字化需求在"签约—履约—报关—结算—对账"这条链上——大宗商品进口涉及长协、到港计量、价差结算与多币种，采购与供应链系统里的长协执行与结算对账能力，是最容易被央企客户点名的短板</div>
-  </div>
-
-</section>
-
-<section class="day-section" id="day-2026-11-07">
-
-  <div class="cat">🏢 ERP 厂商动态</div>
-
-  <div class="card">
-    <h2>微软入选 Gartner 2026《产品中心型企业云 ERP》魔力象限领导者<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 6 日，微软官方博客宣布</li>
-      <li><strong>人物/机构：</strong>Microsoft（Dynamics 365）；Gartner</li>
-      <li><strong>事件：</strong>微软宣布在 Gartner 2026 年《面向产品中心型企业的云 ERP 魔力象限》中获评领导者（Leader）；微软将领先地位归功于 Dynamics 365 财务、供应链管理等应用与 Copilot 及 AI 智能体能力的融合，覆盖制造、零售等产品中心型企业的一体化云 ERP 场景</li>
-      <li><strong>关键名词：</strong>Gartner 魔力象限、Cloud ERP、Dynamics 365、Copilot</li>
-    </ul>
-    <div class="point">💡 看点：产品中心型企业云 ERP 象限是制造/零售企业选型的核心参考，微软凭"ERP+Copilot+智能体"生态跻身领导者梯队，与 SAP、Oracle 的竞逐焦点已全面转向 AI 能力——对标国际厂商时，差距不只在功能覆盖，更在 AI 原生架构</div>
-  </div>
-
-  <div class="card">
-    <h2>新华网聚焦金蝶"AI 重塑财务管理"：IDC AI Agent 评估列为领导者，央企客户点破落地瓶颈</h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 7 日，新华网报道</li>
-      <li><strong>人物/机构：</strong>金蝶；IDC；中国信通院；参会央国企客户代表</li>
-      <li><strong>事件：</strong>新华网报道金蝶探索 AI 重塑企业管理新路径：金蝶在 IDC 2026 年中国企业资源管理市场 AI Agent 厂商评估中获评领导者类别，灵基平台通过中国信通院企业级 AI 原生办公智能体平台评估；会上国企客户代表直言，央企要求私有化部署、数据不出域，"上下文"与数据主权是 AI 落地现实约束</li>
-      <li><strong>关键名词：</strong>AI Agent 厂商评估、灵基平台、私有化部署、数据不出域</li>
-    </ul>
-    <div class="point">💡 看点：大型企业 AI 落地的最大瓶颈不是模型能力而是数据主权——ERP 产品规划 AI 功能时，"私有化部署+数据不出域"必须作为一等公民选项设计，而非事后补丁</div>
-  </div>
-
-  <div class="cat">🤖 供应链科技 &amp; AI</div>
-
-  <div class="card">
-    <h2>Siemens、GS1 与 SAP 完成欧洲商务钱包（EBW）概念验证：用数字身份解决供应商信任</h2>
-    <ul>
-      <li><strong>时间：</strong>概念验证于 2026 年 8 月完成，11 月 7 日海外媒体集中报道</li>
-      <li><strong>人物/机构：</strong>Siemens、GS1、SAP；GS1 in Europe（覆盖 49 国、代表 50 万+ 企业）</li>
-      <li><strong>事件：</strong>三方合作验证欧洲商务钱包（European Business Wallet, EBW）在复杂全球供应链中的应用：通过标准化数字身份与可信凭证交换，让企业高效验证供应商的真实性与合规资质，把跨组织信任建立流程数字化</li>
-      <li><strong>数据：</strong>PoC 于 2026 年 8 月完成，验证 EBW 可从根本上改变供应链中的供应商信任建立方式</li>
-      <li><strong>关键名词：</strong>European Business Wallet、数字身份、供应商验证、GS1 标准</li>
-    </ul>
-    <div class="point">💡 看点："可信供应商网络"正成为采购数字化的新基础设施——数字身份+标准凭证把供应商准入尽调从人工核验变成系统自动校验，SRM 产品应提前打通供应商主数据与数字身份认证</div>
-  </div>
-
-  <div class="card">
-    <h2>C.H. Robinson 扩展 Lean AI 智能体至海运、空运与清关全链路</h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月上旬发布，11 月 7 日海外媒体跟进报道</li>
-      <li><strong>人物/机构：</strong>C.H. Robinson（全球头部货运代理/3PL）</li>
-      <li><strong>事件：</strong>C.H. Robinson 发布面向海运、空运运输及报关清关服务的新一代 AI 智能体，是其 Lean AI 能力在货代业务的延伸；智能体可协同处理一次发运涉及的多环节复杂任务，服务更多客户</li>
-      <li><strong>关键名词：</strong>Lean AI、货代智能体、清关自动化、多智能体协同</li>
-    </ul>
-    <div class="point">💡 看点：头部 3PL 把 AI 智能体从报价、跟踪等单点推进到海运+空运+清关全链路作业，单证与操作岗自动化率将快速抬升——物流产品经理需重新设计人机分工与异常升级界面</div>
-  </div>
-
-  <div class="card">
-    <h2>京东工业 JoyIndustrial 2.0 落地汽车供应链全环节：MRO 采购周期缩至 3-5 天</h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 5 日，亿邦动力报道</li>
-      <li><strong>人物/机构：</strong>京东工业；华南某大型汽车制造企业、徐工集团等</li>
-      <li><strong>事件：</strong>京东工业披露工业大模型 JoyIndustrial 2.0 三层架构及研产供服落地工具：与华南某大型车企共建 MRO 采购电商平台，实现 MRO 采购全流程数字化、AI 智能历史价格校验、比价凭证自动集成与采购环节自动化合规管控；覆盖工程机械、车企出海、MRO 采购等场景，以 AI 双飞轮推动供应链数智化</li>
-      <li><strong>数据：</strong>徐工集团非生产物资采购周期从 20 多天缩短到 3-5 天，采购成本明显下降</li>
-      <li><strong>关键名词：</strong>JoyIndustrial 2.0、工业垂直大模型、MRO 采购、AI 比价</li>
-    </ul>
-    <div class="point">💡 看点：行业垂直大模型正从"问答"走向"嵌入采购作业流"——历史价格校验、比价凭证自动化是采购系统最容易算清 ROI 的 AI 切入点，做采购模块可以优先复制这类场景</div>
-  </div>
-
-  <div class="cat">📦 物流与供应链</div>
-
-  <div class="card">
-    <h2>第九届进博会央企"购物车"爆发：中石油签 38 份协议超 188 亿美元<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 6 日，第九届进博会央企交易团集中签约</li>
-      <li><strong>人物/机构：</strong>国务院国资委央企交易团（团长李镇）；中国石油、上海振华重工、中国东航等；沙特阿美、巴西国油、道达尔、西门子、ABB、安川电机等海外供应商</li>
-      <li><strong>事件：</strong>近百家央企组织超 2 万人到会采购、组建 58 个专业团组；中国石油与 35 家合作伙伴签署 38 份采购协议，覆盖 16 个国家和地区，涉及油气资源、高端装备、绿色低碳等；上海振华重工与西门子、ABB、安川电机等 12 家海外供应商签约 28.35 亿元；东航签下本届央企首单，将与 8 个国家和地区的 15 家供应商签署 23 份协议</li>
-      <li><strong>数据：</strong>中石油签约金额超 188 亿美元、较去年稳中有升；振华重工 28.35 亿元；东航 5.4 亿美元；中石油自 2018 年首届进博会以来累计签约超 1636 亿美元</li>
-      <li><strong>关键名词：</strong>进博会、央企集中采购、油气全产业链、高端装备</li>
-    </ul>
-    <div class="point">💡 看点：央企年度采购大单集中落地，高端装备与绿色低碳是重点品类——集中签约之后是履约、跨境结算与供应商协同的数字化需求高峰，做央企采购数字化的厂商可跟进"签约-履约-对账"闭环系统机会</div>
-  </div>
-
-  <div class="card">
-    <h2>中国移动发布供应链生态三大成果：风险预警中心、生态聚合平台、"千帆"2.0</h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 6 日，2026 移动网络大会供应链生态合作论坛（广州）</li>
-      <li><strong>人物/机构：</strong>中国移动（副总经理陈怀达出席并致辞）</li>
-      <li><strong>事件：</strong>论坛以"聚链成势・向新同行"为主题，中国移动发布移动生态聚合平台、供应链风险预警中心、"千帆"2.0 跃升计划暨测试场三大成果，以技术演进、安全可控、绿色低碳为核心导向，构建"协同共建、能力共享、价值共创"的供应链生态合作新范式</li>
-      <li><strong>关键名词：</strong>供应链风险预警中心、生态聚合平台、千帆 2.0、算力基础设施</li>
-    </ul>
-    <div class="point">💡 看点：链主企业自建"供应链风险预警中心"渐成趋势——从管理自家采购延伸到监控全链供应商风险与安全可控，供应链产品可借鉴"风险预警中心化"的产品形态，向链主侧输出能力</div>
-  </div>
-
-  <div class="card">
-    <h2>美的与京东达成战略合作：数智化采购+一体化供应链，冲刺三年 2388 亿目标</h2>
-    <ul>
-      <li><strong>时间：</strong>2026 年 11 月 5 日，双方举行战略合作仪式（11 月 6 日披露）</li>
-      <li><strong>人物/机构：</strong>美的集团（董事长兼 CEO 方洪波）、京东集团（CEO 许冉）</li>
-      <li><strong>事件：</strong>双方将在全渠道零售、数智化采购、企业服务及海内外一体化供应链等领域深化战略合作，共同推进家电零售业务未来三年 2388 亿元全渠道销售目标，优势互补拓展国内外市场</li>
-      <li><strong>数据：</strong>未来三年 2388 亿元全渠道销售目标</li>
-      <li><strong>关键名词：</strong>数智化采购、全渠道零售、海内外一体化供应链</li>
-    </ul>
-    <div class="point">💡 看点：制造巨头与供应链企业的合作已从"卖货渠道"升级为"数智化采购+海外供应链共建"——品牌企业出海时倾向复用成熟供应链基础设施，ERP 厂商的海外供应链模块要考虑与这类平台生态对接</div>
-  </div>
-
-  <div class="cat">🌐 政策与出海</div>
-
-  <div class="card">
-    <h2>欧盟跨境电商税费新规叠加落地，商务部回应"希望欧方审慎评估"<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>欧盟新规 2026 年 11 月 1 日生效；商务部 11 月 5 日例行新闻发布会回应</li>
-      <li><strong>人物/机构：</strong>中国商务部（新闻发言人黄玲）；欧盟</li>
-      <li><strong>事件：</strong>欧盟自 11 月 1 日起对通过境外远程销售直接寄递给欧盟消费者的货物，在进口申报时按商品税目增收 2 欧元处理费；此前 7 月已对符合条件的远程销售低价值货物征收每商品税目 3 欧元临时关税，两项费用叠加。商务部表示中方高度关注，跨境电商是国际贸易的创新业态，希望欧方审慎评估相关政策影响</li>
-      <li><strong>数据：</strong>2 欧元处理费 + 3 欧元临时关税，按商品税目叠加计收</li>
-      <li><strong>关键名词：</strong>低价值商品、境外远程销售、跨境电商税费、商品税目</li>
-    </ul>
-    <div class="point">💡 看点：单件低价值商品合规成本再抬升，跨境直邮模式定价空间被进一步压缩，海外仓/半托管的相对成本优势扩大——跨境供应链产品需支持品目级税费试算与申报模式切换测算</div>
-  </div>
-
-  <div class="card">
-    <h2>中国对美正丙醇延续征收反倾销反补贴税五年，全球化工贸易流向持续重构</h2>
-    <ul>
-      <li><strong>时间：</strong>商务部 11 月 5 日宣布，11 月 6 日（周五）起实施，为期五年</li>
-      <li><strong>人物/机构：</strong>中国商务部；美国正丙醇（n-Propanol, NPA）出口商</li>
-      <li><strong>事件：</strong>中国自周五起对美国进口正丙醇继续征收反倾销税和反补贴税，为期五年；NPA 是主要用作溶剂和化工中间体的工业化学品。同期，美国际贸委会（USITC）对巴西、挪威高纯溶解浆反倾销反补贴调查作出无损害终裁（11 月 6 日）</li>
-      <li><strong>关键名词：</strong>反倾销税、反补贴税、正丙醇、日落复审、溶解浆</li>
-    </ul>
-    <div class="point">💡 看点：化工原料贸易救济措施密集延续/出清，涉美化工品采购需在寻源系统里维护好原产地关税标识与替代料清单——中美、欧巴之间的化工与浆料贸易流向重构，直接影响采购成本测算模型</div>
   </div>
 
 </section>
