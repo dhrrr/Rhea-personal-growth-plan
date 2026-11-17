@@ -125,20 +125,150 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab active" data-day="2026-11-16">11/16 周一</button>
+  <button class="day-tab active" data-day="2026-11-17">11/17 周二</button>
+  <button class="day-tab" data-day="2026-11-16">11/16 周一</button>
   <button class="day-tab" data-day="2026-11-15">11/15 周日</button>
   <button class="day-tab" data-day="2026-11-14">11/14 周六</button>
   <button class="day-tab" data-day="2026-11-13">11/13 周五</button>
   <button class="day-tab" data-day="2026-11-12">11/12 周四</button>
   <button class="day-tab" data-day="2026-11-11">11/11 周三</button>
-  <button class="day-tab" data-day="2026-11-10">11/10 周二</button>
 </div>
 <!-- /DAY-TABS -->
 
 <div class="container">
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
-<section class="day-section active" id="day-2026-11-16">
+<section class="day-section active" id="day-2026-11-17">
+
+  <div class="cat">🚀 模型 &amp; 产品</div>
+
+  <div class="card">
+    <h2>阿里巴巴发布新一代基座大模型 Qwen4-Max：2.4T 参数、百万上下文，单任务成本降六成<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月16日（杭州发布，千问 AI 平台同步上线）</li>
+      <li><strong>人物/机构：</strong>阿里巴巴（通义千问团队）；阿里云百炼平台</li>
+      <li><strong>事件：</strong>发布全新一代基座大模型 Qwen4-Max，定位旗舰多模态模型，融合文本生成、图片与视频理解及深度思考能力，适用于编程开发、办公、前端设计与复杂智能体任务；已在千问 AI 平台首发上线，API 服务与 Token Plan 同步开放，支持联网搜索、工具调用和结构化输出，并兼容 OpenAI 与 Anthropic API，面向开发者与企业全面开放</li>
+      <li><strong>数据：</strong>总参数 2.4T（2.4 万亿）；原生视觉能力；100 万 token 上下文；缓存命中低至 0.5 元/百万 tokens；完成单任务的平均费用较上代模型下降约六成</li>
+      <li><strong>关键名词：</strong>Qwen4-Max、基座大模型、原生多模态、Token Plan、缓存命中定价</li>
+    </ul>
+    <div class="point">💡 看点：国产旗舰把"多模态 + 百万上下文"打到低价档，还直接兼容 OpenAI/Anthropic API——企业替换海外模型的迁移成本进一步降低。对 ERP/供应链类 SaaS，这是重算"模型采购账单"的时点：缓存命中定价对单据解析、对账、客服这类高频固定流程尤其友好。</div>
+  </div>
+
+  <div class="card">
+    <h2>腾讯混元推出 Hy4 Flash：小激活 MoE + 百万上下文，主打日常 Agent 任务又快又便宜</h2>
+    <ul>
+      <li><strong>时间：</strong>11月17日凌晨（海外 AI 资讯站 AI/TLDR 收录）</li>
+      <li><strong>人物/机构：</strong>腾讯（混元团队）</li>
+      <li><strong>事件：</strong>推出 Flash 档新一代混元模型 Hunyuan Hy4 Flash，采用小激活量 MoE 架构与 100 万 token 上下文，面向日常智能体（Agent）工作场景，主打低成本、高速度</li>
+      <li><strong>数据：</strong>1M token 上下文；小激活 MoE（激活参数量小、推理成本低）</li>
+      <li><strong>关键名词：</strong>Hunyuan Hy4 Flash、小激活 MoE、长上下文、Agent 日常任务</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>OpenAI 升级 ChatGPT for Healthcare：计算机操作智能体上线，新增 20+ 医疗插件</h2>
+    <ul>
+      <li><strong>时间：</strong>11月17日（InfoQ 收录）</li>
+      <li><strong>人物/机构：</strong>OpenAI；Abridge、Ambience、Cigna、CVS Health 等医疗健康机构</li>
+      <li><strong>事件：</strong>ChatGPT for Healthcare 迎来升级：更强的 computer-use agents（可代用户操作软件界面）、更强的临床问答能力，并新增 20+ 个医疗健康插件，与多家领先医疗记录、保险与药店机构打通工作流</li>
+      <li><strong>数据：</strong>新增 20+ 医疗插件；合作方覆盖临床记录（Abridge、Ambience）与保险/药店巨头（Cigna、CVS Health）</li>
+      <li><strong>关键名词：</strong>ChatGPT for Healthcare、computer-use agent、临床问答、医疗插件生态</li>
+    </ul>
+    <div class="point">💡 看点：行业纵深 Agent 的打法已经跑通——"通用底座 + 垂直插件 + 代操作界面"三件套开始向医疗这类强合规行业渗透。对 ERP 产品经理的启示：采购、供应链场景的"代操作系统"（自动录单、自动对账）同样是这套组合拳的落点，插件生态的接入标准值得提前布局。</div>
+  </div>
+
+  <div class="card">
+    <h2>谷歌 Gemini 侧边栏在 Apps Script 正式可用：普通员工说人话就能生成办公自动化脚本</h2>
+    <ul>
+      <li><strong>时间：</strong>11月16日官宣 GA（正式发布），11月12日起灰度、最长 15 天覆盖全部用户</li>
+      <li><strong>人物/机构：</strong>Google（Google Workspace 团队）</li>
+      <li><strong>事件：</strong>Gemini 在 Apps Script 编辑器中的侧边栏正式发布：非技术员工与专业开发者均可用自然语言描述任务，由 Gemini 编写、修改、调试脚本，覆盖 Sheets/Docs/Slides/Forms 场景；支持按代码块逐个或全部接受/拒绝，运行失败时可在执行日志"一键诊断"，用大白话解释原因并给出可直接套用的修复；面向 Business/Enterprise 标准版及以上及 Google AI Pro/Ultra 订阅用户</li>
+      <li><strong>数据：</strong>11月12日起灰度，最长 15 天全量；脚本权限体系不变（沿用用户既有 OAuth 授权）</li>
+      <li><strong>关键名词：</strong>Apps Script、Gemini 侧边栏、自然语言编程、GA（正式发布）、OAuth 审计</li>
+    </ul>
+    <div class="point">💡 看点：办公自动化"会写脚本"的门槛基本消失，安全边界从"谁会写代码"变成"谁敢点全部接受"——管理员侧的 OAuth 审计与脚本权限管控变得更关键。对企业内部数字化团队，这是把低代码需求收编进统一治理框架的机会窗口。</div>
+  </div>
+
+  <div class="cat">🧠 芯片 &amp; 算力</div>
+
+  <div class="card">
+    <h2>英伟达 Vera Rubin 平台首秀横扫 MLPerf 全部基准，智能体推理每瓦性能提升 10 倍<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月16日（MLPerf Training v6.1 放榜；同日 SC26 超算大会发布 Rubin HPC）</li>
+      <li><strong>人物/机构：</strong>英伟达、MLCommons；微软 Azure（万卡规模同场提交）</li>
+      <li><strong>事件：</strong>Vera Rubin NVL72 首次参加 MLPerf Training v6.1 即拿下全部基准的领先成绩，是唯一覆盖 LLM、图像生成、推荐系统、强化学习后训练全套项目的平台；并首次提交 MLPerf Endpoints 智能体推理基准（按"每瓦完成的 token 吞吐"计分、且验证 Agent 任务真实完成）；同日在 SC26 发布面向科学、工程与分析仿真/Agent 工作负载的新 GPU Rubin HPC，主打创纪录的 CUDA 核心规模与加速数据搬运</li>
+      <li><strong>数据：</strong>单 GPU 性能最高达上代 GB300 NVL72 的 2 倍；DeepSeek-V3 训练从 256 卡扩到 1024 卡扩展效率约 97%、训练时间 16 分钟缩至约 4 分钟；本轮最大提交规模 10240 卡；Kimi K3 智能体推理每瓦吞吐较 GB300 提升 10 倍以上（provisional 初步结果）</li>
+      <li><strong>关键名词：</strong>Vera Rubin NVL72、MLPerf Endpoints、tokens/瓦特、Rubin HPC、NVLink、Quantum-X800 InfiniBand</li>
+    </ul>
+    <div class="point">💡 看点：基准评分标准从"裸算力吞吐"转向"每瓦电完成多少真实 Agent 任务"——电力成为数据中心第一约束后，这一指标将直接影响云厂商与企业的算力采购决策。对供应链条线：关注 Rubin 整机柜（NVL72）出货节奏与配套网络设备（InfiniBand/以太网）的需求外溢。</div>
+  </div>
+
+  <div class="card">
+    <h2>Claude 3 天完成 AMD MI355X 适配写入招股书："AI 写内核"动摇 CUDA 护城河叙事<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月10日路演视频披露、同日修订版招股书确认，11月17日媒体集中解读</li>
+      <li><strong>人物/机构：</strong>Anthropic；Tom Brown（联合创始人、首席算力官）；AMD；英伟达</li>
+      <li><strong>事件：</strong>Anthropic 向 IPO 投资者披露：Claude Mythos Preview 在几乎无人工干预的情况下，用约 3 天完成了在 AMD MI355X GPU 上跑通模型的软件适配，而同类工作历史上需要数十名工程师 6–12 个月；近 100% 的算子内核（kernels）由模型编写或移植；Anthropic 同时持有与 AMD 上限 2GW 的算力协议，首批基于 MI450 的 Helios 机柜预计 2027 年上半年交付</li>
+      <li><strong>数据：</strong>3 天 vs 历史口径 6–12 个月；内核近 100% 由模型完成；AMD 算力协议上限 2GW</li>
+      <li><strong>关键名词：</strong>Claude Mythos、kernels（算子内核）、ROCm、HIPify、CUDA 护城河、芯片平台适配（bring-up）</li>
+    </ul>
+    <div class="point">💡 看点：CUDA 近二十年的软件壁垒，第一次被"模型自己写适配"从内部凿开——若可复制，大模型公司采购芯片的议价权将明显增强，算力供应链从"英伟达单选"走向真多供应商比价。但注意口径：目前仅覆盖单模型 prefill 阶段、无与英伟达硬件的速度对比，6–12 个月基准也是 Anthropic 自估；结论先留一半。</div>
+  </div>
+
+  <div class="card">
+    <h2>美国 AI 云商 TensorWave 与 OpenAI 签六年协议：锁定 457 兆瓦专用算力</h2>
+    <ul>
+      <li><strong>时间：</strong>11月16日 22:07（财联社）</li>
+      <li><strong>人物/机构：</strong>TensorWave（美国 AI 云服务商）、OpenAI</li>
+      <li><strong>事件：</strong>双方签署为期六年的算力协议，TensorWave 将在美国多个数据中心提供总计 457 兆瓦（MW）的 IT 容量，作为 OpenAI 的专用 AI 算力供给</li>
+      <li><strong>数据：</strong>协议期 6 年；457MW IT 容量</li>
+      <li><strong>关键名词：</strong>TensorWave、专用算力容量、数据中心 IT 容量、长约锁供</li>
+    </ul>
+    <div class="point">💡 看点：头部模型公司开始绕过超大规模云厂商、直接向二线 AI 云锁定容量，算力供给链进一步多元化；6 年长约把数据中心电力、机房、网络设备等上游环节的订单能见度显著拉长，值得跟踪国内对应环节（电力设备、液冷、IDC）的映射机会。</div>
+  </div>
+
+  <div class="cat">💰 融资 &amp; 并购</div>
+
+  <div class="card">
+    <h2>Anthropic 正式向 SEC 提交 S-1：IPO 六倍超额认购，或募 640 亿美元、英伟达等拟认购 260 亿<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月16日–17日（Anthropic 官宣提交 S-1）；11月13日路透报道路演第三天即获 6 倍超额认购</li>
+      <li><strong>人物/机构：</strong>Anthropic（PBC 公益公司）；美国证监会（SEC）；英伟达等 7 家公司</li>
+      <li><strong>事件：</strong>Anthropic 正式提交 S-1 注册声明、启动 IPO 流程；路演认购火爆，订单达六倍超额认购；媒体测算本次 IPO 或募资约 640 亿美元，英伟达等 7 家公司拟按发行价认购合计 260 亿美元股票</li>
+      <li><strong>数据：</strong>6 倍超额认购；或募资约 640 亿美元；7 家公司锚定认购 260 亿美元</li>
+      <li><strong>关键名词：</strong>S-1、IPO、超额认购、PBC、锚定认购</li>
+    </ul>
+    <div class="point">💡 看点：AI 头部公司的资金供给从"私募轮"切换到"公开市场"，算力军备竞赛的资金池再上一个数量级，二级市场情绪今后会直接影响模型 API 供给与定价。对关注算力产业链的人，Anthropic 招股书里的算力合同与资本开支披露是难得的全景数据源，值得精读。</div>
+  </div>
+
+  <div class="card">
+    <h2>融资速览：AI 防御安全 Corma 三个月冲到 10 亿美元估值、斯坦福系 Noeri 出手 1.1 亿美元、欧洲 Plural 募 10 亿欧元基金</h2>
+    <ul>
+      <li><strong>时间：</strong>11月16日（三笔同日官宣）</li>
+      <li><strong>人物/机构：</strong>Corma（NEA 领投，红杉、Khosla、Coatue 跟投）；Noeri（斯坦福教授 Yejin Choi、Carlos Guestrin 创立，Menlo Ventures 领投，英伟达、Snowflake、思科战投）；Plural（伦敦深科技 VC）</li>
+      <li><strong>事件：</strong>①AI 防御安全公司 Corma（特拉维夫+旧金山）获 1.25 亿美元 A 轮、估值 10 亿美元，距 8 月种子轮仅 3 个月，主打"自主 AI 安全班组"——自研防御专用基础模型，在企业现有安全栈内值守安全运营，"黑色十月"漏洞潮后企业客户需求爆发；②Noeri 发布"客户自有、可自我改进的 AI"，从企业生产流量中持续学习并优化技能、工具乃至模型参数，主张智能应分散于多个客户专属系统而非单一超级模型；③Plural 完成迄今最大 10 亿欧元基金，投向欧洲 AI 基础设施、核聚变、防务与机器人深科技（组合含 Helsing、Proxima Fusion 等）</li>
+      <li><strong>数据：</strong>Corma A 轮 1.25 亿美元/估值 10 亿/总融资 1.85 亿/团队约 25 人；Noeri 1.1 亿美元；Plural 基金 10 亿欧元（约为首支的 4 倍）</li>
+      <li><strong>关键名词：</strong>AI 防御安全、自主 AI Workforce、自我改进 AI、客户自有模型、深科技基金</li>
+    </ul>
+  </div>
+
+  <div class="cat">🛡️ 安全 &amp; 伦理</div>
+
+  <div class="card">
+    <h2>Anthropic 把漏洞披露窗口压缩到 30 天：AI 找漏洞的速度快过人类流程</h2>
+    <ul>
+      <li><strong>时间：</strong>11月17日凌晨（海外 AI 安全资讯站 AI/TLDR 收录）</li>
+      <li><strong>人物/机构：</strong>Anthropic 前沿红队（Frontier Red Team）</li>
+      <li><strong>事件：</strong>因 AI 发现同类漏洞的速度大幅加快，Anthropic 前沿红队宣布缩短协调漏洞披露（CVD）时限至 30 天，要求安全研究者更早上报或公开发现，自身修复与响应节奏同步加快</li>
+      <li><strong>数据：</strong>披露窗口缩短至 30 天</li>
+      <li><strong>关键名词：</strong>CVD（协调漏洞披露）、前沿红队、AI 加速漏洞挖掘、负责任披露</li>
+    </ul>
+    <div class="point">💡 看点：当 AI 把漏洞发现速度提高一个量级，"披露时限"这类行业惯例被迫跟着改，安全响应周期会变成所有软件团队（不只是 AI 公司）的新约束。做企业系统的人可以把"30 天修复窗口"当作内部 SLA 的参考线。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-16">
 
   <div class="cat">🚀 模型 &amp; 产品</div>
 
@@ -837,113 +967,6 @@
 
 </section>
 
-<section class="day-section" id="day-2026-11-10">
-
-  <div class="cat">🚀 模型 &amp; 产品</div>
-
-  <div class="card">
-    <h2>Claude Fable 5.2 &amp; Mythos 5.2 登顶 Intelligence-Index：1000 Agent 协作 8 天造 OS<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月9日（美东时间），北京时间 11月10日</li>
-      <li><strong>人物/机构：</strong>Anthropic；Artificial Analysis</li>
-      <li><strong>事件：</strong>发布两款新旗舰模型——Claude Fable 5.2（编程与网络安全优化）和 Claude Mythos 5.2（深度通用推理）；Fable 5.2 在 Artificial Analysis Intelligence-Index v5 上以 65 分登顶，击败 Gemini 4 Carbon（60 分）和 GPT-6 Astra（50 分），超越前代 Fable 5.1 整整 5 分；演示成果包括：1000 个 Agent 协作 8 天从零造出一套操作系统、30 小时解决费马大定理、两个黑洞物理开放难题；生成速度最高提升 30%，API 价格降低 20%；整体行为安全审计得分 2.67（Mythos 5.2）优于 Opus 5.5 的 2.79</li>
-      <li><strong>数据：</strong>Intelligence-Index 65 分排第一；速度 +30%；API 价格 -20%；安全审计 2.67 分（越低越好）</li>
-      <li><strong>关键名词：</strong>Claude Fable 5.2、Mythos 5.2、Intelligence-Index v5、Agent 协作、行为安全审计</li>
-    </ul>
-    <div class="point">💡 看点：Anthropic 把"安全"与"能力"同时拉满——登顶排行榜的同时给出更低的安全行为分数；1000 Agent 自组织造 OS 的演示，说明多智能体协作的"涌现式工程"已从 PPT 走到真实交付，企业内的 Agent 编排框架要尽快评估 Fable 系列的能力。</div>
-  </div>
-
-  <div class="cat">🧠 芯片 &amp; 算力</div>
-
-  <div class="card">
-    <h2>谷歌发布 TPU 8tx &amp; 8i Max：一年四款挑战英伟达，保密计算 + 长上下文双方向<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月9日（美东时间）</li>
-      <li><strong>人物/机构：</strong>谷歌 Cloud；AMD</li>
-      <li><strong>事件：</strong>谷歌发布 TPU 第八代两款新变体——TPU 8tx 和 TPU 8i Max；这是谷歌首次在一年内推出四款 TPU（8t 和 8i 于 2026 I/O 发布），芯片迭代速度翻倍；TPU 8tx 面向政府、金融、医疗等受监管行业，与 AMD 处理器协同，硬件层面对数据加密，支持保密推理；TPU 8i Max 将两颗 TPU 封装在一起，扩大内存和计算能力，面向长上下文编程、数学推理及药物研发；两款均计划 2027 年上市</li>
-      <li><strong>数据：</strong>首次一年四款 TPU；8tx 硬件级加密 + AMD 协同；8i Max 双芯片封装；2027 年上市</li>
-      <li><strong>关键名词：</strong>TPU 8tx、TPU 8i Max、保密计算、长上下文、谷歌 vs 英伟达</li>
-    </ul>
-    <div class="point">💡 看点：TPU 从"追性能"转向"追场景"——保密计算和长上下文是企业 AI 落地最痛的两个点，谷歌直接在硬件层解决；"一年四款"的节奏说明谷歌把自研芯片当成了对抗英伟达生态的核心武器，云采购方在评估算力时，必须把"数据安全等级"和"上下文窗口支持"加入硬指标。</div>
-  </div>
-
-  <div class="card">
-    <h2>登临科技港股 11月10日挂牌：国产 GPU 赛道资本化提速</h2>
-    <ul>
-      <li><strong>时间：</strong>11月10日</li>
-      <li><strong>人物/机构：</strong>登临科技（国产 GPU 厂商）；港交所</li>
-      <li><strong>事件：</strong>国产 GPU 厂商登临科技正式在港交所挂牌上市，成为国产算力赛道资本化的又一里程碑；同期算力巨头超聚变 IPO 将于 11月12日在深交所上会，拟募资 80 亿元；出口管制持续收紧的窗口期，国产算力企业密集上市融资，直接输血研发与产能建设</li>
-      <li><strong>数据：</strong>登临科技 11月10日挂牌；超聚变拟募 80 亿元、11月12日上会</li>
-      <li><strong>关键名词：</strong>国产 GPU、港股 IPO、超聚变、算力替代、出口管制</li>
-    </ul>
-    <div class="point">💡 看点：国产算力的"资本化窗口"正在关闭——出口管制越紧，国产替代的时间压力越大；上市融资的钱直接流向产能和自研，未来一两年国产 GPU 的量产爬坡速度会比预期更快，企业算力采购要同步启动国产方案的 PoC 和评估。</div>
-  </div>
-
-  <div class="cat">💰 融资 &amp; 并购</div>
-
-  <div class="card">
-    <h2>Anthropic 最快本周二启动 IPO 路演：估值下修至 1.1-1.75 万亿，募资至多 1000 亿<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月9日（《金融时报》、凤凰网科技等报道）</li>
-      <li><strong>人物/机构：</strong>Anthropic；摩根大通；Dragoneer、Altimeter、红杉等投资方</li>
-      <li><strong>事件：</strong>10月26日提交 S-1 后的 15 天静默等待期将于本周正式结束，Anthropic 最快本周二启动正式路演；计划 11月16日当周完成定价、赶在 11月26 日美国感恩节假期前登陆纳斯达克全球精选市场；估值从此前传闻的 2 万亿美元大幅下修至 1.1-1.75 万亿美元区间，不同机构预期分歧明显；募资规模预计 800-1000 亿美元，将是美股历史上规模最大的 IPO；摩根大通 11月13日为潜在投资者举行信息说明会</li>
-      <li><strong>数据：</strong>估值 1.1-1.75 万亿美元；募资 800-1000 亿美元；最快本周二路演；11月16日当周定价；感恩节（11月26日）前上市</li>
-      <li><strong>关键名词：</strong>IPO 路演、S-1 静默期、估值下修、感恩节上市、美股最大 IPO</li>
-    </ul>
-    <div class="point">💡 看点：AI 巨头估值从"对标沙特主权基金"回归"对标现金流承诺"——1.1-1.75 万亿的估值区间，对应的是 Q3 年化约 810 亿美元营收；招股书里累计约 8954 亿美元的算力采购承诺会是上市后被市场公开审视的第一道考题，也给所有重度租算力的 AI 公司定了估值范式。</div>
-  </div>
-
-  <div class="card">
-    <h2>OpenAI 新一轮融资：阿联酋 MGX 牵头、投前估值 1.4 万亿美元<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月6日-9日（彭博社、智通财经等多轮报道）</li>
-      <li><strong>人物/机构：</strong>OpenAI；阿布扎比 MGX；软银集团；Coatue；贝莱德；加州大学捐赠基金</li>
-      <li><strong>事件：</strong>OpenAI 正与包括 MGX 在内的多家阿联酋基金磋商新一轮至少 300 亿美元融资，其中阿联酋方面合计出资上限约 100 亿美元，MGX 为最大投资方；软银和现有股东 Coatue 拟各投资数亿美元，贝莱德、加州大学捐赠基金同步洽谈入局；本轮按投前约 1.4 万亿美元定价，暂不设领投方，以固定估值向潜在投资人报价；此前 OpenAI 已完成约 110 亿美元首轮交割（估值 1.25 万亿美元）；最初计划融资 300 亿美元，后因市场下调至约 200 亿，现在又恢复至 300 亿级别</li>
-      <li><strong>数据：</strong>融资至少 300 亿美元；阿联酋出资上限约 100 亿；投前估值约 1.4 万亿美元；首轮已交割约 110 亿</li>
-      <li><strong>关键名词：</strong>MGX、阿联酋财团、软银、1.4 万亿投前估值、远程租算力</li>
-    </ul>
-    <div class="point">💡 看点：中东主权基金正在成为 AI 资本的"接盘者"——在美国科技股暴跌、Anthropic 估值下修的同时，阿联酋财团反而提高了出资额；资本向单一地域集中的趋势，意味着 AI 公司的股权结构会越来越复杂，也给非中东的 AI 创业公司带来了新的融资对手盘。</div>
-  </div>
-
-  <div class="card">
-    <h2>可灵 AI 198 亿元交割落地：估值 180 亿美元超母公司快手，港股上市在即</h2>
-    <ul>
-      <li><strong>时间：</strong>10月30日快手公告，11月持续报道</li>
-      <li><strong>人物/机构：</strong>快手；可灵 AI；中金、高盛、瑞银；国家人工智能产业投资基金</li>
-      <li><strong>事件：</strong>快手公告旗下视频生成大模型可灵 AI 已完成增资交割，实际到账增资款约 198.02 亿元人民币（约 29.05 亿美元），创全球视频生成大模型赛道单轮融资纪录；投后估值约 180 亿美元，已超过母公司快手的港股市值；34 名投资方合计出资认购 16.67% 股权，包括腾讯、阿里云、百度、中信证券投资等产业资本与财务资本，以及国家人工智能产业投资基金；中金、高盛、瑞银被选定为承销商，计划未来 12 个月内启动港股上市程序，目标最低融资 10 亿美元</li>
-      <li><strong>数据：</strong>到账约 198 亿元人民币（约 29 亿美）；估值约 180 亿美；34 名投资方；港股上市筹备中，目标 10 亿美</li>
-      <li><strong>关键名词：</strong>可灵 AI、视频生成、港股上市、估值超母公司、国家 AI 产业基金</li>
-    </ul>
-    <div class="point">💡 看点：子公司估值反超母公司——AI 子业务从"母公司成本中心"变成"独立估值的明星资产"，快手本身会不会被迫分拆成纯持股平台？对 ERP 采购来说，视频生成能力的商业化正在加速落地，品牌内容创作的 AI 工具链即将进入主流采购清单。</div>
-  </div>
-
-  <div class="cat">⚖️ 政策 &amp; 治理</div>
-
-  <div class="card">
-    <h2>欧盟拟向 AI 聊天机器人"成瘾设计"开刀 + 中央网信办清朗行动第二阶段启动</h2>
-    <ul>
-      <li><strong>时间：</strong>11月7日-9日多轮报道</li>
-      <li><strong>人物/机构：</strong>欧盟立法机构；中央网信办；各平台</li>
-      <li><strong>事件：</strong>两则 AI 监管同步推进：① 欧盟拟出台新规，要求企业向成年用户提供关闭"成瘾设计"功能的选项，AI 聊天机器人若模拟人际关系鼓励持续互动，相关功能也将受约束，触及平台提高用户留存的核心手段；② 中央网信办启动"清朗·整治AI应用乱象"专项行动第二阶段，同期还部署"清朗·整治科普健康类网络谣言"和"清朗·整治短视频虚假人设乱象"，此前已清理 AI 假冒公众人物信息 4.7 万余条、处置账号 3961 个</li>
-      <li><strong>数据：</strong>欧盟新规草案 + 清朗行动第二阶段；此前清理 4.7 万条、处置 3961 个账号</li>
-      <li><strong>关键名词：</strong>成瘾设计、AI 聊天机器人、清朗行动、假冒公众人物、数据合规</li>
-    </ul>
-    <div class="point">💡 看点：监管正在同时从"产品形态"和"内容渠道"两端收紧——欧盟管产品设计、中国管应用乱象，AI 交互方式的自由度正在被压缩；对企业来说，AI Agent 的用户界面不能再用"虚拟闺蜜""数字男友"这类高粘性人设，合规红线在变清晰。</div>
-  </div>
-
-  <div class="card">
-    <h2>英伟达 Vera Rubin 内存调度再披露：单卡 HBM 只多 3%，推理吞吐最高 30 倍</h2>
-    <ul>
-      <li><strong>时间：</strong>11月9日（英伟达技术博客）</li>
-      <li><strong>人物/机构：</strong>英伟达；AMD</li>
-      <li><strong>事件：</strong>英伟达进一步披露 Vera Rubin NVL72 的内存调度策略：模型权重与 KV 缓存压缩到 NVFP4 格式，权重摊到 72 颗 GPU 释放本地 HBM，Vera CPU 的大容量内存做缓冲层，Dynamo 负责上下文迁移，RAG 索引与非活跃上下文下沉到更便宜的存储层；内存从"单卡上限"变成"整机柜可调度资源"；同期 AMD 也发布 MI400 系列，进一步拉开数据中心算力的"内存 vs 算力"路线之争</li>
-      <li><strong>数据：</strong>单 GPU HBM 仅增约 3%；厂商口径推理吞吐最高 30 倍（待第三方验证）；72 颗 GPU 权重分摊</li>
-      <li><strong>关键名词：</strong>Vera Rubin、NVFP4、KV 缓存、Dynamo 调度、MI400、内存-算力解耦</li>
-    </ul>
-    <div class="point">💡 看点：AI 推理降本的胜负手正在从"芯片制程"转向"系统调度"——3% 的硬件增量撬动 30 倍的系统收益，采购侧评估 GPU 再也不能只看 FLOPS，要看整机柜交付能力和内存调度软件；ERP 系统的算力采购模块也要适配"按整机柜而非单卡"的评估模型。</div>
-  </div>
-
-</section>
 
 <!-- /DAY-SECTIONS -->
 
