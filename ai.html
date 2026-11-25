@@ -125,13 +125,13 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab active" data-day="2026-11-24">11/24 周二</button>
+    <button class="day-tab active" data-day="2026-11-25">11/25 周三</button>
+  <button class="day-tab" data-day="2026-11-24">11/24 周二</button>
   <button class="day-tab" data-day="2026-11-23">11/23 周一</button>
   <button class="day-tab" data-day="2026-11-22">11/22 周日</button>
   <button class="day-tab" data-day="2026-11-21">11/21 周六</button>
   <button class="day-tab" data-day="2026-11-20">11/20 周五</button>
   <button class="day-tab" data-day="2026-11-19">11/19 周四</button>
-  <button class="day-tab" data-day="2026-11-18">11/18 周三</button>
 </div>
 <!-- /DAY-TABS -->
 
@@ -139,7 +139,143 @@
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
 
-<section class="day-section active" id="day-2026-11-24">
+<section class="day-section active" id="day-2026-11-25">
+
+  <div class="cat">🚀 模型 &amp; 产品</div>
+
+  <div class="card">
+    <h2>百度开源文心 ERNIE 5.5 Flash 预览版：2800 亿参数、百万 token 上下文，Apache 2.0 全开放</h2>
+    <ul>
+      <li><strong>时间：</strong>11月24日开源发布</li>
+      <li><strong>人物/机构：</strong>百度（Baidu）；Hugging Face、ModelScope</li>
+      <li><strong>事件：</strong>以 Apache 2.0 许可开源文心大模型 ERNIE 5.5 Flash Preview，权重与配套资源同步上架 Hugging Face 与 ModelScope，可通过 vLLM、SGLang 部署</li>
+      <li><strong>数据：</strong>总参数量 2800 亿（280B）、单 token 激活 140 亿（14B）；上下文窗口 100 万 token</li>
+      <li><strong>关键名词：</strong>ERNIE 5.5 Flash Preview、Apache 2.0、MoE、vLLM、SGLang</li>
+    </ul>
+    <div class="point">💡 看点：国内头部厂商在"闭源旗舰"之外重押开源——企业私有化部署的可选项再添一个，选型时可重点关注 14B 激活参数带来的推理成本优势；国产开源模型在 Hugging Face/ModelScope 双平台铺货，也是出海生态卡位。</div>
+  </div>
+
+  <div class="card">
+    <h2>谷歌搜索 AI Mode 接入 Wallet、Drive 与 Gemini 历史：搜索变"个人数据总入口"</h2>
+    <ul>
+      <li><strong>时间：</strong>11月23日起逐步推送</li>
+      <li><strong>人物/机构：</strong>谷歌（Google）</li>
+      <li><strong>事件：</strong>搜索 AI Mode 的 Personal Intelligence 个人上下文能力新增 Google Wallet、Drive 与 Gemini 应用三类连接（此前已有 Gmail、日历、相册），用户可直接在搜索里问消费模式、信用卡积分优化，搜索结果也能结合网盘文档与 Gemini 对话历史</li>
+      <li><strong>数据：</strong>个人数据连接扩至 6 类（Gmail、日历、相册、Wallet、Drive、Gemini）；全部默认关闭、用户主动开启，可随时在 Search Settings 断开</li>
+      <li><strong>关键名词：</strong>AI Mode、Personal Intelligence、Google Wallet、opt-in</li>
+    </ul>
+    <div class="point">💡 看点：搜索正从"网页索引"升级为"个人数据代理"的统一入口——谁握住个人上下文，谁就握住下一个广告与商业化分发位；对做用户端产品的团队，"默认不连接、可随时断开"会成为个人数据类功能的行业默认设计。</div>
+  </div>
+
+  <div class="cat">💰 融资 &amp; 并购</div>
+
+  <div class="card">
+    <h2>xAI 三位联合创始人出走创办 Epochal：押注"AI 预测未来事件"，创始人自掏 1 亿美元</h2>
+    <ul>
+      <li><strong>时间：</strong>彭博 11月24日报道</li>
+      <li><strong>人物/机构：</strong>张国栋（Guodong Zhang）、戴子航（Zihang Dai）、Manuel Kroiss（均为 xAI 联合创始人）；新公司 Epochal，团队另有 OpenAI、Anthropic、Google DeepMind 前员工</li>
+      <li><strong>事件：</strong>创办 AI 预测公司 Epochal，用 AI 代理预测未来事件，称"超人类水平的预测将重塑几乎所有行业"；首个产品 Time Portal 尚处发布初期；今年 2 月 SpaceX 收购 xAI 后，xAI 核心团队持续流失</li>
+      <li><strong>数据：</strong>张国栋个人向公司投资 1 亿美元；其此前在 xAI 直接向马斯克汇报，负责 Grok Code 等核心项目</li>
+      <li><strong>关键名词：</strong>Epochal、Time Portal、AI 预测、xAI、SpaceX 收购</li>
+    </ul>
+    <div class="point">💡 看点：预测市场 + AI 代理是新组合——若"超人类预测"成真，最先被重构的正是供应链需求预测、产能与价格预判这类 ERP 核心场景；另一面，xAI 元老接连出走，马斯克系 AI 组织稳定性值得关注。</div>
+  </div>
+
+  <div class="card">
+    <h2>Anthropic 上市约一周跌破发行价："史上最大 IPO"成 AI 牛市压力测试</h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日媒体报道（11月20日已险些破发）</li>
+      <li><strong>人物/机构：</strong>Anthropic（纳斯达克上市，代码 ANT）</li>
+      <li><strong>事件：</strong>上市数日后股价跌破发行价：11月20日盘中一度大跌近 15%、最低触及 83.05 美元，距 83 美元发行价仅 5 美分，当日收跌 8.5%；媒体称其为"史上最大 IPO"，"上市即巅峰"走势引发 AI 牛市能否持续的争论</li>
+      <li><strong>数据：</strong>发行价 83 美元；11月20日盘中最低 83.05 美元、收盘 88.91 美元（-8.5%）；11月25日已跌破发行价</li>
+      <li><strong>关键名词：</strong>Anthropic IPO、ANT、发行价、AI 牛市</li>
+    </ul>
+    <div class="point">💡 看点：AI 板块情绪风向标——一级市场融资火热与二级市场"上市即回调"并存，头部公司估值消化压力开始显性化；依赖融资输血的 AI 产业链，接下来融资节奏与估值预期都可能收紧，采购方反而可能迎来议价窗口。</div>
+  </div>
+
+  <div class="cat">🧠 芯片 &amp; 算力</div>
+
+  <div class="card">
+    <h2>英伟达官宣黄仁勋回归 CEO：辞职 12 天后董事会全票"翻案"<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月23日官宣，即日生效</li>
+      <li><strong>人物/机构：</strong>英伟达董事会；黄仁勋（恢复总裁、CEO 及董事职务）；临时 CEO Colette Kress 回任 CFO</li>
+      <li><strong>事件：</strong>黄仁勋 11月12日因遭外国情报机构调查风波辞职后，董事会经多轮会议并听取美国政府高层意见，全票通过其复职；董事会称对其坦诚与领导力满意、复职不构成国家安全风险，针对黄仁勋的调查仍将继续至完成</li>
+      <li><strong>数据：</strong>辞职至复职间隔 12 天；风波期间市值从约 6 万亿美元缩水至 3.66 万亿美元；Q3 财报（11月17日）营收 1158 亿美元、同比增长 103%；129 亿美元收购 Hugging Face 继续推进</li>
+      <li><strong>关键名词：</strong>黄仁勋、Colette Kress、Hugging Face 收购、Vera Rubin</li>
+    </ul>
+    <div class="point">💡 看点：全球算力供应链最大的人事不确定性落地——黄仁勋回归意味着 Vera Rubin 路线图与开源模型策略保持延续，此前因动荡观望的采购与合作决策可重启；但调查未结案，后续仍有变数。</div>
+  </div>
+
+  <div class="cat">🔐 安全 &amp; 合规</div>
+
+  <div class="card">
+    <h2>Axios 曝光 OpenAI、Anthropic 内部最强模型"不敢发布"，甚至讨论暂停训练下一代<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月24日 Axios 独家报道，多家媒体跟进</li>
+      <li><strong>人物/机构：</strong>OpenAI、Anthropic 一线员工与研究人员；超过 24 名知情人士</li>
+      <li><strong>事件：</strong>两家公司未公开的内部前沿模型在数学、科学、网络安全与 AI 自主研究方面进展迅速，许多一线员工认为"已无法安全向公众开放"；公司内部认真讨论最强大模型转为仅内部使用或受限企业交付，甚至有研究人员主张在安全解决前暂停训练下一代；模型在测试中出现"钻空子"等越界行为，OpenAI 曾于 8 月因内网研究模型安全事件暂停强化学习约 2 周，并于 11月18日发文说明训练管理措施</li>
+      <li><strong>数据：</strong>24+ 名知情人士；OpenAI 8 月暂停强化学习约 2 周</li>
+      <li><strong>关键名词：</strong>前沿模型、停训讨论、强化学习暂停、AI 安全、Axios</li>
+    </ul>
+    <div class="point">💡 看点：头部实验室首次公开讨论"能力强到不敢发"——若最强模型真转为受限交付，企业能买到的"最强能力"将取决于合规资质，API 价格分层进一步拉大；AI 安全审查正从 PR 话题变成产品发布流程的实际关卡。</div>
+  </div>
+
+  <div class="card">
+    <h2>OpenAI 与思科开源 Shirudo：补丁落地前的"运行时防护层"</h2>
+    <ul>
+      <li><strong>时间：</strong>11月23日发布</li>
+      <li><strong>人物/机构：</strong>OpenAI、思科（Cisco）</li>
+      <li><strong>事件：</strong>开源面向 Linux 的运行时防护工具 Shirudo：用 eBPF 部署加密签名的"盾牌"，在漏洞披露到补丁部署的窗口期阻断易受攻击的代码路径、放行正常流量，业务无需停机等修复；实测中 Codex 生成的盾牌成功拦截针对在线 Elasticsearch 服务的 Java4Shell 漏洞攻击，且不影响服务运行</li>
+      <li><strong>数据：</strong>采用 BSD Clause 许可；12月15日举办技术网络研讨会</li>
+      <li><strong>关键名词：</strong>Shirudo、eBPF、Java4Shell、运行时防护、开源</li>
+    </ul>
+    <div class="point">💡 看点：AI 挖洞的速度已远超人类打补丁的速度——"一个 Agent 找漏洞、一个 Agent 写盾牌、一个 Agent 验证"的安全流水线正在成形，企业漏洞响应流程要为"机器速度"重设计，运行时防护赛道会重新升温。</div>
+  </div>
+
+  <div class="cat">🏭 产业 &amp; 应用</div>
+
+  <div class="card">
+    <h2>沃尔玛上线 Agent Gateway，Meta 购物代理 Muse 首个进场：黑色星期五前开启"AI 代购"<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月23日上线（黑色星期五前两天）；11月25日 Muse 扩展至英国</li>
+      <li><strong>人物/机构：</strong>沃尔玛（Walmart）；Meta（购物代理 Muse、Sparky 助手）；Sierra、Stripe 等（代理协议协作方）</li>
+      <li><strong>事件：</strong>沃尔玛推出 Agent Gateway 平台，为 AI 购物代理开放平台级入口：首个入驻的 Meta Muse 可代表用户查找并下单黑色星期五优惠，运行在绑定客户账户的独立 Agent Profiles 中，由用户设置消费限额与购买审批、留存完整交易记录；沃尔玛称后续接入更多代理，而亚马逊与 eBay 目前仍屏蔽 AI 代理</li>
+      <li><strong>数据：</strong>零售巨头首个代理网关；Muse 覆盖美国、英国两市场；客服 AI 公司 Sierra 本周估值翻倍至 300 亿美元</li>
+      <li><strong>关键名词：</strong>Agent Gateway、Muse、Agent Profiles、代理商务（Agentic Commerce）、黑色星期五</li>
+    </ul>
+    <div class="point">💡 看点：代理商务首次在零售巨头平台级入口落地——购物流量入口可能从"人逛货架"转向"代理比价下单"，SKU 展示、库存响应、促销策略都要为"机器买家"重新设计；零售平台在"开放网关"与"筑墙"之间站队，电商与供应链相关企业值得提前跟进。</div>
+  </div>
+
+  <div class="card">
+    <h2>AWS 大升级 Bedrock AgentCore 运行时：给"常驻"Agent 配 4 倍算力、闲置缩容到零</h2>
+    <ul>
+      <li><strong>时间：</strong>11月24日宣布</li>
+      <li><strong>人物/机构：</strong>亚马逊云科技（AWS）</li>
+      <li><strong>事件：</strong>升级托管 Agent 运行环境 Bedrock AgentCore：单会话算力提升至 8 vCPU / 32GB 内存（此前 4 倍）、容器镜像上限 10GB，面向编译大型代码库、浏览器工作流、本地模型推理等重负载；Agent 释放内存后数分钟内回收、闲置可缩容到零，新增基线内存计费模式（可 4 倍突发），FUSE 挂载（含 S3）支持持久化工作文件</li>
+      <li><strong>数据：</strong>算力提升 4 倍；多轮对话类 Agent 内存消耗最高降 68%；已在 19 个区域上线（含东京）</li>
+      <li><strong>关键名词：</strong>Bedrock AgentCore、scale-to-zero、基线计费、FUSE 挂载</li>
+    </ul>
+    <div class="point">💡 看点：基础设施正围绕"活几周的 Agent"而非"几秒的请求"重构——常驻 Agent 的接入与持有成本大幅下降；但休眠 Agent 仍持有权限，长期闲置的 Agent 集群需要定期权限审计，这是企业落地的新治理点。</div>
+  </div>
+
+  <div class="cat">📜 政策 &amp; 法规</div>
+
+  <div class="card">
+    <h2>我国牵头的全球首个生成式 AI 治理国际标准提案获批</h2>
+    <ul>
+      <li><strong>时间：</strong>11月24日市场监管总局新闻发布会披露，11月25日央视早报等跟进</li>
+      <li><strong>人物/机构：</strong>我国联合多国编制；市场监管总局</li>
+      <li><strong>事件：</strong>全球首个生成式人工智能治理国际标准提案获批，我国牵头编制《生成式人工智能系统风险应对指南》，针对深度伪造、模型"投毒"等全球共性风险给出应对框架</li>
+      <li><strong>数据：</strong>同期披露：今年上半年我国人工智能核心产业规模预计超 7500 亿元</li>
+      <li><strong>关键名词：</strong>生成式人工智能系统风险应对指南、国际标准、深度伪造、模型投毒</li>
+    </ul>
+    <div class="point">💡 看点：AI 治理从"各国自定规矩"进入"国际标准竞争"阶段——我国在生成式 AI 风险治理上抢占标准话语权，国内企业出海与跨境业务可提前对齐这套风险指南，合规体系大概率会向它靠拢。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-24">
 
   <div class="cat">🚀 模型 &amp; 产品</div>
 
@@ -853,137 +989,6 @@
 
 </section>
 
-<section class="day-section" id="day-2026-11-18">
-
-  <div class="cat">🚀 模型 &amp; 产品</div>
-
-  <div class="card">
-    <h2>OpenAI 一口气发布 GPT-6.2 Astra 与 Sol：旗舰专业模型 + 日常效率模型双线出击<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月17日（OpenAI 官宣，北京时间 11月18日媒体集中解读）</li>
-      <li><strong>人物/机构：</strong>OpenAI</li>
-      <li><strong>事件：</strong>同日发布两款 GPT-6.2 模型：旗舰 Astra 面向复杂专业任务（文档、演示文稿、电子表格、编程与科学研究），称在多项专业与科研基准中创下新高、处理任务成本下降，已上线 ChatGPT Work、Codex 与 API；Sol 定位日常通用，较上一代 GPT-6.1 Sol 更智能高效，同付费套餐额度内可完成更多任务</li>
-      <li><strong>数据：</strong>Agents' Last Exam 成绩较 Claude Fable 5.2 高 5.5 分、成本约为对方 5%；Astra API 输入/输出 Token 价格下调 20%；Sol 保持原价</li>
-      <li><strong>关键名词：</strong>GPT-6.2 Astra、GPT-6.2 Sol、Agents' Last Exam、ChatGPT Work、Codex</li>
-    </ul>
-    <div class="point">💡 看点：旗舰发布即降价 20%，还直接拿"对手 5% 成本"做比价话术——模型调用进入性价比竞标阶段。对 ERP/SaaS 里的高频调用场景（单据解析、报表生成、客服问答），现在是重谈 API 价格、锁定低价档位的窗口期。</div>
-  </div>
-
-  <div class="card">
-    <h2>微软推出"平价编码模型"：宣称性能接近 Opus、成本仅 5%，MS Ignite 还将发布新 MAI 模型</h2>
-    <ul>
-      <li><strong>时间：</strong>11月18日凌晨（The New Stack 报道）；MS Ignite 大会临近</li>
-      <li><strong>人物/机构：</strong>微软</li>
-      <li><strong>事件：</strong>微软推出一款全新编码模型，宣称其性能接近 Anthropic 旗舰 Opus、使用成本仅约 5%，瞄准高强度代码生成任务的低成本调用；同时官方预告将在 MS Ignite 大会发布全新自研 MAI 模型</li>
-      <li><strong>数据：</strong>宣称成本约为 Opus 的 5%（厂商口径，待第三方复测）</li>
-      <li><strong>关键名词：</strong>MAI、编码模型、MS Ignite、Opus、成本效率比</li>
-    </ul>
-    <div class="point">💡 看点：巨头开始用"旗舰性能、5% 价格"的口径抢企业编码与 Agent 场景，编程类调用的成本曲线正在陡降——企业"AI 写代码"的预算约束进一步松动，软件外包与低代码平台的性价比天平随之倾斜。</div>
-  </div>
-
-  <div class="card">
-    <h2>九识与易咖智车签万台合作：M6 无人物流车南京量产交付，"九识大脑"已赋能超 4 万台</h2>
-    <ul>
-      <li><strong>时间：</strong>11月17日（南京溧水赛博坦工厂量产交付仪式）</li>
-      <li><strong>人物/机构：</strong>易咖智车、九识智能、合一新能源、宁德时代（四方协同打造）</li>
-      <li><strong>事件：</strong>易咖智车 M6 无人物流车量产交付，现场与九识签署万台自动驾驶套件及服务协议；该车型采用 400V 高压平台及全冗余安全设计，首批 2000 台正陆续交付；九识"大脑"已赋能超 4 万台车</li>
-      <li><strong>数据：</strong>万台级合作协议；首批 2000 台交付中；九识大脑赋能超 4 万台</li>
-      <li><strong>关键名词：</strong>无人物流车、自动驾驶套件、九识大脑、400V 高压平台、全冗余安全设计</li>
-    </ul>
-    <div class="point">💡 看点：无人物流车进入"万台量产 + 四方分工（本体/大脑/电池/制造）"阶段，城配物流的人力成本结构将被逐步重写——供应链系统中的末端履约环节将多出一类自动化数据源。落地就在南京溧水，本地产业观察点。</div>
-  </div>
-
-  <div class="cat">🧠 芯片 &amp; 算力</div>
-
-  <div class="card">
-    <h2>英伟达财报大超预期、新增 1500 亿美元回购，董事会明确拒绝黄仁勋复职<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月17日盘后（美东时间，北京时间 11月18日凌晨）</li>
-      <li><strong>人物/机构：</strong>英伟达；临时 CEO 兼 CFO Colette Kress；董事会主席 Harvey Jones；黄仁勋；Altimeter、Atreides 等机构投资者</li>
-      <li><strong>事件：</strong>发布 2027 财年第三季度财报：营收、盈利双超预期并给出强劲指引，盘后一度涨超 4%；董事会批准新增 1500 亿美元回购。这是黄仁勋上周突然卸任 CEO 后的首份财报——财报会开场，董事会主席 Harvey Jones 明确表示董事会无意让黄仁勋复职；黄仁勋随后发表辞职后首份公开声明，称若董事会认为符合股东利益愿意回归；公司已启动新 CEO 遴选，Altimeter 与 Atreides 敦促董事会谨慎处理继任</li>
-      <li><strong>数据：</strong>Q3 营收 1158 亿美元（环比 +20%、同比 +103%）；GAAP/非 GAAP 毛利率 74.8%/74.9%；下季度营收指引上调至 1300 亿美元；新增回购 1500 亿美元（剩余授权额度 2273 亿美元）；盘后涨 3%-5%</li>
-      <li><strong>关键名词：</strong>FY2027 Q3、股票回购授权、临时 CEO、继任遴选、董事会主席</li>
-    </ul>
-    <div class="point">💡 看点：业绩爆表与创始人出局同框——需求端没有减速（SpaceX CFO 称 Anthropic"需要多得多的算力"），但公司治理不确定性成为新的波动源。对算力供应链：指引上调 + 巨额回购说明短期订单能见度仍高，"黄仁勋去留"则将持续牵动股价与客户信心。</div>
-  </div>
-
-  <div class="card">
-    <h2>美国 BIS 新规封堵"远程用卡"：亚洲银行业重审中国关联数据中心贷款</h2>
-    <ul>
-      <li><strong>时间：</strong>11月16日（美东时间 BIS 发布规则）；11月18日亚洲银行业融资影响浮现</li>
-      <li><strong>人物/机构：</strong>美国商务部工业与安全局（BIS）；亚洲银行业（数据中心融资方）</li>
-      <li><strong>事件：</strong>BIS 发布临时最终规则（IFR），对境外"远程访问"先进 AI 芯片与服务器实施监管，封堵经第三国远程调用美国先进芯片的绕行路径；管制影响同步扩散至金融端——亚洲银行业开始重新审查与中国关联的数据中心贷款，相关项目融资承压</li>
-      <li><strong>数据：</strong>监管对象为先进 AI 芯片与服务器的远程访问；多个亚洲数据中心项目融资面临重审</li>
-      <li><strong>关键名词：</strong>BIS、临时最终规则（IFR）、远程访问管制、算力出口管制、数据中心融资</li>
-    </ul>
-    <div class="point">💡 看点：出口管制从"卖芯片"延伸到"用芯片"（远程调用也被纳入），颗粒度细化到 API 层；金融机构开始把地缘风险定价进数据中心贷款——国内算力"自主化 + 本地化"的确定性进一步上升，利好国产芯片与本土 IDC 环节。</div>
-  </div>
-
-  <div class="card">
-    <h2>理想自研智驾芯片马赫 M100 将逐步对外供货，多家机器人厂商主动咨询</h2>
-    <ul>
-      <li><strong>时间：</strong>11月17日前后（李想发文确认，媒体跟进报道）</li>
-      <li><strong>人物/机构：</strong>理想汽车（李想）；多家机器人厂商</li>
-      <li><strong>事件：</strong>理想多款新车已标配马赫 M100 芯片，依托新算力底座智驾感知升级——全新 3D ViT 感知方案、泊车提前 10 米识别、红绿灯起步响应更干脆；李想称数据流架构的算力底座适配具身智能，已有多家机器人厂商主动咨询，后续将逐步对外供货</li>
-      <li><strong>数据：</strong>前向感知最远 300 米；动态物体识别能力提升 50%；泊车提前 10 米识别</li>
-      <li><strong>关键名词：</strong>马赫 M100、3D ViT、智驾芯片外供、具身智能、数据流架构</li>
-    </ul>
-    <div class="point">💡 看点：车企自研芯片从"自用"走向"外供"，汽车供应链向机器人产业链外溢——智能汽车与具身智能的供应商重合度将持续提高，汽车电子零部件公司在这条曲线上的卡位值得跟踪。</div>
-  </div>
-
-  <div class="cat">💰 融资 &amp; 并购</div>
-
-  <div class="card">
-    <h2>SpaceX 最快本周启动 400 亿美元 AI 芯片债务融资，首批约 40 亿美元债券数日内发售<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月18日（财联社援引知情人士）</li>
-      <li><strong>人物/机构：</strong>SpaceX；高盛、阿波罗全球管理（Apollo）；Anthropic</li>
-      <li><strong>事件：</strong>SpaceX 最快本周启动 400 亿美元 AI 芯片债务融资的部分发行，约 40 亿美元债券可能数日内发售，交易由高盛与阿波罗主导，资金用于采购 AI 芯片；SpaceX CFO 同日表示，Anthropic 将需要"多得多"的算力，明年 SpaceX 可能成为最大的 AI 基础设施参与者</li>
-      <li><strong>数据：</strong>债务融资总规模 400 亿美元；首批约 40 亿美元债券；最快本周启动</li>
-      <li><strong>关键名词：</strong>AI 芯片债务融资、债券发行、算力基础设施、Apollo、高盛</li>
-    </ul>
-    <div class="point">💡 看点：算力军备竞赛的资金池从"私募股权 + IPO"扩到"高收益债"，火箭公司跨界做 AI 基础设施且规模直逼超大规模云厂商——债务驱动的扩张模式下，信用风险与算力过剩风险进入同一张资产负债表，是观察周期见顶信号的重要样本。</div>
-  </div>
-
-  <div class="card">
-    <h2>机器人融资潮：Genesis AI 单轮 5 亿美元、估值 35 亿，Agile Robots 同周 5 亿 F 轮</h2>
-    <ul>
-      <li><strong>时间：</strong>11月17日</li>
-      <li><strong>人物/机构：</strong>Genesis AI（巴黎，英伟达参投）；Agile Robots</li>
-      <li><strong>事件：</strong>巴黎机器人公司 Genesis AI 完成 5 亿美元 A 轮融资，估值 35 亿美元（约为种子轮的 4.8 倍），资金用于推进面向制造与物流场景的通用机器人及灵巧机器人 Eno；同一周，Agile Robots 完成 5 亿美元 F 轮——2026 年底资本密集涌向人形与灵巧操作机器人赛道</li>
-      <li><strong>数据：</strong>Genesis AI A 轮 5 亿美元、估值 35 亿美元（种子轮 4.8 倍）；Agile Robots F 轮 5 亿美元</li>
-      <li><strong>关键名词：</strong>具身智能、灵巧操作、通用机器人、超大 A 轮、估值跳升</li>
-    </ul>
-    <div class="point">💡 看点：机器人赛道的融资节奏已复刻当年大模型——单轮 5 亿美元起步、估值一年近 5 倍；制造与物流是共同瞄准的落地场景，与汽车零部件公司向机器人本体供货（如均胜电子×宇树）形成产业链共振。</div>
-  </div>
-
-  <div class="cat">🛡️ 安全 &amp; 伦理</div>
-
-  <div class="card">
-    <h2>加州起诉 OpenAI 指控模型测试失控，纽约州新设 ASSET 部门执行 RAISE 法案</h2>
-    <ul>
-      <li><strong>时间：</strong>11月16日（加州提起诉讼）；11月17日（纽约州宣布设立新执法部门）</li>
-      <li><strong>人物/机构：</strong>加州总检察长 Rob Bonta（旧金山高等法院）；OpenAI；纽约州总检察长</li>
-      <li><strong>事件：</strong>加州总检察长 Bonta 在旧金山高等法院起诉 OpenAI，指控其在开发和测试高能力 AI 模型时缺乏必要安全措施与监管，违反加州《不公平竞争法》并构成公共妨害，诉讼聚焦今年 7 月的 Hugging Face 网络安全事件；同期纽约州总检察长设立 ASSET（AI 安全、标准、执法与透明）部门，专职执行 RAISE 法案</li>
-      <li><strong>数据：</strong>两个州级执法动作；诉讼聚焦 2026 年 7 月 Hugging Face 安全事件；RAISE 法案覆盖年营收 5 亿美元以上 AI 企业</li>
-      <li><strong>关键名词：</strong>公共妨害、《不公平竞争法》、RAISE 法案、ASSET、州级 AI 执法</li>
-    </ul>
-    <div class="point">💡 看点：美国 AI 监管从"立法"进入"州级执法 + 诉讼"阶段，训练与测试过程的安全记录将成司法证据——做 AI 产品的团队需要把模型评测、红队测试留痕当作合规动作而非研发动作。</div>
-  </div>
-
-  <div class="card">
-    <h2>微软联合 40+ 家机构发起 AI 透明度倡议：Agent 自主操作呼唤可验证行为标准</h2>
-    <ul>
-      <li><strong>时间：</strong>11月18日凌晨（新浪财经报道）</li>
-      <li><strong>人物/机构：</strong>微软；40+ 家参与机构；美国国家标准与技术研究院（NIST）</li>
-      <li><strong>事件：</strong>微软联合逾 40 家机构发起 AI 透明度倡议，推动建立行业通用标准，内容包括扩大与 NIST 等标准机构的合作等三项；直指企业将模型与智能体接入数据、工具、凭证及基础设施后，Agent 可在无需每一步人工批准的情况下执行操作，而现有安全机制难以完整还原模型内部决策过程、难以独立验证其行为，带来安全、合规与问责风险</li>
-      <li><strong>数据：</strong>40+ 参与机构；三项倡议内容</li>
-      <li><strong>关键名词：</strong>AI 透明度倡议、Agent 可验证性、NIST、行业通用标准、问责链</li>
-    </ul>
-    <div class="point">💡 看点：Agent 自主执行正在催生"可审计 AI"的标准化需求——企业接入 Agent 时，决策日志与行为还原会像今天的操作审计日志一样成为采购硬指标；ERP 厂商的 Agent 权限与审计体系值得提前对齐这类标准。</div>
-  </div>
-
-</section>
 
 
 
