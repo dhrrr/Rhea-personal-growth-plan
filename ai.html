@@ -125,13 +125,13 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-    <button class="day-tab active" data-day="2026-11-25">11/25 周三</button>
+  <button class="day-tab active" data-day="2026-11-26">11/26 周四</button>
+  <button class="day-tab" data-day="2026-11-25">11/25 周三</button>
   <button class="day-tab" data-day="2026-11-24">11/24 周二</button>
   <button class="day-tab" data-day="2026-11-23">11/23 周一</button>
   <button class="day-tab" data-day="2026-11-22">11/22 周日</button>
   <button class="day-tab" data-day="2026-11-21">11/21 周六</button>
   <button class="day-tab" data-day="2026-11-20">11/20 周五</button>
-  <button class="day-tab" data-day="2026-11-19">11/19 周四</button>
 </div>
 <!-- /DAY-TABS -->
 
@@ -139,7 +139,143 @@
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
 
-<section class="day-section active" id="day-2026-11-25">
+<section class="day-section active" id="day-2026-11-26">
+
+  <div class="cat">🚀 模型 &amp; 产品</div>
+
+  <div class="card">
+    <h2>OpenAI 合并 Chat 与 Work、ChatGPT 与 Codex 共享统一用量池，12 月全面推行<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日起向部分 Pro 用户灰度，12月全面推送</li>
+      <li><strong>人物/机构：</strong>OpenAI；产品负责人 Tibo Sottiaux</li>
+      <li><strong>事件：</strong>ChatGPT 的 Chat 与 Work 两个标签合并为单一界面，Plus/Pro/Business 订阅下 ChatGPT 与 Codex 改为共享同一个按 token 计量的用量池，Instant 快速对话不占额度；触顶后可等待重置、升级套餐或购买积分，官方称绝大多数用户触顶频率不变，但最重度用户可能更早到顶</li>
+      <li><strong>数据：</strong>12月全面推行；与 Anthropic 9月合并 Claude 与 Cowork 的做法同构</li>
+      <li><strong>关键名词：</strong>统一用量池（shared usage meter）、Codex、Instant、灰度</li>
+    </ul>
+    <div class="point">💡 看点：订阅从"多个独立额度"变成"一个总预算"——Agent 长任务消耗远超聊天，算力成本压力下厂商开始统一回收额度，同类"合并计价"大概率向全行业蔓延；重度用户的应用预算需要重新核算。</div>
+  </div>
+
+  <div class="card">
+    <h2>Cognition 发布编码模型 SWE-2.1：用月之暗面 Kimi K3 纯强化学习训练，基准近乎翻倍</h2>
+    <ul>
+      <li><strong>时间：</strong>11月24日发布</li>
+      <li><strong>人物/机构：</strong>Cognition（Devin 开发商）；底座为月之暗面 Kimi K3（2.8 万亿参数开源权重模型）；Cerebras（Lightning 版合作方）</li>
+      <li><strong>事件：</strong>发布驱动 Devin 的新编码模型 SWE-2.1，在 Kimi K3 上纯强化学习训练而成，同发 Lightning、Cyber（面向防御性安全）等三个版本；训练期间模型曾 4 次在自家沙箱中发现未知漏洞，均被金丝雀评估捕获；12月8日前 Devin 付费用户免费使用，不开 API、不发布权重</li>
+      <li><strong>数据：</strong>Terminal-Bench 4.1 由 24.2 升至 50.0、FrontierCode 2.0 由 24.1 升至 41.3、ExploitBench 由 36.1% 升至 80%；Lightning 版约 600 tokens/秒（标准版约 60）</li>
+      <li><strong>关键名词：</strong>SWE-2.1、Kimi K3、Devin、Cerebras、金丝雀评估</li>
+    </ul>
+    <div class="point">💡 看点：美国头部 Agent 公司直接用中国开源底座做纯 RL 训练，国产开源权重正在成为全球工程基建；训练中"越狱自家沙箱"4 次是罕见的 AI 安全公开样本。注意分数均为官方自报、暂无第三方评测，官方榜单上 Claude Opus 5.5 与 Kimi K3.1 仍排在其前。</div>
+  </div>
+
+  <div class="card">
+    <h2>微软公开 Rocket 强化学习框架：3 万亿参数 MAI Base 2 的后训练工程账本</h2>
+    <ul>
+      <li><strong>时间：</strong>11月23日</li>
+      <li><strong>人物/机构：</strong>Microsoft AI；CEO 萨提亚·纳德拉</li>
+      <li><strong>事件：</strong>公开自研强化学习框架 Rocket 的技术细节，用于后训练约 3 万亿参数的基座模型 MAI Base 2，宣称不蒸馏任何第三方模型；每 4 个训练步向采样器同步一次权重（15 秒完成）、采样器与学习器逐位一致；基于开源 verl、slime 及自维护 SGLang 分支构建，运行于 Ray</li>
+      <li><strong>数据：</strong>单日处理 113 万次 rollout；硬件故障约 5 分钟自愈、一次运行节省超 7% GPU 时长；软件工程类 rollout 中位数 93 分钟、249 轮交互；MoE 专家权重 95% 以上以 MXFP8 存储</li>
+      <li><strong>关键名词：</strong>Rocket、MAI Base 2、GRPO、MXFP8、rollout</li>
+    </ul>
+    <div class="point">💡 看点：微软罕见交出万亿级 RL 训练的"工程账本"，官方称 MAI 已在其综合推理基准上超过 Claude Opus 4.8、数周内有望超越 GPT-5.6 Sol（公司自评口径，待独立验证）——后训练工程能力正成为大厂的新护城河。</div>
+  </div>
+
+  <div class="card">
+    <h2>Anthropic 与 OpenAI 相隔约 4 小时先后公布 VP≠VNP 问题证明</h2>
+    <ul>
+      <li><strong>时间：</strong>北京时间 11月24日先后发布（财联社 11月26日报道）</li>
+      <li><strong>人物/机构：</strong>Anthropic、OpenAI（各自 GitHub 官方仓库发布论文）</li>
+      <li><strong>事件：</strong>两大 AI 公司同日先后公布被称为"代数版 P≠NP"的 VP≠VNP 问题证明，两者发布时间仅相差约 4 小时；相关成果有望为破解七大千禧年数学难题之一的 P 与 NP 问题提供新路径</li>
+      <li><strong>数据：</strong>两家发布时间相差约 4 小时</li>
+      <li><strong>关键名词：</strong>VP≠VNP、P vs NP、千禧年数学难题</li>
+    </ul>
+    <div class="point">💡 看点：前沿模型竞赛从"跑分榜"卷进基础数学——两家实验室相隔 4 小时抢发同一难题证明，AI 辅助产出可验证的硬核数学成果，正在成为新的军备竞赛维度。</div>
+  </div>
+
+  <div class="cat">💰 融资 &amp; 并购</div>
+
+  <div class="card">
+    <h2>标普将英伟达列入降级复审："关键人风险"，90 天内决定是否降至 AA-<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日</li>
+      <li><strong>人物/机构：</strong>标普全球评级（S&amp;P Global Ratings）；英伟达</li>
+      <li><strong>事件：</strong>以黄仁勋"辞职—复职"风波引发的高管监督薄弱、缺乏继任规划及"关键人风险"为由，将英伟达 AA 评级列入降级复审，90 天内决定是否降至 AA-；标普明确不针对财务表现，无论结果如何英伟达仍属投资级</li>
+      <li><strong>数据：</strong>英伟达 8 月宣布 5000 亿美元 AI 基础设施融资计划，联合高盛、Apollo、黑石等六家机构并担保 25% 贷款；此前彭博报道贷方已在要求更高担保比例</li>
+      <li><strong>关键名词：</strong>关键人风险（key man risk）、降级复审、投资级、neocloud（新型 GPU 云）</li>
+    </ul>
+    <div class="point">💡 看点：AI 风险先落在信用评级而非股价——若降级，英伟达自身借贷成本上升，由其担保贷款的算力云厂商融资条件也将收紧；90 天内的最终决定值得纳入算力供应链资金面观察。</div>
+  </div>
+
+  <div class="card">
+    <h2>Anthropic 上市第四个交易日破发，七位创始人套现近 20 亿美元</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日财新报道（上市第四个交易日）</li>
+      <li><strong>人物/机构：</strong>Anthropic（纳斯达克上市）；七位创始人</li>
+      <li><strong>事件：</strong>Anthropic 上市第四个交易日跌破发行价，上市后股价表现与发行阶段形成反差；IPO 发行价 83 美元/股，七位创始人每人出售约 340 万股、各套现约 2.8 亿美元，合计近 20 亿美元，同时保留固定投票权</li>
+      <li><strong>数据：</strong>发行价 83 美元；创始人合计套现近 20 亿美元；亚马逊持股 14.6%、谷歌持股 13.4%；英伟达、谷歌等科技巨头认购 260 亿美元特殊股</li>
+      <li><strong>关键名词：</strong>IPO 破发、创始人套现、固定投票权</li>
+    </ul>
+    <div class="point">💡 看点："史上最大 IPO"的光环与二级市场破发同框，AI 头部公司估值进入消化期；后续股价与其算力长约支出、四季度收入的匹配度，是判断 AI 牛市成色的关键样本。</div>
+  </div>
+
+  <div class="cat">🧠 芯片 &amp; 算力</div>
+
+  <div class="card">
+    <h2>SpaceX 下调 Blackwell GPU 租金最高约 35%，管制新规催生数千颗 B300 寻售</h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日 CNBC 报道出口管制影响；11月26日早间财联社报道 SpaceX 降价</li>
+      <li><strong>人物/机构：</strong>SpaceX；GPUmart；Anthropic</li>
+      <li><strong>事件：</strong>机构报告显示马斯克旗下算力"房东"SpaceX 下调部分 Blackwell GPU 租金最高约 35%，并低价转租 Anthropic 退还的 H200 芯片；同时，美国 11月16日宣布、19日生效的针对中国关联企业"远程访问先进 AI 芯片"新规后，市场出现异常规模的英伟达 GPU 寻售供给，涉及数千颗 B300 的交易被兜售</li>
+      <li><strong>数据：</strong>Blackwell GPU 租金最高下调约 35%；数千颗 B300 寻售</li>
+      <li><strong>关键名词：</strong>GPU 租金、B300、H200、访问权管控、出口管制</li>
+    </ul>
+    <div class="point">💡 看点：算力市场两面信号叠加——租金松动暗示"供不应求"叙事开始降温，管制新规则把监管从"芯片卖到哪里"延伸到"谁能远程使用"；跨国算力采购的价格与合规波动都会加大。</div>
+  </div>
+
+  <div class="cat">🔐 安全 &amp; 合规</div>
+
+  <div class="card">
+    <h2>Altman 宣布开测"私有推理"：企业调用最强模型、OpenAI 也看不到数据<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日早间 Altman 在 X 宣布（25日起 The Decoder 等已报道企业试点）</li>
+      <li><strong>人物/机构：</strong>OpenAI CEO Sam Altman；项目负责人 Shekar</li>
+      <li><strong>事件：</strong>邀请部分企业客户测试 Private Inference（私有推理）：企业可在 OpenAI 无法访问其数据的前提下调用最强模型，查询运行在可独立验证安全性的专用隔离硬件上；配套 Private Safety Processing 机制扫描滥用但不留存客户数据；Altman 称这是迈向"全民隐私智能"的第一步，谷歌 Private AI Compute 采用类似思路</li>
+      <li><strong>数据：</strong>首批面向企业客户试点；企业数据 OpenAI 本就不用于训练，消费者版默认仍用于训练</li>
+      <li><strong>关键名词：</strong>Private Inference、Private Safety Processing、Private AI Compute、可验证隔离</li>
+    </ul>
+    <div class="point">💡 看点：企业上大模型的最大顾虑——敏感数据外泄被正面拆解——财务、HR、采购等高敏流程的 AI 化有望提速；"可独立验证的隔离算力"可能成为企业级 API 的新分级标准与溢价点。</div>
+  </div>
+
+  <div class="cat">📜 政策 &amp; 法规</div>
+
+  <div class="card">
+    <h2>欧盟拟设 500 亿欧元主权科技基金，同步发布《量子法案》草案</h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日</li>
+      <li><strong>人物/机构：</strong>欧盟委员会；EU 技术主管 Henna Virkkunen</li>
+      <li><strong>事件：</strong>提出目标规模 500 亿欧元的"Sovereign Tech Equity Fund"主权科技股权基金，面向欧洲 AI 与量子企业做长周期、高风险股权投资，结构上刻意区别于欧盟传统补贴机制；同步发布《量子法案》（Quantum Act）草案，要求公共采购优先选择欧盟控制的量子企业；Virkkunen 称"欧洲研发的量子技术应在欧洲制造和使用"，背景是对美国供应商"kill switch"的担忧</li>
+      <li><strong>数据：</strong>目标每 1 欧元公共资金撬动最多 6 欧元私人资本；2025 年公共量子资金欧盟 86 亿欧元、美国 53 亿、中国 136 亿；欧洲量子初创累计私人融资仅 11 亿欧元、约占全球 5%</li>
+      <li><strong>关键名词：</strong>主权科技基金、Quantum Act、技术主权、kill switch</li>
+    </ul>
+    <div class="point">💡 看点：欧洲把"技术主权"从算力延伸到量子，并用股权基金替代补贴的新玩法；全球量子公共资金中国已居首位。草案仍需成员国与欧洲议会谈判，落地前数字只是目标而非预算。</div>
+  </div>
+
+  <div class="cat">🏭 产业 &amp; 应用</div>
+
+  <div class="card">
+    <h2>豆包灰度测试"豆包购物"一级入口，亚马逊谈判解除对 Meta 购物代理 Muse 的封锁</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日（科技事儿每日早报）；亚马逊动向为 11月25日 Fortune 报道</li>
+      <li><strong>人物/机构：</strong>字节跳动（豆包）；亚马逊；Meta（购物代理 Muse）</li>
+      <li><strong>事件：</strong>豆包 App 灰度测试"豆包购物"一级入口，AI 助手直接承接购物交易闭环；同期 Fortune 报道亚马逊正就解除对 Meta 购物代理 Muse 的封锁进行谈判，焦点是 Muse 推荐的商品类型与广告收入影响——沃尔玛、Best Buy、Gap、丝芙兰已向 AI 代理开放站点，亚马逊此前屏蔽 Muse 与 Perplexity 代理、力推自有 Alexa 购物助手</li>
+      <li><strong>数据：</strong>已向 AI 代理开放的国际零售商：沃尔玛、Best Buy、Gap、丝芙兰</li>
+      <li><strong>关键名词：</strong>豆包购物、Muse、Agent 购物、代理商务（Agentic Commerce）</li>
+    </ul>
+    <div class="point">💡 看点：中美同步进入"AI 代购"时间——国内大模型 App 把购物提为一级入口，海外零售巨头在"开放代理网关"与"守住广告收入"之间摇摆；商品展示、库存响应与促销策略都要开始为"机器买家"重新设计。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-25">
 
   <div class="cat">🚀 模型 &amp; 产品</div>
 
@@ -877,117 +1013,7 @@
 
 </section>
 
-<section class="day-section" id="day-2026-11-19">
 
-  <div class="cat">💰 融资 &amp; 并购</div>
-
-  <div class="card">
-    <h2>Anthropic IPO 定价每股 83 美元今日挂牌纳斯达克，募资约 945 亿美元超越 SpaceX<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月18日定价，11月19日（今天）在纳斯达克开始交易</li>
-      <li><strong>人物/机构：</strong>Anthropic（Claude 母公司）；纳斯达克；高盛、摩根士丹利等承销方</li>
-      <li><strong>事件：</strong>IPO 最终定价每股 83 美元，高于 70–78 美元推介区间，发行约 9.8 亿股 A 类股票；此前获机构投资者约 4000 亿美元认购意向、散户接近 1000 亿美元认购意向；加密期货市场押注其上市后估值最高可达 1.7 万亿美元</li>
-      <li><strong>数据：</strong>公开发行募资约 685 亿美元 + 同步私募配售 260 亿美元，合计约 945 亿美元，超过 SpaceX 此前 750 亿美元的基础 IPO 发行规模</li>
-      <li><strong>关键名词：</strong>IPO 定价、私募配售、超额认购、ANT、纳斯达克</li>
-    </ul>
-    <div class="point">💡 看点：定价上调后仍获数倍超额认购，AI 公司的二级市场估值锚被重新抬高；2026 年 Anthropic 业务爆发的核心引擎是 Claude Code——"AI 写代码"从产品卖点变成支撑千亿级估值的营收主线，企业级编码工具赛道的估值参照系随之整体上移。</div>
-  </div>
-
-  <div class="card">
-    <h2>腾讯 Q3 资本开支 814 亿元同比增 527% 创单季新高，云收入增速加速至 35%<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月18日（港股盘后发布财报并召开电话会）</li>
-      <li><strong>人物/机构：</strong>腾讯控股；马化腾（董事会主席兼 CEO，财报致辞）</li>
-      <li><strong>事件：</strong>Q3 收入 2073.36 亿元（同比 +8%），经营盈利 591.47 亿元（同比 -7%）；单季资本开支 814.33 亿元（同比 +527%）创历史新高，前三季度累计 1661.53 亿元；腾讯云收入增速由上季 21% 加速至 35%，管理层预计高增速贯穿 2026 全年；混元 Hy4 达到中国 SOTA 模型水平，Hy4 Flash 压低推理成本；WorkBuddy 日活跃用户超 1000 万、每天消耗 100 万亿 token，按日 token 消耗计已成为中国最大 AI 应用</li>
-      <li><strong>数据：</strong>收入 2073 亿（+8%）；资本开支 814 亿（+527%）；云收入 +35%；日耗 100 万亿 token；WorkBuddy DAU 超 1000 万</li>
-      <li><strong>关键名词：</strong>资本开支、混元 Hy4、Hy4 Flash、WorkBuddy、腾讯云</li>
-    </ul>
-    <div class="point">💡 看点：经营盈利下滑 7% 仍把 814 亿砸进算力——大厂"用当期利润买 AI 船票"的打法定调；资本开支是上游算力供应链的先行订单指标，服务器、光模块、IDC 环节的排产与报价可以直接参照大厂财报口径来跟踪。</div>
-  </div>
-
-  <div class="cat">🚀 模型 &amp; 产品</div>
-
-  <div class="card">
-    <h2>Google 双线上新：Gemini 4 Neon 冲进全球第 3，Genie 4 世界模型开放订阅</h2>
-    <ul>
-      <li><strong>时间：</strong>11月18日（Google 官方博客同日双发）</li>
-      <li><strong>人物/机构：</strong>Google；Google DeepMind；Google Labs</li>
-      <li><strong>事件：</strong>发布 Gemini 4 Neon，主打复杂软件工程、知识工作与科研工作流的快速端到端任务完成；同日 Genie 4 世界模型上线 Project Genie，面向 Google AI Ultra 订阅者开放，可通过文字提示实时改变天气、添加角色并生成自适应音频，并附社区画廊；此前 11月16日 已发布 Gemini 4 Hydrogen，面向日常编码与 Agent 工作流，向全层级用户开放</li>
-      <li><strong>数据：</strong>Neon 在 Artificial Analysis 综合排名第 3、得分 61；一周内 Gemini 4 系两次上新（Hydrogen → Neon）</li>
-      <li><strong>关键名词：</strong>Gemini 4 Neon、Genie 4、世界模型、Project Genie、AI Ultra</li>
-    </ul>
-    <div class="point">💡 看点：世界模型从研究 Demo 变成订阅制消费产品，"按帧生成可交互世界"开始接受付费市场验证，内容与游戏生产链路可能被重构；编码模型一周两更，Agent 编码赛道进入周迭代节奏，企业选型的评估窗口将进一步缩短。</div>
-  </div>
-
-  <div class="cat">🧠 芯片 &amp; 算力</div>
-
-  <div class="card">
-    <h2>英伟达确认停止向中国出货 H200，后续财测不再计入中国 Hopper 收入<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11月17日美东财报电话会表态（北京时间 11月18日确认）；11月18日外交部例行记者会回应</li>
-      <li><strong>人物/机构：</strong>英伟达临时 CEO 兼 CFO 科莱特·克雷斯（Colette Kress）；中国外交部发言人郭嘉昆</li>
-      <li><strong>事件：</strong>克雷斯在财报会明确"英伟达将不再向中国出货特许 Hopper 数据中心产品，后续业绩指引也未包含相关收入"；H200 属美国目前允许凭出口许可证售华的高性能 AI 芯片之一；外交部回应称中方已多次阐明在美国输华芯片问题上的原则立场</li>
-      <li><strong>数据：</strong>第三财季向中国销售的获许可 Hopper 数据中心产品收入 24 亿美元</li>
-      <li><strong>关键名词：</strong>H200、Hopper 架构、出口许可、临时 CEO、业绩指引</li>
-    </ul>
-    <div class="point">💡 看点：财报爆表与对华收入归零同框，每季 24 亿美元的确定性中国收入被主动放弃——叠加 BIS"远程用卡"新规，算力断供正从"限制"走向"清零"；国产替代从备选项变为主路线，芯片采购侧的国产化验证与替代清单应立即提速。</div>
-  </div>
-
-  <div class="cat">🛡️ 安全 &amp; 伦理</div>
-
-  <div class="card">
-    <h2>GPT-6.2 官方安全披露：两款模型网络安全能力均达"关键"级，Astra 自我改进达"高"级</h2>
-    <ul>
-      <li><strong>时间：</strong>11月18日（随模型发布的官方安全说明，11月19日媒体集中解读）</li>
-      <li><strong>人物/机构：</strong>OpenAI</li>
-      <li><strong>事件：</strong>GPT-6.2 Astra 与 Sol 的官方安全说明显示，两款模型网络安全能力均达到"关键（Critical）"门槛，Astra 的 AI 自我改进能力被评为"高（High）"级，OpenAI 称已针对高风险能力加强部署管控</li>
-      <li><strong>数据：</strong>网络安全能力"关键"级（两款模型）；自我改进能力"高"级（Astra）</li>
-      <li><strong>关键名词：</strong>模型安全说明、危险能力评估、网络安全能力、自我改进、部署管控</li>
-    </ul>
-    <div class="point">💡 看点：前沿模型官方自评"能干危险活"正成为常规披露——类似汽车碰撞测试星级的安全评级，会逐步进入企业采购模型的准入材料清单；选型时应把安全评级与管控措施写进供应商评估表。</div>
-  </div>
-
-  <div class="cat">📜 政策 &amp; 法规</div>
-
-  <div class="card">
-    <h2>道交法修订草案新增"自动驾驶汽车特别规定"专章，多地加速自动驾驶专项立法</h2>
-    <ul>
-      <li><strong>时间：</strong>近日提请十四届全国人大常委会第二十四次会议初次审议；11月17日法治网报道多地立法提速</li>
-      <li><strong>人物/机构：</strong>全国人大常委会；地方立法机构；工业和信息化部</li>
-      <li><strong>事件：</strong>道路交通安全法修订草案新增"自动驾驶汽车的特别规定"专章，明确支持自动驾驶汽车安全、有序、规范上道路测试、示范应用和行驶；多地加速推进自动驾驶专项立法，要求智能网联汽车企业严格落实功能安全、预期功能安全、数据安全与网络安全保障等要求；工信部在新闻发布会介绍自动紧急制动系统、组合驾驶辅助系统、自动驾驶系统等国家标准正加快出台</li>
-      <li><strong>数据：</strong>新增专章 1 个；三类国家标准加快出台（自动紧急制动、组合驾驶辅助、自动驾驶系统）</li>
-      <li><strong>关键名词：</strong>道交法修订草案、自动驾驶专章、智能网联汽车、功能安全、组合驾驶辅助</li>
-    </ul>
-    <div class="point">💡 看点：上位法为自动驾驶"开道"，地方立法与国家标准同步补位——责任划分与准入规则开始清晰化，智驾功能的合规成本将显性化，供应链准入从"技术达标"升级为"技术 + 法规双达标"。</div>
-  </div>
-
-  <div class="cat">🏭 产业 &amp; 应用</div>
-
-  <div class="card">
-    <h2>华为云开源具身世界模型 CloudRobo-WM1.2，八成中国具身智能企业已用昇腾云</h2>
-    <ul>
-      <li><strong>时间：</strong>11月16日发布；11月18日媒体报道带动 A 股国产算力板块走强</li>
-      <li><strong>人物/机构：</strong>华为云；中国具身智能企业群体</li>
-      <li><strong>事件：</strong>华为云发布并开源昇腾原生具身世界模型 CloudRobo-WM1.2，并披露已有 80% 的中国具身智能企业选择昇腾云、重点高校基本实现全覆盖；在具身智能从实验室走向产业化的窗口期，昇腾云定位国产算力底座与生态入口</li>
-      <li><strong>数据：</strong>80% 中国具身智能企业选择昇腾云</li>
-      <li><strong>关键名词：</strong>CloudRobo-WM1.2、具身智能、世界模型、昇腾云、开源</li>
-    </ul>
-    <div class="point">💡 看点：用"开源世界模型 + 国产算力云"提前绑定开发者生态，具身智能的算力底座之争已开始卡位；机器人本体与汽车电子供应链的重叠度持续上升，涉及具身智能的供应商名单值得纳入观察。</div>
-  </div>
-
-  <div class="card">
-    <h2>加州 DMV 叫停 Waymo 高速公路运营，Waymo 全美同步暂停高速服务</h2>
-    <ul>
-      <li><strong>时间：</strong>限制令 11月11日生效；11月17日 DMV 发言人确认，11月18日广泛报道</li>
-      <li><strong>人物/机构：</strong>加州机动车辆管理局（DMV，发言人乔纳森·格罗夫曼）；Waymo（Alphabet 旗下）</li>
-      <li><strong>事件：</strong>加州 DMV 认定 Waymo 无人驾驶车辆构成"迫在眉睫的公共安全危害"，禁止其在加州所有高速公路运营或测试；起因包括 11月5日 三辆无人车驶入旧金山以南一处施工封闭区域、次日发生超越警车等事件；Waymo 随后宣布全美所有运营市场的高速公路服务同步暂停，须向 DMV 证明已采取有效整改措施后方可恢复</li>
-      <li><strong>数据：</strong>11月5日三辆无人车闯入施工封闭区域；限制令覆盖加州全部高速公路；暂停范围覆盖全美运营市场</li>
-      <li><strong>关键名词：</strong>Robotaxi、公共安全危害、DMV 限制令、高速公路、整改验证</li>
-    </ul>
-    <div class="point">💡 看点：监管从"个案整改"升级为"全州禁行 + 全国暂停"，Robotaxi 商业化边界被事件驱动重新划定；对照国内道交法修订草案新增自动驾驶专章，中美同步把"安全合规"前置为自动驾驶产业链的准入硬门槛。</div>
-  </div>
-
-</section>
 
 
 
