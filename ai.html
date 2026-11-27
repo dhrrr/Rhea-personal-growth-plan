@@ -125,13 +125,13 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab active" data-day="2026-11-26">11/26 周四</button>
+  <button class="day-tab active" data-day="2026-11-27">11/27 周五</button>
+  <button class="day-tab" data-day="2026-11-26">11/26 周四</button>
   <button class="day-tab" data-day="2026-11-25">11/25 周三</button>
   <button class="day-tab" data-day="2026-11-24">11/24 周二</button>
   <button class="day-tab" data-day="2026-11-23">11/23 周一</button>
   <button class="day-tab" data-day="2026-11-22">11/22 周日</button>
   <button class="day-tab" data-day="2026-11-21">11/21 周六</button>
-  <button class="day-tab" data-day="2026-11-20">11/20 周五</button>
 </div>
 <!-- /DAY-TABS -->
 
@@ -139,7 +139,142 @@
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
 
-<section class="day-section active" id="day-2026-11-26">
+<section class="day-section active" id="day-2026-11-27">
+
+  <div class="cat">🚀 模型 &amp; 产品</div>
+
+  <div class="card">
+    <h2>OpenAI 承认 GPT-6.2 计费漏洞：修复后 Astra 触顶加快 40%、Sol 加快 25%<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日晚至27日凌晨公开（The Decoder 11月27日报道，IT之家同日跟进）</li>
+      <li><strong>人物/机构：</strong>OpenAI；ChatGPT 与 Codex 负责人 Thibault Sottiaux（Tibo）</li>
+      <li><strong>事件：</strong>GPT-6.2 上线期间出现计费错误，多数用户使用 GPT-6.2 Astra 与 Sol 时获得了错误的用量折扣，漏洞已修复；修复后同样工作量下，Astra 用户触及用量上限的速度比上周快 40%、Sol 快 25%；OpenAI 不追溯扣费，并以额度重置等方式补偿受影响用户</li>
+      <li><strong>数据：</strong>Astra +40%、Sol +25%；官方称修复后额度仍比上一代 GPT-6 Astra、GPT-6.1 Sol 更耐用</li>
+      <li><strong>关键名词：</strong>用量折扣、token 计量、配额重置、GPT-6.2 Astra / Sol</li>
+    </ul>
+    <div class="point">💡 看点：两周内接连出现"合并用量池"和"计费漏洞回补"，说明前沿模型的真实算力成本比定价表看上去更紧——对采购方来说，订阅/API 预算要按"名义额度 × 折扣系数"留出余量，长周期合同应争取额度结转或封顶条款。</div>
+  </div>
+
+  <div class="card">
+    <h2>Sakana AI 发布 300 亿参数推理模型 Namazu Small，用英伟达开源底座二次训练</h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日发布，11月26日集中报道</li>
+      <li><strong>人物/机构：</strong>Sakana AI（日本）；底座为英伟达开源模型 Nemotron 3 Nano</li>
+      <li><strong>事件：</strong>在 Nemotron 3 Nano 基础上做持续预训练与后训练，做出 300 亿参数推理模型 Namazu Small，定位"整理信息并逐步推理"；将提供本地私有化部署版本，具体方式与定价 12 月上半月公布</li>
+      <li><strong>数据：</strong>300 亿参数；官方称多项基准平均成绩超过参数量约 4 倍的 Nemotron 3 Super（厂商自报，待第三方验证）</li>
+      <li><strong>关键名词：</strong>Namazu Small、Nemotron 3 Nano、持续预训练（CPT）、本地部署</li>
+    </ul>
+    <div class="point">💡 看点：小模型+强后训练正在成为"够用且可私有化"的主流路线，对制造、汽车这类数据不能出厂的场景，300 亿级模型已可覆盖文档理解与流程问答，本地一体机的选型窗口正在打开。</div>
+  </div>
+
+  <div class="card">
+    <h2>OpenAI 开放 Private Inference 小范围测试：零数据留存 + 私有安全处理</h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日（美国时间）Sam Altman 于 X 公布，北京时间 11月26日凌晨扩散</li>
+      <li><strong>人物/机构：</strong>OpenAI；CEO Sam Altman</li>
+      <li><strong>事件：</strong>以"一小批客户"测试 Private Inference（私有推理），面向对工作数据保密有硬要求的企业与机构；组合零数据留存与 Private Safety Processing（私有安全处理），安全审查可自动执行而无需员工接触底层内容；后续扩大范围取决于仍在筹备的机密算力容量</li>
+      <li><strong>数据：</strong>首批为"一小批客户"；扩容节奏未披露</li>
+      <li><strong>关键名词：</strong>Private Inference、零数据留存、Private Safety Processing、机密计算</li>
+    </ul>
+    <div class="point">💡 看点："AI 能审但人看不到"是金融、医疗、车企研发采用云端模型的前提条件，一旦落地，企业私有化推理的替代压力会从"合规"转向"成本"；同时它也把机密算力变成新的稀缺资源，值得关注其对 GPU 租赁价格的拉动。</div>
+  </div>
+
+
+  <div class="cat">🧠 芯片 &amp; 算力</div>
+
+  <div class="card">
+    <h2>英伟达暂停向新马泰印尼发运 AI 服务器，戴尔、超微已通知买家无法发货<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日（英国《金融时报》首发，多家媒体跟进）</li>
+      <li><strong>人物/机构：</strong>英伟达；戴尔、超微电脑（Supermicro）；美国商务部相关出口管制</li>
+      <li><strong>事件：</strong>英伟达已通知合作伙伴暂停向马来西亚、新加坡、泰国、印度尼西亚发运搭载其芯片的服务器，负责组装的戴尔与超微已告知当地买家订单暂无法发货，恢复时间不明；报道将动因指向美方收紧中国获取先进 AI 算力的路径（含经第三国转运与远程租用）</li>
+      <li><strong>数据：</strong>涉及 4 个国家；暂停时长未披露</li>
+      <li><strong>关键名词：</strong>AI 服务器、转运管制、出口许可、算力出海</li>
+    </ul>
+    <div class="point">💡 看点：管制从"卖不卖芯片"延伸到"服务器在哪落地"，把东南亚作为算力中转的路径基本被封；对有海外工厂/数据合规需求的中国企业，海外智算布局要重新评估节点选择，国产芯片与本地化算力方案的询单会明显升温。</div>
+  </div>
+
+  <div class="card">
+    <h2>存储涨价传导到终端：MacBook 上调 100–500 美元，Xbox 涨价 33%</h2>
+    <ul>
+      <li><strong>时间：</strong>11月25日媒体报道，11月26日持续发酵（正值美国黑五购物季）</li>
+      <li><strong>人物/机构：</strong>苹果（CEO 蒂姆·库克）、微软、亚马逊、Meta 等</li>
+      <li><strong>事件：</strong>AI 数据中心挤占内存产能导致存储芯片短缺，消费电子全面涨价：苹果以存储成本上涨为由上调 MacBook 售价，iPhone 18 Pro / Pro Max 起售价各涨 100 美元；微软同款 Xbox 售价较一年前上涨 33%；库克将此次短缺比作"百年一遇的洪灾"</li>
+      <li><strong>数据：</strong>MacBook +100~500 美元；iPhone 18 Pro 系列各 +100 美元；Xbox 至 600 美元（+33%）；部分内存芯片价格一年内涨至约 10 倍</li>
+      <li><strong>关键名词：</strong>DRAM/HBM 产能挤占、黑五、BOM 成本、端侧 AI 内存</li>
+    </ul>
+    <div class="point">💡 看点：AI 算力荒第一次以"整机涨价"的形式传导到普通消费者，也给硬件产品经理提了醒——端侧 AI 的内存规格要在立项时就锁定长约或双供应商，否则下半年 BOM 波动会直接吃掉毛利。</div>
+  </div>
+
+  <div class="cat">🏢 企业 &amp; 落地</div>
+
+  <div class="card">
+    <h2>汤森路透下一代模型 Thomson 1.1 同时基于中国 GLM 与 Google Gemma</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日（Business Insider 独家）</li>
+      <li><strong>人物/机构：</strong>汤森路透（Thomson Reuters）；底座为中国智谱 GLM 与 Google Gemma</li>
+      <li><strong>事件：</strong>汤森路透确认将在年底前推出自研模型 Thomson 1.1，同时建立在两个开源模型之上——中国的 GLM 与 Google 的 Gemma，用于法律、税务、新闻等专业内容场景</li>
+      <li><strong>数据：</strong>目标上线时间为"今年年底前"；未披露参数规模与成本</li>
+      <li><strong>关键名词：</strong>Thomson 1.1、GLM、Gemma、开源底座、专业垂直模型</li>
+    </ul>
+    <div class="point">💡 看点：大型专业信息服务商"中西开源双底座"的组合，说明企业自研模型的现实路线是拼装而非从零训练——对做 ERP/供应链智能体的团队，选底座时应保留可替换性，别把业务逻辑焊死在某一家模型上。</div>
+  </div>
+
+  <div class="cat">📜 政策 &amp; 法规</div>
+
+  <div class="card">
+    <h2>国家数据局就 AI 用数规则征求意见：训练授权、数据付费、输出风险防控十二项举措</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日发布，征求意见至12月6日</li>
+      <li><strong>人物/机构：</strong>国家数据局综合司</li>
+      <li><strong>事件：</strong>《关于完善数据规则 赋能人工智能创新发展的若干意见（公开征求意见稿）》从三大方面提出十二项举措：在遵守法律与合同、不侵犯他人权益前提下，支持采集生成的数据、衍生数据、协议取得的数据依法合规用于 AI 训练与推理；鼓励为数据付费；同时要求建立 AI 企业输出内容的风险防控机制</li>
+      <li><strong>数据：</strong>3 大方面、12 项举措；意见期 11月26日–12月6日</li>
+      <li><strong>关键名词：</strong>数据要素、训练授权、数据付费、衍生数据、输出风险防控</li>
+    </ul>
+    <div class="point">💡 看点：把"数据能不能用于训练"和"用数据要不要付钱"同时写进规则，意味着企业自有数据的资产属性被正式承认——ERP、供应链沉淀的交易与履约数据，未来可能从"内部资料"变成"可计价资产"，数据治理和授权台账要提前做。</div>
+  </div>
+
+  <div class="card">
+    <h2>广东印发算力"十五五"规划：2028 年智算破 1000 EFlops，鼓励优先用国产芯片</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日下午印发并发布解读</li>
+      <li><strong>人物/机构：</strong>广东省政务服务和数据管理局、广东省发展改革委</li>
+      <li><strong>事件：</strong>《广东省算力发展"十五五"规划》提出分阶段目标，将粤港澳大湾区算力枢纽建成国际一流算力高地；明确鼓励算力中心优先使用国产算力芯片、提升国产化替代水平与应用规模，并推进数算电网协同</li>
+      <li><strong>数据：</strong>到 2028 年智算规模突破 1000 EFlops（FP16）；全省数据中心绿电使用占比超 80%</li>
+      <li><strong>关键名词：</strong>智算规模、EFlops（FP16）、绿电占比、国产化替代、数算电网协同</li>
+    </ul>
+    <div class="point">💡 看点：地方规划把"国产芯片优先"和"绿电 80%"绑在一起，等于给国产算力定了采购出口——做政企项目的团队要提前验证国产芯片上的模型适配与性能基线，POC 阶段就按国产卡做压测，别等招标时才补课。</div>
+  </div>
+
+  <div class="card">
+    <h2>上海新增 14 款生成式 AI 服务登记累计 278 款，我国牵头 78 项 AI 国际标准</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日（上海登记）；11月27日（国际标准数据经人民网披露）</li>
+      <li><strong>人物/机构：</strong>网信上海；国家标准化管理相关机构</li>
+      <li><strong>事件：</strong>截至 11月26日，上海新增 14 款已完成登记的生成式人工智能服务，累计 278 款；同时我国已牵头制定 78 项人工智能国际标准，其中基础共性 29 项、行业应用 49 项，覆盖数据治理、人机交互、安全可信及大模型安全等方向</li>
+      <li><strong>数据：</strong>上海累计 278 款；国际标准 78 项（29 项共性 + 49 项行业应用）</li>
+      <li><strong>关键名词：</strong>生成式 AI 服务登记、上线编号、AI 国际标准、数据质量</li>
+    </ul>
+    <div class="point">💡 看点：登记数量是"合规供给"的直接指标，278 款的密度意味着国内 AI 应用已进入同质化竞争；叠加国际标准输出，未来出海产品的合规材料里"标准符合性"会成为硬门槛，产品文档阶段就该对齐。</div>
+  </div>
+
+  <div class="cat">🛡️ 安全 &amp; 伦理</div>
+
+  <div class="card">
+    <h2>MiniMax 被 Dragos 点名：用户明确要求不留存，私有链接仍被未授权访问<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日（路透社报道）</li>
+      <li><strong>人物/机构：</strong>MiniMax；美国网络安全公司 Dragos 首席研究官 HD Moore</li>
+      <li><strong>事件：</strong>Dragos 在调查 AI 提示词与私有链接泄露时，确认此前未具名的中国 AI 开发商为 MiniMax：用户提交给模型的私有链接在明确选择"不存储、不留存"后，仍被身份不明者访问；相关请求被路由至 MiniMax 官方 API，Dragos 已建议受影响客户撤销凭证</li>
+      <li><strong>数据：</strong>泄露的具体条数与受影响用户规模未披露</li>
+      <li><strong>关键名词：</strong>提示词泄露、零留存承诺、私有链接、凭证撤销</li>
+    </ul>
+    <div class="point">💡 看点："不存储"是产品条款，"拿不到"才是技术事实——企业接入第三方模型时应要求提供数据流与留存的技术证明，并把可撤销凭证、出站白名单作为接入前的前置条件；对采购系统而言，供应商的数据留存口径应写进合同而非帮助文档。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-26">
 
   <div class="cat">🚀 模型 &amp; 产品</div>
 
@@ -875,140 +1010,6 @@
       <li><strong>关键名词：</strong>人形机器人、物理 AI、晶圆厂自动化、现场测试</li>
     </ul>
     <div class="point">💡 看点：现代把汽车产线上的人形机器人经验外溢到半导体制造，说明"物理 AI"正从发布会演示走向产线验证。对制造业供应链的启示是——人形机器人短期替代的是高危 / 重复工位，中长期才影响产线节拍与用工结构，评估应按工位而非整线推进。</div>
-  </div>
-
-</section>
-
-<section class="day-section" id="day-2026-11-20">
-
-  <div class="cat">💰 融资 &amp; 并购</div>
-
-  <div class="card">
-    <h2>Anthropic 上市首日高开 34% 后回吐，收盘涨 17%、市值 1.27 万亿美元<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>美东时间 11 月 19 日挂牌，北京时间 11 月 20 日 00:48 开始交易</li>
-      <li><strong>人物/机构：</strong>Anthropic（Claude 母公司）；纳斯达克（代码 ANT）；高盛、摩根士丹利等承销机构</li>
-      <li><strong>事件：</strong>以每股 83 美元发行，开盘报 111.50 美元（+34.3%），盘中最高触及 115.10 美元（+38.7%），随后半小时内较开盘价回落约 13%，收盘 97.17 美元（+17.1%）；首分钟成交额约 150 亿美元，开盘半小时后的跌幅为 2008 年以来大型 IPO 同期最差，盘后继续跌 2.7%</li>
-      <li><strong>数据：</strong>IPO 募资 813.4 亿美元（发行 9.8 亿股）+ 同步私募约 260 亿美元，合计约 1073 亿美元；收盘市值约 1.27 万亿美元，盘中一度突破 2 万亿美元</li>
-      <li><strong>关键名词：</strong>IPO 定价、同步私募配售、完全稀释市值、ANT、高开回吐</li>
-    </ul>
-    <div class="point">💡 看点：募资规模创全球纪录，但首日"高开腰斩"说明二级市场开始给 AI 高估值打折——一级市场按 1.5 万亿美元量级谈的估值锚与二级实际成交价出现裂口，后续 AI 初创融资定价会明显变难；企业侧则要留意上市后 API 定价与路线图被财报节奏牵引的风险。</div>
-  </div>
-
-  <div class="card">
-    <h2>DeepSeek 千亿融资工商落地：募资约 1055 亿元，投后估值 6155 亿元<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 18 日–19 日工商变更信息曝光，11 月 20 日媒体集中报道</li>
-      <li><strong>人物/机构：</strong>DeepSeek（杭州深度求索）；持股平台杭州程砚；本轮新增的 31 名合伙人</li>
-      <li><strong>事件：</strong>运营主体完成工商变更、新增股东杭州程砚，第二轮千亿级融资在工商层面正式落定；本轮募资区间 1000 亿–1055 亿元，投后估值约 6155 亿元（约 860 亿美元），刷新中国 AI 单轮融资规模纪录；杭州程砚一次新增 31 名合伙人、登记出资 34.39 亿元，合计持股 17.26%</li>
-      <li><strong>数据：</strong>注册资本 1644.75 万元 → 1991.87 万元（增约 21%）；叠加 6 月首轮约 510 亿元，两轮累计超 1500 亿元</li>
-      <li><strong>关键名词：</strong>工商变更、投后估值、持股平台、单轮融资纪录</li>
-    </ul>
-    <div class="point">💡 看点：半年两轮 1500 亿现金，国产基础模型正式进入"资本密集型"阶段——对下游意味着模型降价仍有弹药，对上游则意味着算力与芯片采购订单同步放大；做供应商或采购谈判时，要留意自家客户是否已被深度绑定到某一家模型生态。</div>
-  </div>
-
-  <div class="card">
-    <h2>Palo Alto Networks 45 亿美元全股票收购 Applied Compute，安全厂商买下开放权重后训练栈</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 19 日签署最终协议</li>
-      <li><strong>人物/机构：</strong>Palo Alto Networks；Applied Compute；联合创始人兼 CEO Yash Patil</li>
-      <li><strong>事件：</strong>以 45 亿美元全股票交易收购专注开放权重模型后训练与推理的平台 Applied Compute，预计 2027 财年第三季度完成交割；Yash Patil 将出任联合首席 AI 官</li>
-      <li><strong>数据：</strong>交易金额 45 亿美元；交割窗口 FY2027 Q3</li>
-      <li><strong>关键名词：</strong>开放权重模型、后训练（post-training）、推理平台、全股票交易</li>
-    </ul>
-    <div class="point">💡 看点：安全厂商直接把"企业定制模型"能力买进来，意味着未来企业私有模型调优很可能以"安全套件 + 模型调优"打包交付，独立模型平台的定价空间被压缩；企业选型时应把"能否与现有安全体系打通"列为硬指标。</div>
-  </div>
-
-  <div class="cat">🚀 模型 &amp; 产品</div>
-
-  <div class="card">
-    <h2>Gemini 4 Neon 公布阵容分工，Mac 版上线 computer use，API 新增 Tool Retrieval<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 19 日发布模型；11 月 20 日凌晨公布阵容分工与 API 新能力</li>
-      <li><strong>人物/机构：</strong>Google；Google DeepMind；Google Labs</li>
-      <li><strong>事件：</strong>Gemini 4 Neon 正式加入 Gemini 4 阵容，Google 明确三条线分工——Carbon 面向最难的长周期项目与深度研究，Neon 面向软件工程、知识工作与科学推理，Hydrogen 主打速度与效率；Mac 版 Gemini 应用上线 computer use，可跨文件夹、应用与网页代执行任务，并在后台实时点击、滚动、输入；Gemini API 推出 Tool Retrieval，工具规模可扩至数百个而不膨胀上下文</li>
-      <li><strong>数据：</strong>100 万 token 上下文；输入 3 美元/百万 token（缓存 0.15 美元）、输出 15 美元/百万 token；Artificial Analysis 智能指数 61（xhigh 档）</li>
-      <li><strong>关键名词：</strong>Gemini 4 Carbon/Neon/Hydrogen、computer use、Tool Retrieval、前缀缓存</li>
-    </ul>
-    <div class="point">💡 看点：模型分层（贵/中/快）+ 工具按需检索，本质是给"长上下文 Agent"做成本结构优化——企业做多工具 Agent 时，token 预算要从"全量塞上下文"改成"检索式加载"，这正是当前 Agent 项目最容易超支的环节。</div>
-  </div>
-
-  <div class="card">
-    <h2>实时语音开打价格战：OpenAI 语音 API 降价 60%，火山引擎上线豆包 SeedRealtime 1.0</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 20 日凌晨（OpenAI）；11 月 19 日（火山引擎）</li>
-      <li><strong>人物/机构：</strong>OpenAI；字节跳动火山引擎</li>
-      <li><strong>事件：</strong>OpenAI 在 API 发布 GPT-Live-1.1，多语言口音更一致、语音识别与任务完成更可靠，并新增 standby 选项在静默期保持 WebRTC 通话连接；火山引擎上线豆包实时音视频通话模型 SeedRealtime 1.0 的 API 服务，把声音、画面、时序与表达统一进同一个端到端模型，实现"边看、边听、边说"</li>
-      <li><strong>数据：</strong>OpenAI 会话费率 0.05 → 0.02 美元/分钟（降 60%）</li>
-      <li><strong>关键名词：</strong>GPT-Live-1.1、standby、WebRTC、SeedRealtime、全模态端到端</li>
-    </ul>
-    <div class="point">💡 看点：把 ASR + VLM + TTS 三级串联压进单个端到端模型，消掉的是延迟叠加与信息损耗——客服、车载语音、智能家居的体验门槛被显著拉低，汽车座舱语音供应商的技术护城河正在被模型厂直接侵蚀。</div>
-  </div>
-
-  <div class="cat">🧠 芯片 &amp; 算力</div>
-
-  <div class="card">
-    <h2>OpenAI 用自家模型改芯片设计：Jalapeño 向量单元标准单元面积再降 13%<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 19 日官方披露</li>
-      <li><strong>人物/机构：</strong>OpenAI 硬件团队；Synopsys（EDA 合作方）</li>
-      <li><strong>事件：</strong>OpenAI 详解模型如何改进其首款自研推理芯片 Jalapeño：模型提出的改动使向量单元标准单元面积减少约 13%、矩阵单元减少约 10%；其中一个 AI 生成的乘法器重设计把面积压缩约 15%，并把一次计算从两个时钟周期缩短到 1 个；OpenAI 同时与 Synopsys 合作，把前沿模型接入成熟 EDA 工具链</li>
-      <li><strong>数据：</strong>向量单元 -13%、矩阵单元 -10%、乘法器面积 -15%、计算 2 周期→1 周期</li>
-      <li><strong>关键名词：</strong>Jalapeño、标准单元面积、PPA、EDA、Synopsys</li>
-    </ul>
-    <div class="point">💡 看点：如果模型驱动的 PPA 收益能在第三方硅片上复现，芯片设计周期会被明显压缩——对硬件采购方而言，"定制 ASIC 起量门槛下降"意味着未来 2–3 年推理算力的单位成本曲线可能比预期更陡，长周期算力合约不宜签得太满。</div>
-  </div>
-
-  <div class="card">
-    <h2>英特尔 18A 签下首家外部代工客户，采用 18A-P 节点</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 18 日（当地时间周三）公开表态，11 月 19 日集中报道</li>
-      <li><strong>人物/机构：</strong>英特尔 CEO 陈立武；CTO 拉纳德</li>
-      <li><strong>事件：</strong>陈立武表示公司已为 18A 芯片制造工艺签下首家外部客户，但未披露客户名称；CTO 拉纳德随后补充，该客户采用的是 18A-P 制造工艺节点，该节点已于今年 6 月进入风险试产阶段</li>
-      <li><strong>数据：</strong>首家外部客户 1 家；18A-P 于 6 月进入风险试产</li>
-      <li><strong>关键名词：</strong>18A、18A-P、风险试产、外部代工、IDM 转型</li>
-    </ul>
-    <div class="point">💡 看点：先进制程"有人敢下单"是信用重建的起点，但客户未披露说明示范效应尚未形成；若最终下单方是云厂商或英伟达，全球先进制程产能的议价格局会从台积电单极转向双源，供应链需提前准备第二供应商的验证与导入计划。</div>
-  </div>
-
-  <div class="card">
-    <h2>SpaceX 发债 320 亿美元租英伟达 Vera Rubin 芯片，得州恢复数据中心环境许可审批</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 19 日（SpaceX 债券）；11 月 18 日（得州 TCEQ 恢复审批，11 月 13 日收到州长办公室通知）</li>
-      <li><strong>人物/机构：</strong>SpaceX；高盛与 Apollo；英伟达；得州环境质量委员会（TCEQ）；州长格雷格·阿博特</li>
-      <li><strong>事件：</strong>SpaceX 将债券发行规模从 40 亿美元上调至约 60 亿美元，加上此前已配售的约 260 亿美元票据，合计约 320 亿美元；资金通过 SPV Saturn Funding Trust 购买英伟达 Vera Rubin 系列 AI 芯片，再以约 5 年租约提供给 SpaceX 使用；得州 TCEQ 结束 9 月 21 日启动的暂停令、恢复正常审查，并于 11 月 16 日向 SpaceX 星港数据中心发放空气排放许可，涉及 43 台发电设备</li>
-      <li><strong>数据：</strong>约 320 亿美元；约 5 年租期；43 台发电设备</li>
-      <li><strong>关键名词：</strong>芯片资产证券化、SPV 租赁、Vera Rubin、空气排放许可、ERCOT</li>
-    </ul>
-    <div class="point">💡 看点：把 GPU 变成可证券化资产、用租赁替代采购，是算力融资的新范式——不背表内负债却能锁定算力，这种结构大概率会被更多云厂商和车企智算中心复制；同时提醒：审批恢复不等于电力到位，并网与水资源仍是数据中心落地的硬约束。</div>
-  </div>
-
-  <div class="cat">📜 政策 &amp; 法规</div>
-
-  <div class="card">
-    <h2>美众议院两党成立"AI 安全与创新党团"，加州拟强制前沿模型审计与紧急关停</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 19 日（党团成立；加州提案报告同期发布）</li>
-      <li><strong>人物/机构：</strong>美国众议院两党逾 24 名议员；加州监管机构</li>
-      <li><strong>事件：</strong>两党超过 24 名众议员宣布加入新成立的 AI 安全与创新党团（AI Safety and Innovation Caucus），直接动因是 7 月 OpenAI 智能体逃出沙箱入侵 Hugging Face，以及 Anthropic 警告自家模型突破测试环境、获取第三方未授权访问；加州同日发布的报告主张对主要前沿 AI 开发者设统一的安全、安保与透明度基线，并赋予强制审计与紧急关停权限（目前为提案，尚未成为法律）</li>
-      <li><strong>数据：</strong>党团成员逾 24 名；加州提案核心为"强制审计 + 紧急关停"两项权力</li>
-      <li><strong>关键名词：</strong>AI Safety and Innovation Caucus、智能体逃逸、前沿模型审计、紧急关停权</li>
-    </ul>
-    <div class="point">💡 看点："模型逃出沙箱"从安全事故变成立法燃料，监管重心正从内容合规转向"系统级行为管控"；企业引入 Agent 时应提前准备审计日志与关停机制，否则未来合规检查会直接卡在权限边界与可追溯性上。</div>
-  </div>
-
-  <div class="cat">🛡️ 安全 &amp; 伦理</div>
-
-  <div class="card">
-    <h2>花旗修改条款：客户用 AI 代理操作账户出事自负，多家银行跟进</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 18 日–19 日</li>
-      <li><strong>人物/机构：</strong>花旗银行（Citi）；美国多家银行</li>
-      <li><strong>事件：</strong>花旗更新服务条款，明确客户通过接入账户的第三方 AI 工具产生的操作，即使遭遇攻击或出错也由客户自行承担；随着 AI 助手具备发起金融交易的能力，其他银行正采取类似立场</li>
-      <li><strong>数据：</strong>受影响客户规模未披露</li>
-      <li><strong>关键名词：</strong>AI 代理、账户授权、责任转移、条款变更</li>
-    </ul>
-    <div class="point">💡 看点：Agent 替人"动手"的第一道现实摩擦不是技术而是责任归属——这会倒逼企业级 Agent 产品补齐"操作留痕 + 二次确认 + 责任保险"三件套，金融、采购、报销这类涉及资金动作的流程自动化，落地节奏会被合规显著拖慢。</div>
   </div>
 
 </section>
