@@ -125,13 +125,13 @@
 
 <!-- DAY-TABS（由新到旧排列，最新在最左；定时任务每天在最前插入新 Tab，并删除 7 天前的旧 Tab） -->
 <div class="day-tabs" id="day-tabs">
-  <button class="day-tab active" data-day="2026-11-27">11/27 周五</button>
+  <button class="day-tab active" data-day="2026-11-28">11/28 周六</button>
+  <button class="day-tab" data-day="2026-11-27">11/27 周五</button>
   <button class="day-tab" data-day="2026-11-26">11/26 周四</button>
   <button class="day-tab" data-day="2026-11-25">11/25 周三</button>
   <button class="day-tab" data-day="2026-11-24">11/24 周二</button>
   <button class="day-tab" data-day="2026-11-23">11/23 周一</button>
   <button class="day-tab" data-day="2026-11-22">11/22 周日</button>
-  <button class="day-tab" data-day="2026-11-21">11/21 周六</button>
 </div>
 <!-- /DAY-TABS -->
 
@@ -139,7 +139,142 @@
 
 <!-- DAY-SECTIONS（与 Tab 一一对应，最新的在最上面） -->
 
-<section class="day-section active" id="day-2026-11-27">
+<section class="day-section active" id="day-2026-11-28">
+
+  <div class="cat">🚀 模型 &amp; 产品</div>
+
+  <div class="card">
+    <h2>豆包工作独家接入剪映官方插件，一句话就能剪视频<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月27日官宣（豆包工作）</li>
+      <li><strong>人物/机构：</strong>字节跳动 豆包工作、剪映</li>
+      <li><strong>事件：</strong>豆包工作电脑端侧栏「插件」中可启用剪映官方插件，为独家接入；上传视频素材后，用自然语言要求删除口播里的重复表达、修正口误、调整字幕或画面节奏，由剪映执行；结果可在对话里继续提修改意见，也可打开剪映多轨草稿精修；支持按稿粗剪、批量切片、多版本剪辑，并能调用剪映 Hub 把脚本或商品图做成知识短视频、短漫剧、营销短片；需搭配剪映官网最新版客户端</li>
+      <li><strong>数据：</strong>官方未披露调用量与合作价格；入口为电脑端「插件」中心，搜索「剪映」启用</li>
+      <li><strong>关键名词：</strong>对话式剪辑、多轨草稿、剪映 Hub、批量切片</li>
+    </ul>
+    <div class="point">💡 看点：剪辑这种"工序多、判断碎"的活最先被 Agent 吃掉，但官方保留了"多轨草稿"这个出口——说明厂商清楚专业用户仍需要可干预的中间态。AI 做粗加工、人做终审，是当下最稳的落地形态；对内容团队意味着排产从"按条计"转向"按版本计"。</div>
+  </div>
+
+  <div class="card">
+    <h2>腾讯混元 Hy3D 3.6 发布：高模与 PBR 材质一起生成，已开 API</h2>
+    <ul>
+      <li><strong>时间：</strong>11月27日</li>
+      <li><strong>人物/机构：</strong>腾讯混元</li>
+      <li><strong>事件：</strong>发布面向专业 3D 创作的 Hy3D 3.6，重点优化高精度模型的几何结构与 PBR 材质贴图，针对 AI 生成高模常见的表面不规整、局部形变、"泥塑感"等问题做改进；生成阶段几何与纹理联合处理，可用于角色、生物、服装与复杂道具；已通过腾讯云 Token Hub 提供 API，并接入 Miora、腾讯游戏 LAP 与影视 AI 平台 WorkRally</li>
+      <li><strong>数据：</strong>数百位专业 3D 美术与建模师参与盲测评估（厂商自报）；定价未披露</li>
+      <li><strong>关键名词：</strong>PBR 材质、高模、几何-纹理联合生成、腾讯云 Token Hub</li>
+    </ul>
+    <div class="point">💡 看点：3D 资产是汽车内外饰、门店陈列、游戏影视的前置产能。一旦生成质量达到"可进管线"，最先被压缩的是 3D 外包预算；建议先在非关键外观件上试跑，把"AI 初稿 + 人工精修"写进工时模型，而不是直接按替代算。</div>
+  </div>
+
+  <div class="card">
+    <h2>蚂蚁百灵开源 Ming-Image-0.2-Design：60 亿参数，MIT 许可可商用</h2>
+    <ul>
+      <li><strong>时间：</strong>11月27日（Hugging Face 模型卡上线）</li>
+      <li><strong>人物/机构：</strong>蚂蚁百灵团队（inclusionAI）</li>
+      <li><strong>事件：</strong>开放设计图生成模型 Ming-Image-0.2-Design 权重，采用 MIT 许可；新版改进了复杂构图、光照与文字渲染，可生成电商主图、UI 设计稿与空间效果图；官方提供自然语言与结构化提示词两种示例</li>
+      <li><strong>数据：</strong>扩散 Transformer 部分 60 亿参数；默认生成 2048×2048，另有 16:9、2:3 等尺寸；官方验证配置为单张 80 GiB 显存 CUDA GPU、BF16、12 步采样</li>
+      <li><strong>关键名词：</strong>DiT、MIT 许可、结构化提示词、单卡部署</li>
+    </ul>
+    <div class="point">💡 看点：MIT 许可 + 单卡 80G 意味着中型企业可以把设计出图压在自己机房里，电商详情页、门店物料的单图成本会被重新定价。但"文字渲染"是设计图最容易翻车的环节，落地前先用自家 SKU 图库做验收，别拿 demo 图当结论。</div>
+  </div>
+
+  <div class="card">
+    <h2>DeepSeek 灰度"本轮消耗额度"：单轮对话成本可见，个人端仍免费</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日起灰度，11月27日集中报道</li>
+      <li><strong>人物/机构：</strong>DeepSeek（深度求索）</li>
+      <li><strong>事件：</strong>网页端与移动端 App 小范围测试"显示本轮消耗额度"功能：完成一轮对话后弹出详情卡片，展示本次交互消耗的 Token 数与估算金额（单价与 API 持平），输入部分按缓存命中/未命中分别计价，输出单独计价，页面底部标注上下文占用百分比；当前面向个人用户仍免费，此前已实施用量限额</li>
+      <li><strong>数据：</strong>安卓端 2.10.0 版本可触发；金额按 API 同价折算，官方未公布转收费时间</li>
+      <li><strong>关键名词：</strong>Token 计量、缓存命中、上下文占用、免费额度</li>
+    </ul>
+    <div class="point">💡 看点：把成本"可视化"通常是收费前的标准动作——先让用户对价格有体感，再谈订阅。对重度用户（长文档、长对话）来说，上下文占比一显示，压缩提示词、拆分会话这类"省 tokens"的操作会自己长出来；企业侧采购也可以借此做用量基线测算。</div>
+  </div>
+
+
+  <div class="cat">🧠 芯片 &amp; 算力</div>
+
+  <div class="card">
+    <h2>美国算力新规传导到销售端：机房租给中国客户，就买不到英伟达芯片<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月27日（CNBC 报道，国内财经媒体同日跟进）</li>
+      <li><strong>人物/机构：</strong>英伟达及芯片销售商；美国商务部；neoclouds（新型算力云厂商）</li>
+      <li><strong>事件：</strong>随着美方 11月16日宣布、19日生效的"远程访问先进 AI 芯片"管制落地，芯片销售方已明确通知 neoclouds 等采购方：若数据中心把任何算力租给中国公司，将无法购买英伟达芯片；管制对象由"芯片卖到哪里"延伸到"算力给谁用"</li>
+      <li><strong>数据：</strong>新规 11月16日宣布、11月19日生效；执行与核查细则未公开</li>
+      <li><strong>关键名词：</strong>neocloud、远程访问管制、算力租户审查、出口合规</li>
+    </ul>
+    <div class="point">💡 看点：海外算力租赁合同要加"租户审查 + 违约终止"条款，否则上游断供风险会直接砸到业务。对出海的中国团队，借道第三地机房的窗口正在收窄，采购方案要准备"国产卡 / 自建机房"两套，并把合规审查前置到选址阶段——机柜上了再补材料，基本等于重来。</div>
+  </div>
+
+  <div class="card">
+    <h2>加拿大 AI 算力基金加码至 10 亿加元，买本土云可报销 80%</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日（多伦多，AI 部长 Evan Solomon 宣布）</li>
+      <li><strong>人物/机构：</strong>加拿大政府、人工智能部长 Evan Solomon</li>
+      <li><strong>事件：</strong>在"AI for All"国家战略下，向 AI Compute Access Fund 追加 7 亿加元，总规模达 10 亿加元；企业若从符合"加拿大拥有、运营、治理"要求的主权算力供应商采购，联邦报销比例提高至 80%，选择其他供应商的报销比例较低；官方称此举是用需求侧补贴托起本土算力供给</li>
+      <li><strong>数据：</strong>新增 7 亿加元、总额 10 亿加元；主权云采购报销 80%</li>
+      <li><strong>关键名词：</strong>AI Compute Access Fund、主权算力、需求侧补贴</li>
+    </ul>
+    <div class="point">💡 看点："补贴绑定本土算力"正在成为各国的标准动作，算力成本开始出现明显的"国别差价"。跨国团队的选址与供应商组合应按补贴口径反推，而不是只比 GPU 单价；这也解释了为什么租价在松动、合规成本却在上升。</div>
+  </div>
+
+
+  <div class="cat">🏭 产业 &amp; 应用</div>
+
+  <div class="card">
+    <h2>问界发布整车一体 L3 架构，CTO 定调"L3 核心体验是脱手脱眼"<span class="hot">重点</span></h2>
+    <ul>
+      <li><strong>时间：</strong>11月27日（2026 广州国际车展）</li>
+      <li><strong>人物/机构：</strong>赛力斯集团副总裁、问界汽车 CTO 周林；问界（AITO）</li>
+      <li><strong>事件：</strong>发布"整车一体 L3 架构"，包含整车一体 L3 级全域感知、L3 级决策协同控制、L3 级场景体验三层；周林称 L3 时代核心体验就是脱手脱眼，人不需要一直握着方向盘，"在这种情况下，就需要保证绝对的安全"；同届车展上多款车型把高阶智驾做成标配（全新红旗 H9 搭华为乾崑 ADS 5 高阶版、广汽丰田汉兰达 9X 携华为乾崑智驾、奕境 X9 纯电版标配 ADS）</li>
+      <li><strong>数据：</strong>架构分三层；官方未披露 L3 落地时间表、责任划分与法规认证进度</li>
+      <li><strong>关键名词：</strong>整车一体 L3、全域感知、决策协同控制、脱手脱眼、ADS 5</li>
+    </ul>
+    <div class="point">💡 看点：把 L3 拆成"感知-决策-体验"三层并强调"整车一体"，实质是在争责任主体——谁集成，谁背锅。对供应链而言，L3 会把域控、冗余制动/转向、传感器清洗从选配变成必配，采购清单与供应商准入要按 L3 重排；同时"脱手脱眼"的宣传口径一旦跑在法规前面，法务风险高于技术风险。</div>
+  </div>
+
+  <div class="card">
+    <h2>豆包大模型进八成国内头部电视厂商，双十一豆包版电视抖音销售额破亿</h2>
+    <ul>
+      <li><strong>时间：</strong>11月27日（字节火山引擎披露）</li>
+      <li><strong>人物/机构：</strong>字节跳动 火山引擎；创维、长虹、海信、TCL 等</li>
+      <li><strong>事件：</strong>火山引擎称豆包大模型已服务八成国内头部电视厂商，创维、长虹、海信、TCL 等已推出量产"豆包大模型电视"；2026 双十一期间，豆包大模型版电视在抖音电商渠道销售额破亿</li>
+      <li><strong>数据：</strong>覆盖八成国内头部电视厂商；双十一抖音渠道销售额破亿</li>
+      <li><strong>关键名词：</strong>端侧语音交互、大模型电视、内容电商分发</li>
+    </ul>
+    <div class="point">💡 看点：大模型在硬件上第一波规模化落点是电视语音与内容推荐——容错高、ROI 可测。"模型厂 + 硬件厂 + 内容电商"这条分发链路跑通后，家电、座舱、办公设备都可以照抄；对产品经理的启发是：先把"说不准也有人用"的场景做规模，再谈高精度场景。</div>
+  </div>
+
+  <div class="card">
+    <h2>知乎向 DeepSeek 开放内容检索，回答里可直接跳回原文</h2>
+    <ul>
+      <li><strong>时间：</strong>11月27日</li>
+      <li><strong>人物/机构：</strong>知乎、DeepSeek</li>
+      <li><strong>事件：</strong>知乎宣布与 DeepSeek 开展内容合作，通过数据开放平台提供社区问答、文章、热榜与话题讨论的检索能力，覆盖科技、科学、职场、生活、教育、财经等领域；能力覆盖 DeepSeek 网页端与移动端；知乎内容被检索并用于回答时，参考资料显示知乎来源标识、标题、摘要与创作者信息，用户可点击跳转阅读全文</li>
+      <li><strong>数据：</strong>覆盖 6 大领域；授权费用与分成方式未披露</li>
+      <li><strong>关键名词：</strong>内容检索、来源标注、数据开放平台、创作者归属</li>
+    </ul>
+    <div class="point">💡 看点：中文高质量语料开始"持牌供应"，模型厂为压幻觉、控版权风险会持续买入垂直内容。对内容平台是新的收入曲线；对企业则是提醒——内部知识库的"可检索授权"边界要提前定，否则接入大模型时说不清哪些文档能用。</div>
+  </div>
+
+
+  <div class="cat">📜 政策 &amp; 监管</div>
+
+  <div class="card">
+    <h2>路透：GLM-5.5 或因管制与反蒸馏推迟到 2027，中国模型迭代被拖慢</h2>
+    <ul>
+      <li><strong>时间：</strong>11月26日（路透独家），11月27-28日持续发酵</li>
+      <li><strong>人物/机构：</strong>Z.AI（智谱）、月之暗面 Moonshot；路透社</li>
+      <li><strong>事件：</strong>知情人士称 Z.AI 原计划 11 月发布约 3 万亿参数的 GLM-5.5，但未能按期；部分原因是美方反蒸馏防护加强、先进芯片获取受限，公司希望年底完成训练，但新限制可能把发布推到 2027 年一季度或更晚；其已于 11月23日先行发布 GLM-5.4；月之暗面的发布节奏也可能被拉长，并有在海外扩容、接洽国产芯片训练的消息；Z.AI 方面以截图形式公开否认，双方均未正式确认</li>
+      <li><strong>数据：</strong>GLM-5.5 参数规模约 3 万亿；GLM-5.4 于 11月23日发布</li>
+      <li><strong>关键名词：</strong>反蒸馏、出口管制、训练算力、发布节奏</li>
+    </ul>
+    <div class="point">💡 看点：管制的影响正从"买不到卡"变成"迭代变慢"，中美模型的时间差会被拉开。对采购方的直接含义是——国产模型选型要以"当前可用版本"做基线，别把未发布的路线图写进方案；合同里留好版本降级与替代条款，避免被一次延期拖住上线。</div>
+  </div>
+
+</section>
+
+<section class="day-section" id="day-2026-11-27">
 
   <div class="cat">🚀 模型 &amp; 产品</div>
 
@@ -905,119 +1040,6 @@
   </div>
 
 </section>
-
-<section class="day-section" id="day-2026-11-21">
-
-  <div class="cat">💰 融资 &amp; 并购</div>
-
-  <div class="card">
-    <h2>Anthropic IPO 收官：承销商全额行使"绿鞋"，募资升至 935 亿美元<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>美东时间 11 月 20 日公告；11 月 19 日已在纳斯达克挂牌（代码 ANT）</li>
-      <li><strong>人物/机构：</strong>Anthropic；高盛、摩根士丹利等承销团；AMD、博通、Google、美光、微软、英伟达等七家战略投资者</li>
-      <li><strong>事件：</strong>承销商全额行使 1.47 亿股超额配售权，公司最终以每股 83 美元发行 11.27 亿股 A 类普通股，IPO 募资总额由 813 亿美元提升至约 935 亿美元；同时完成对七家战略投资者的 3.13 亿股 Class N 普通股私募配售，规模约 26 亿美元，两项合计约 1195 亿美元，其中约 916 亿美元归公司</li>
-      <li><strong>数据：</strong>11.27 亿股 × 83 美元 ≈ 935 亿美元；含私募合计约 1195 亿美元；绿鞋 1.47 亿股</li>
-      <li><strong>关键名词：</strong>绿鞋机制、超额配售权、Class A / Class N、同步私募配售</li>
-    </ul>
-    <div class="point">💡 看点：绿鞋被全额行使说明承销端认购需求仍在，但同一时间二级市场给出的答案是"跌"——一级抢筹与二级抛售的背离，正是当前 AI 估值分歧的缩影。对企业采购侧的含义是：上市后的模型公司会更受季度业绩约束，API 定价与路线图的稳定性反而下降，长约里要预留价格调整与迁移条款。</div>
-  </div>
-
-  <div class="card">
-    <h2>Databricks 洽谈以 2250 亿美元估值融资数十亿美元</h2>
-    <ul>
-      <li><strong>时间：</strong>北京时间 11 月 21 日 06:53</li>
-      <li><strong>人物/机构：</strong>Databricks；潜在投资方未披露</li>
-      <li><strong>事件：</strong>美国数据与人工智能公司 Databricks 正进行初步洽谈，拟以 2250 亿美元估值融资数十亿美元；目前处于早期阶段，条款与投资方名单均未确定</li>
-      <li><strong>数据：</strong>估值 2250 亿美元；融资规模"数十亿美元"</li>
-      <li><strong>关键名词：</strong>数据湖仓、AI 原生数据平台、一级市场估值、初步洽谈</li>
-    </ul>
-    <div class="point">💡 看点：基础模型公司在二级市场被打折的同时，卖"数据底座"的公司仍能拿到高溢价——说明企业 AI 预算正从"买模型"转向"买数据与治理能力"。这对做 ERP / 供应链数据中台的团队是明确利好：数据资产的可信度与打通度，比模型参数更值钱。</div>
-  </div>
-
-  <div class="card">
-    <h2>阿波罗与高盛完成 440 亿美元 SpaceX GPU 融资定价，锁定英伟达 Vera Rubin</h2>
-    <ul>
-      <li><strong>时间：</strong>美东 11 月 20 日公告（北京时间 11 月 21 日）</li>
-      <li><strong>人物/机构：</strong>Apollo（阿波罗全球管理）、高盛联合牵头；贝莱德、高盛资产管理、KKR 参与；SpaceX；英伟达</li>
-      <li><strong>事件：</strong>完成约 440 亿美元优先及次级票据定价，资金用于采购 GPU 及相关设备并出租给 SpaceX；交易因需求强劲获超额认购并扩大规模，成为迄今规模最大的 GPU 融资交易；芯片采用下一代英伟达 Vera Rubin，租赁计划在 2027 年上半年 GPU 交付后启动</li>
-      <li><strong>数据：</strong>440 亿美元；2027 年上半年交付；英伟达 Vera Rubin</li>
-      <li><strong>关键名词：</strong>GPU 融资租赁、优先 / 次级票据、Vera Rubin、超额认购</li>
-    </ul>
-    <div class="point">💡 看点：从昨日的 320 亿美元发债到今天 440 亿美元结构化融资，"算力资产证券化"正从个案变成主流范式。对车企自建智算中心同样适用：租赁结构可规避重资产入表，但会锁定多年算力成本——必须与业务爬坡曲线严格匹配，否则容易变成"锁价锁死"。</div>
-  </div>
-
-  <div class="cat">🧠 芯片 &amp; 算力</div>
-
-  <div class="card">
-    <h2>英伟达财报后暴跌 14%，纳指抹平年内涨幅、标普七连跌<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>美东 11 月 20 日（周五）收盘</li>
-      <li><strong>人物/机构：</strong>英伟达；纳斯达克；Anthropic 等 AI 概念股</li>
-      <li><strong>事件：</strong>英伟达 FY2027 第三财季营收 1158 亿美元（同比 +103%、环比 +20%），数据中心 1076 亿美元（同比 +110%、占比约 93%），Q4 营收指引 1300 亿美元（±3%）且高于市场预期约 4%；但业绩公布后周五股价暴跌 14%，Anthropic 跌 8.5%，纳指抹平年内全部涨幅，标普 500 七连跌，黄金同步重挫</li>
-      <li><strong>数据：</strong>营收 1158 亿美元、净利 653 亿美元、数据中心 1076 亿美元、Q4 指引 1300 亿美元；英伟达 -14%、Anthropic -8.5%</li>
-      <li><strong>关键名词：</strong>FY2027 Q3、数据中心业务、业绩指引、利好出尽、AI 资本开支</li>
-    </ul>
-    <div class="point">💡 看点："史上最好财报"换来最大单日跌幅，说明市场质疑的已不是当期业绩，而是 AI 资本开支能否持续。做年度 IT 预算与算力长约时，应把"需求不及预期时的弹性退出条款"写进合同，同时保留一部分按需采购额度，避免被高价长约锁死。</div>
-  </div>
-
-  <div class="card">
-    <h2>英伟达洽谈收购 Inception，补"物理 AI"拼图，估值至少 5 亿美元</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 20 日 The Information 披露，双方暂未回应</li>
-      <li><strong>人物/机构：</strong>英伟达；Inception（2024 年成立于加州帕洛阿尔托）</li>
-      <li><strong>事件：</strong>英伟达正与 Inception 进行深度收购谈判，交易估值至少 5 亿美元，并可能附带与业绩挂钩的激励条款；最终收购价格、交割安排与产品后续运营模式均未敲定，谈判仍存在变数</li>
-      <li><strong>数据：</strong>交易估值 ≥ 5 亿美元</li>
-      <li><strong>关键名词：</strong>物理 AI、具身智能、业绩对赌、技术补强</li>
-    </ul>
-    <div class="point">💡 看点：英伟达在算力之外持续收购"物理世界"能力，指向机器人 / 自动驾驶的训练与仿真闭环。对智能驾驶和智能制造供应链是明确风向——未来竞争不在单点模型，而在"芯片 + 仿真 + 数据"的一体化平台，供应商选型要看平台闭环能力而非单项指标。</div>
-  </div>
-
-  <div class="cat">🚀 模型 &amp; 产品</div>
-
-  <div class="card">
-    <h2>国产开源双雄：Kimi K3.1 Pro 开放全量权重，中国开源模型累计下载破 100 亿次<span class="hot">重点</span></h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 21 日报道（工信部数据）；Kimi K3.1 Pro 权重于近期公布</li>
-      <li><strong>人物/机构：</strong>月之暗面（Moonshot）；腾讯混元；工业和信息化部</li>
-      <li><strong>事件：</strong>月之暗面公布 Kimi K3.1 Pro 完整模型权重——总参数 2.8 万亿、每 token 激活 104B、上下文超 100 万 token、许可相对宽松，是目前全球参数规模最大的开源模型；腾讯混元 Hy4 在指令遵循、长文理解、长程任务与深度研究上提升，并新增原生视觉理解与电脑操作能力；最新中文大模型榜单中 Qwen4-Max、Hy4 与 Kimi 同处第一梯队</li>
-      <li><strong>数据：</strong>国内开源模型累计下载量突破 100 亿次；2.8T 总参 / 104B 激活 / 1M 上下文；榜单评测 Qwen4-Max、Hy4 分别提升 18.39 分、18.05 分</li>
-      <li><strong>关键名词：</strong>MoE 混合专家、开源权重、百万上下文、computer use、中文大模型榜单</li>
-    </ul>
-    <div class="point">💡 看点：开源权重 + 电脑操作能力的组合，意味着中型企业可以私有化部署"能自己点系统"的 Agent，ERP、采购、对账这类重复操作流程的替代窗口正式打开。选型时要重点验证权限边界、操作留痕与可回滚，而不是只看榜单分数。</div>
-  </div>
-
-  <div class="card">
-    <h2>微软 Ignite 2026 收官：Agent 365 把智能体当"员工"管，接入 Anthropic、OpenAI、Databricks</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 17–20 日，旧金山</li>
-      <li><strong>人物/机构：</strong>微软</li>
-      <li><strong>事件：</strong>Agent 365 扩展为统一的 AI 资产可观测平台，覆盖 Copilot、智能体、模型、应用及第三方服务；Entra Agent ID 强化智能体身份与访问治理，新增对 MCP 服务器、插件、技能的管控；Copilot Managed Runtime 正式可用，Autopilot 开始向 Frontier 客户推送；Agent 365 Business Analytics 把 AI 花费、采用率与业务成果打通</li>
-      <li><strong>数据：</strong>可接入 Anthropic、Databricks、OpenAI、Salesforce 等平台；支持跨多租户管理智能体</li>
-      <li><strong>关键名词：</strong>Agent 365、Entra Agent ID、MCP、Copilot Managed Runtime、智能体治理</li>
-    </ul>
-    <div class="point">💡 看点：企业级 Agent 的竞争焦点从"能力演示"转向"身份、权限、成本与审计"——这正是采购 / 供应链落地 Agent 的真实门槛。评估方案时，应要求供应商明确 MCP 工具的授权粒度、操作日志留存与人工接管机制，否则上生产即等于埋合规雷。</div>
-  </div>
-
-  <div class="cat">🏭 产业 &amp; 应用</div>
-
-  <div class="card">
-    <h2>现代旗下波士顿动力 Atlas 人形机器人将进格罗方德晶圆厂实测</h2>
-    <ul>
-      <li><strong>时间：</strong>11 月 20 日披露，测试自 2027 年初启动</li>
-      <li><strong>人物/机构：</strong>波士顿动力（现代汽车集团旗下）；格罗方德（GlobalFoundries）</li>
-      <li><strong>事件：</strong>双方将在格罗方德厂区内对 Atlas 进行现场测试，评估人形机器人在晶圆制造场景的潜在应用、客户准备度与集成需求，并针对具体任务开展早期测试与培训；格罗方德成为汽车行业之外首家参与该计划的半导体企业</li>
-      <li><strong>数据：</strong>测试于 2027 年初启动；格罗方德为汽车行业外首家参与方</li>
-      <li><strong>关键名词：</strong>人形机器人、物理 AI、晶圆厂自动化、现场测试</li>
-    </ul>
-    <div class="point">💡 看点：现代把汽车产线上的人形机器人经验外溢到半导体制造，说明"物理 AI"正从发布会演示走向产线验证。对制造业供应链的启示是——人形机器人短期替代的是高危 / 重复工位，中长期才影响产线节拍与用工结构，评估应按工位而非整线推进。</div>
-  </div>
-
-</section>
-
-
-
-
-
 
 <!-- /DAY-SECTIONS -->
 
